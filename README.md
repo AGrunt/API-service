@@ -14,8 +14,9 @@
 ## How to use
 
 Service available at `http://localhost:5000`  
-Dovumentation for available methods accessable at `http://localhost:5000/swagger`
+Documentation for available methods accessable at `http://localhost:5000/swagger`
 
-Swagger interface allow to try out methods and get service response.
+Swagger interface allow to try out methods and get service response.  
+To try out methods through swagger UI press `Try it out`, fill required fields, and press `Execute` button bellow  
 
 Every response is hardcoded now for test reasons.
