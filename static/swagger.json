@@ -1,0 +1,302 @@
+{
+  "definitions": {
+    "User": {
+      "properties": {
+        "postcode": {
+          "description": "Postcode of the user",
+          "type": "string"
+        },
+        "gender": {
+          "description": "Gender of the user",
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "age": {
+          "description": "Age of the user",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "postcode",
+        "gender",
+        "age"
+      ]
+    },
+    "Recommendation": {
+      "properties": {
+        "cafe": {
+          "description": "Cafe identifier",
+          "type": "string"
+        },
+        "ranking": {
+          "description": "Ranking of the cafe for a given user",
+          "type": "numeric"
+        }
+      },
+      "required": [
+        "cafeId",
+        "ranking"
+      ]
+    },
+    "Recommendations": {
+      "properties": {
+        "recommendations": {
+          "description": "Array of cafes rankings",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/Recommendation"
+          }
+        }
+      },
+      "recommendations": [
+        "responses"
+      ]
+    },
+    "Response": {
+      "properties": {
+        "questionId": {
+          "description": "Question Id",
+          "type": "string"
+        },
+        "value": {
+          "description": "Response for a given question",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "questionId",
+        "value"
+      ]
+    },
+    "Responses": {
+      "properties": {
+        "responses": {
+          "description": "Array of user's questionare responses",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/Response"
+          }
+        }
+      },
+      "required": [
+        "responses"
+      ]
+    },
+    "Ranking":{
+      "properties": {
+        "categoryId": {
+          "description": "Marking category Id",
+          "type": "string"
+        },
+        "rank": {
+          "description": "Mark for a given cafe in a given category",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "categoryId",
+        "rank"
+      ]
+    },
+    "Rankings":{
+      "properties": {
+        "rankings": {
+          "description": "Array of marks for given cafe",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/Ranking"
+          }
+        }
+      },
+      "required": [
+        "rankings"
+      ]
+    }
+  },
+  "info": {
+    "title": "Cafe recommendation service",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/users/{id}": {
+      "get": {
+        "summary": "Get user",
+        "description": "Returns user information for a user with a given id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User identifier",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        },
+        "tags": [
+          "users"
+        ]
+      },
+      "put": {
+        "summary": "Add user",
+        "description": "Ads user to the database",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "User details",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        },
+        "tags": [
+          "users"
+        ]
+      }
+    },
+    "/users/{id}/recommendations": {
+      "get": {
+        "summary": "Get recommendations",
+        "description": "Returns recommndations for a given user",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "start",
+            "description": "Zero-based position of the first prediction to return",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "size",
+            "description": "Number of predictions to return",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Recommendations"
+            }
+          }
+        },
+        "tags": [
+          "users"
+        ]
+      }
+    },
+    "/users/{id}/responses": {
+      "put": {
+        "summary": "User's answers collection",
+        "description": "Reciev user's answers to store them into a database",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "User's questionare responses",
+            "schema": {
+              "$ref": "#/definitions/Responses"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        },
+        "tags": [
+          "users"
+        ]
+      }
+    },
+    "/users/{id}/{cafeid}/ranking": {
+      "put": {
+        "summary": "User's cafe ranking collection",
+        "description": "Recieve user's cafe marks to store them into a database",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "cafeid",
+            "description": "Cafe identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "User's cafe rankings",
+            "schema": {
+              "$ref": "#/definitions/Rankings"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        },
+        "tags": [
+          "users"
+        ]
+      }
+    }
+  },
+  "swagger": "2.0"
+}
