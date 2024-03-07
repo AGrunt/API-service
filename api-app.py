@@ -31,7 +31,7 @@ def get_users_recommendations(id):
 def put_responses(id):
     return f"Success", 200
 
-@app.route('/users/<id>/<cafeid>/ranking', methods=['PUT'])
+@app.route('/users/<id>/<cafeid>/rankings', methods=['PUT'])
 def put_ranking(id, cafeid):
     return f"Success", 200
 

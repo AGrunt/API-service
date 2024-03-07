@@ -257,7 +257,7 @@
         ]
       }
     },
-    "/users/{id}/{cafeid}/ranking": {
+    "/users/{id}/{cafeid}/rankings": {
       "put": {
         "summary": "User's cafe ranking collection",
         "description": "Recieve user's cafe marks to store them into a database",
