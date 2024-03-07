@@ -1,7 +1,6 @@
 # API-service
  Coffee selection rest api service
 
-
 ## Requirements
 * Python 3.12
 
@@ -9,6 +8,7 @@
 
 * Create virtual environmnet in local copy of repo: `python -m venv .venv`
 * Run virtual environment: `source .venv/bin/activate`
+* Install requirements: `pip install -r requirements.txt`
 * Run application: `python api-app.py`
 
 ## How to use
