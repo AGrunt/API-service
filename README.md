@@ -13,7 +13,7 @@
 
 ## How to use
 
-Service available at `http://localhost:5000`
+Service available at `http://localhost:5000`  
 Dovumentation for available methods accessable at `http://localhost:5000/swagger`
 
 Swagger interface allow to try out methods and get service response.
