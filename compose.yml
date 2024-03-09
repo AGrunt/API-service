@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+
+  coffee-api-service-db:
+    image: mysql:8.0
+    restart: always
+    ports:
+      - "33060:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE:  maindb
+      MYSQL_USER: sample
+      MYSQL_PASSWORD: sample
+      MYSQL_ROOT_PASSWORD: sample
+      MYSQL_ROOT_HOST: '0.0.0.0'
+    volumes:
+      - api-db:/var/lib/mysql
+
+  coffee-api-service:
+    image: example/database
+    ports:
+      - "5000:5000"
+    build:
+      dockerfile: api-servie.dockerfile
+
+volumes:
+  api-db:

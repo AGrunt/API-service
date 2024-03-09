@@ -2,14 +2,11 @@
  Coffee selection rest api service
 
 ## Requirements
-* Python 3.12
+* docker engine installed
 
 ## How to run
 
-* Create virtual environmnet in local copy of repo: `python -m venv .venv`
-* Run virtual environment: `source .venv/bin/activate`
-* Install requirements: `pip install -r requirements.txt`
-* Run application: `python api-app.py`
+* Run `docker compose up`
 
 ## How to use
 
