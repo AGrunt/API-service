@@ -1,5 +1,5 @@
 import json
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_swagger_ui import get_swaggerui_blueprint
 
 SWAGGER_URL="/swagger"
@@ -14,6 +14,10 @@ swagger_ui_blueprint = get_swaggerui_blueprint(
 )
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html') 
 
 @app.route('/users/<id>', methods=['GET'])
 def get_users(id):
