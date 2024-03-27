@@ -1,12 +1,14 @@
+-- This table holds users
 CREATE TABLE usersTable(
-userId varchar(255),
+userId varchar(255), 
 gender INT(1),
 age INT(2),
-registrationDate varchar(255),
+registrationTimeStamp varchar(255),
 postcode varchar(255),
 PRIMARY KEY (userId)
 );
 
+-- This table holds user's answers to questionare about their coffee preferences 
 CREATE TABLE responses(
 responseIndex INT AUTO_INCREMENT,
 userId varchar(255),
@@ -16,6 +18,7 @@ responseTimeStamp varchar(255),
 PRIMARY KEY (responseIndex)
 );
 
+-- This table holds user's cafe rankings. Do they like cafe or not for categories.
 CREATE TABLE rankings(
 rankingIndex INT AUTO_INCREMENT,
 userId varchar(255),
@@ -26,6 +29,7 @@ rankingTimeStamp varchar(255),
 PRIMARY KEY (rankingIndex)
 );
 
+-- This table holds recomendations for each cafe for each user
 CREATE TABLE predictions(
 predictionIndex int AUTO_INCREMENT,
 userId varchar(255),
