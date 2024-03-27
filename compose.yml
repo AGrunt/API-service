@@ -14,21 +14,20 @@ services:
       MYSQL_USER: sample
       MYSQL_PASSWORD: sample
       MYSQL_ROOT_PASSWORD: sample
-      MYSQL_ROOT_HOST: '0.0.0.0'
-    
+      MYSQL_ROOT_HOST: '0.0.0.0'    
     healthcheck:
       test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
       start_period: 5s
       interval: 5s
       timeout: 5s
       retries: 55    
-    
     volumes:
       - api-db:/var/lib/mysql
       - ./scripts/makeSchema.sql:/docker-entrypoint-initdb.d/1.sql
 
   coffee-api-service:
     image: flask/application
+    hostname: api-service
     ports:
       - "5000:5000"
     container_name: api-flask
