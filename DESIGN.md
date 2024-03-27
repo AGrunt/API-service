@@ -39,8 +39,6 @@ TODO: Diagram
 
 ### Interactions
 
-
-
 ### Design decisions
 
 #### Decision 1
@@ -109,9 +107,19 @@ TODO: Diagram
 | Options considered | Single model for collaborative filtering, but that creates cold start issues.                                                                                     |
 | Notes              |                                                                                                                                                                   |
 
-
 #### Decision 7
 
+| Attribute          | Text                                                                                      |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| #                  | 7                                                                                         |
+| Design decision    | Provide services and abstact all DB ML DB operations from what people are doing on the UI |
+| Rationale          | Distributed team that rarely meets                                                        |
+| Trade-offs         | Inefficiently in storage                                                                  |
+| Options considered | One big database, but that is tricky to integrate                                         |
+| Notes              |                                                                                           |
+
+
+#### Decision 8
 | Attribute          | Text                                                                                      |
 | ------------------ | ----------------------------------------------------------------------------------------- |
 | #                  | 7                                                                                         |
@@ -127,4 +135,4 @@ TODO: Diagram
 
 1. Where are the cafe rankings that users enter on signing up? What rakings? Like/Did Not Like/Skip vs. Stars/Skip
 2. How are rankings across different categories (ambiance, etc.) used on the Cafe Page?
-3. 
+
