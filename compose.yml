@@ -5,24 +5,39 @@ services:
   coffee-api-service-db:
     image: mysql:8.0
     restart: always
+    hostname: api-db
     ports:
       - "33060:3306"
-    command: --default-authentication-plugin=mysql_native_password
+    container_name: api-db
     environment:
-      MYSQL_DATABASE:  maindb
+      MYSQL_DATABASE: coffee-mate
       MYSQL_USER: sample
       MYSQL_PASSWORD: sample
       MYSQL_ROOT_PASSWORD: sample
-      MYSQL_ROOT_HOST: '0.0.0.0'
+      MYSQL_ROOT_HOST: '0.0.0.0'    
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 55    
     volumes:
       - api-db:/var/lib/mysql
+      - ./scripts/V001_coffee_mate.sql:/docker-entrypoint-initdb.d/V001_coffee_mate.sql
 
   coffee-api-service:
-    image: example/database
+    image: flask/application
+    hostname: api-service
     ports:
       - "5000:5000"
+    container_name: api-flask
+    restart: always
     build:
       dockerfile: api-servie.dockerfile
+    depends_on:
+      - coffee-api-service-db
+    links: 
+      - coffee-api-service-db
 
 volumes:
   api-db:

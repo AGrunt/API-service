@@ -1,6 +1,7 @@
 import json
 from flask import Flask, request, jsonify, render_template
 from flask_swagger_ui import get_swaggerui_blueprint
+import mysql.connector
 
 SWAGGER_URL="/swagger"
 API_URL="/static/swagger.json"
@@ -12,6 +13,17 @@ swagger_ui_blueprint = get_swaggerui_blueprint(
         'app_name': 'Access API'
     }
 )
+
+# Creating db connector
+mydb = mysql.connector.connect(
+  host="api-db",
+  port="3306",
+  user="sample",
+  password="sample"
+)
+
+# Make a cursor
+#cursor = mydb.cursor()
 
 app = Flask(__name__)
 
@@ -35,9 +47,14 @@ def get_users_recommendations(id):
 def put_responses(id):
     return f"Success", 200
 
-@app.route('/users/<id>/<cafeid>/rankings', methods=['PUT'])
+@app.route('/users/<id>/rankings/<cafeid>', methods=['PUT'])
 def put_ranking(id, cafeid):
     return f"Success", 200
+
+@app.route('/db', methods=['GET'])
+def db_test():
+    #foo = print(mydb)
+    return f'{mydb}', 200
 
 #Run swagger 
 app.register_blueprint(swagger_ui_blueprint, url_prefix=SWAGGER_URL)
