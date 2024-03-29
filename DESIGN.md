@@ -118,21 +118,30 @@ TODO: Diagram
 | Options considered | One big database, but that is tricky to integrate                                         |
 | Notes              |                                                                                           |
 
-
 #### Decision 8
-| Attribute          | Text                                                                                      |
-| ------------------ | ----------------------------------------------------------------------------------------- |
-| #                  | 7                                                                                         |
-| Design decision    | Provide services and abstact all DB ML DB operations from what people are doing on the UI |
-| Rationale          | Distributed team that rarely meets                                                        |
-| Trade-offs         | Inefficiently in storage                                                                  |
-| Options considered | One big database, but that is tricky to integrate                                         |
-| Notes              |                                                                                           |
 
+| Attribute          | Text                                                                                            |
+| ------------------ | ----------------------------------------------------------------------------------------------- |
+| #                  | 8                                                                                               |
+| Design decision    | Collect initial data from questionare published over social media                               |
+| Rationale          | We need data to build initial model                                                             |
+| Trade-offs         | We are rebuilding application in a google form in effect                                        |
+| Options considered | 1. Try to find dataset. 2. Start with empty database and collect data as people start using it. |
+| Notes              | Dependencies: Question required. Cafe list required.                                            |
+
+#### Decision 9
+
+| Attribute          | Text                                                                                            |
+| ------------------ | ----------------------------------------------------------------------------------------------- |
+| #                  | 9                                                                                               |
+| Design decision    | Collect cafes from the google maps api                                                          |
+| Rationale          | We need data to build initial model                                                             |
+| Trade-offs         | We are rebuilding application in a google form in effect                                        |
+| Options considered | 1. Try to find dataset. 2. Start with empty database and collect data as people start using it. |
+| Notes              | Dependencies: Question required. Cafe list required.                                            |
 
 
 ## Outstanding questions
 
 1. Where are the cafe rankings that users enter on signing up? What rakings? Like/Did Not Like/Skip vs. Stars/Skip
 2. How are rankings across different categories (ambiance, etc.) used on the Cafe Page?
-
