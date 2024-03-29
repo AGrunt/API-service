@@ -1,0 +1,657 @@
+{
+   "html_attributions" : [],
+   "results" : 
+   [
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4269542,
+               "lng" : 150.8894587
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42561417010727,
+                  "lng" : 150.8908679798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42831382989272,
+                  "lng" : 150.8881683201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Amalfi Cafe and Coffee",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 4032,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108625978620720390993\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJb409UhCLDjo48WD2K_92V9ngfWFUBHjPiwsthlHZRccdHVIzxr2KD8l-jnaChCAkPd8RuhSyx9HifSc13JNI75EtRty2GgvtDSe2zMYbqe98cXYYrYKqs1lJWT6RBiuvmsGvvIbVAvc3xbLAnk9lY47K030v7b9_RgShoTbC31-BWR",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJgW55VIcZE2sRvu0hTcNgnL0",
+         "plus_code" : 
+         {
+            "compound_code" : "HVFQ+6Q Wollongong, New South Wales",
+            "global_code" : "4RQGHVFQ+6Q"
+         },
+         "price_level" : 1,
+         "rating" : 4.7,
+         "reference" : "ChIJgW55VIcZE2sRvu0hTcNgnL0",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "meal_takeaway",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 76,
+         "vicinity" : "4 Auburn St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4269517,
+               "lng" : 150.8908203
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42561912010728,
+                  "lng" : 150.8921065798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42831877989272,
+                  "lng" : 150.8894069201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Bostons Espresso-Cafe",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 3072,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110734911043897187261\"\u003eDavid Williams\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJaDs6L7QxmC0ZtNkEPe79qs6Op1aTcozEsWweGdbW6Tma_cWEsIcqnJkrK-bt78P7It1opzOgksh2BH_iX8WwmrzDJxbnDsOqHf0uKaAoegr4WkRXIUcRVVXyfDKbeFsemO3v42CPEqBgU47ZxEWwDpRwG3wlktArbCDndqpts9Bema",
+               "width" : 4096
+            }
+         ],
+         "place_id" : "ChIJXxNciaQZE2sRC1w4gqQprW8",
+         "plus_code" : 
+         {
+            "compound_code" : "HVFR+68 Wollongong, New South Wales",
+            "global_code" : "4RQGHVFR+68"
+         },
+         "price_level" : 1,
+         "rating" : 4.6,
+         "reference" : "ChIJXxNciaQZE2sRC1w4gqQprW8",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 165,
+         "vicinity" : "11/15 Atchison St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4243565,
+               "lng" : 150.8928866
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42303412010727,
+                  "lng" : 150.8944233798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42573377989272,
+                  "lng" : 150.8917237201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "The Coffee Emporium Wollongong",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 3024,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114073029255091743153\"\u003eRaulan Grajewski\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJanPSjng4IYuDmVXFOjpOInnHgttL5B6JuZbixi1b_vhPijiRevoltFjutwYRLiNzsZBkIYmiRLGp1Pjq5-M9kcBD5089aoPUtA7b0GaU3We93uAHGfBm5mfsYi3sk_H2liTwwlxh77gxr-bxUsYO9Si95qP4zOI9dRUJV9m0sB1aTo",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJK1xug6YZE2sR4UziAtADMlE",
+         "plus_code" : 
+         {
+            "compound_code" : "HVGV+75 Wollongong, New South Wales",
+            "global_code" : "4RQGHVGV+75"
+         },
+         "price_level" : 2,
+         "rating" : 3.9,
+         "reference" : "ChIJK1xug6YZE2sR4UziAtADMlE",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 100,
+         "vicinity" : "202 Keira St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4258619,
+               "lng" : 150.888689
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42446542010728,
+                  "lng" : 150.8900136298927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42716507989272,
+                  "lng" : 150.8873139701073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Lettuce B. Frank",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 2988,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/104788344460544093600\"\u003eNorbert Fischer\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJZfhAcHXXhXWcqG1_b2hRSWxWDFxifOgzwozizpEvwfUmutCXBcWSENR3o2aRHDWRlP9wLfzun9XfAF-yqJr4uLDCJlLrYdi0ooj1V4SxttXTIFs6v7-EsIUqthDUVuynmwfwBSwpLaz3vBC2QdczhV7Ba7hW_zplPhq3Z0XMIsKhIq",
+               "width" : 5312
+            }
+         ],
+         "place_id" : "ChIJLcven6MZE2sROpFEBYPmWTs",
+         "plus_code" : 
+         {
+            "compound_code" : "HVFQ+MF Wollongong, New South Wales",
+            "global_code" : "4RQGHVFQ+MF"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJLcven6MZE2sROpFEBYPmWTs",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "bakery",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 547,
+         "vicinity" : "337 Crown St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4275495,
+               "lng" : 150.8908102
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42619142010727,
+                  "lng" : 150.8920446798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42889107989271,
+                  "lng" : 150.8893450201072
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Inspire Espresso",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 1152,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101879751644251134571\"\u003eInspire Espresso\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJbUPEyyilNv3E9sFhHDmiEFlLb2fxMG7qJpYi4Gcg5IflXvPQCjIt4752zJeppOrbasy3sbv2kXXL3jsotaGTDJ0_jwLTfIl9QtPnE53YOVMkEFH0ja2zkpLZY8YKDx3CbBsUQv5AIaakmytuX95tY9BXBULMs7mv7_q-5QrTZGvHXZ",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJh1HZoqQZE2sR5bCYX2n68LQ",
+         "plus_code" : 
+         {
+            "compound_code" : "HVCR+X8 Wollongong, New South Wales",
+            "global_code" : "4RQGHVCR+X8"
+         },
+         "rating" : 4.8,
+         "reference" : "ChIJh1HZoqQZE2sR5bCYX2n68LQ",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 6,
+         "vicinity" : "G/F, HATCH Building, 25 Atchison St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.42516579999999,
+               "lng" : 150.8856682
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42386222010727,
+                  "lng" : 150.8870310798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42656187989272,
+                  "lng" : 150.8843314201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Fresh on Crown Caffe",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 4000,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/103753970920403389168\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJb1WhfhlAtMloRIiEuXAUSIjwFFwJJUCoUIc4dpEkme8FWGHRH4SipOqpgKFc_QUZi_MeeHEGWqdLkPS8LHDKl39D5p7A9-_Rd9U7vrECvjzVIESW6qem29Vz65a-3GuTNuD0sz82v7y4NWeW2nbMFg2tU4dLu1oRlDnGqyoYr3aUzA",
+               "width" : 3000
+            }
+         ],
+         "place_id" : "ChIJn7FZX6IZE2sRV2qAy88vYU0",
+         "plus_code" : 
+         {
+            "compound_code" : "HVFP+W7 Wollongong, New South Wales",
+            "global_code" : "4RQGHVFP+W7"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJn7FZX6IZE2sRV2qAy88vYU0",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "bakery",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 22,
+         "vicinity" : "2/338 Crown St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.422216,
+               "lng" : 150.893166
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42093292010728,
+                  "lng" : 150.8944888298927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42363257989273,
+                  "lng" : 150.8917891701072
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Bull & Bear Cafe - Restaurant",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 1808,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108016645155588944505\"\u003eNicholas Lim\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJY3gtyHwYvThVlzhFoXkmIAjT6_FXBILT48dlJMx1Z6D1Ul3_64qyQOc5MNqBulMG3uLMbwrQte9NRhF-7Oz9v2nCVahDlqdl0DaLjoHzWICkn7LGgdMv5aIDht2rPQsY35aJ_9qt2IFe5wHbb0FIjuRwhRKGeBxCJm5mpRcTRZ_p1k",
+               "width" : 3216
+            }
+         ],
+         "place_id" : "ChIJjepEVKYZE2sRJr_WYuxC5H0",
+         "plus_code" : 
+         {
+            "compound_code" : "HVHV+47 Wollongong, New South Wales",
+            "global_code" : "4RQGHVHV+47"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJjepEVKYZE2sRJr_WYuxC5H0",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "restaurant",
+            "cafe",
+            "bar",
+            "store",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 719,
+         "vicinity" : "2A Victoria St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4219779,
+               "lng" : 150.8936494
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42061492010728,
+                  "lng" : 150.8950613298927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42331457989272,
+                  "lng" : 150.8923616701072
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Opus Coffee Brewers",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 3000,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116072961146732198451\"\u003eMatthew Campbell\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJbRRBe8zHNbkG5UOc9Dm8DqF9aEvBZ9dAVgKOot18jYn2xKJ7zw_-wVfQ5PrccKQoG8VXB1BZBNSH1eN2ZkXA8JvVrdnMe4H-7sV1ftKp3SbH-4a6hg1Y9H1TtVwc3-LOgREwUhMnpbTudrXim-3_BMJ-4Ik-8DyQ-stAFGET4EFZOq",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJia3zrKcZE2sR7h9LN3YE58E",
+         "plus_code" : 
+         {
+            "compound_code" : "HVHV+6F Wollongong, New South Wales",
+            "global_code" : "4RQGHVHV+6F"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJia3zrKcZE2sR7h9LN3YE58E",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 398,
+         "vicinity" : "118/120 Keira St, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4274817,
+               "lng" : 150.8874819
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42609927010728,
+                  "lng" : 150.8888450798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42879892989272,
+                  "lng" : 150.8861454201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Ariel's Wollongong Station",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 4032,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111026780917473409893\"\u003eDaniel Qandi\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJYDi56W9fULGNZ5Ih27ALb0qbJgDW9winq26hEs5tbAvPkp62uVLiQuDRyU3_vH4SRWODRIPju_QX_SU2-cH99ALlTYhxI1a_NBh6l937Zdb0p-2E_Y-wISJfeCqApQVT3V9ZMTu3bb0_x51vnIOq0Uk0JH_gf10vz3xqy-UvXzzP6b",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJp-7Ldu4ZE2sRpPb610FG4jk",
+         "plus_code" : 
+         {
+            "compound_code" : "HVFP+2X Wollongong, New South Wales",
+            "global_code" : "4RQGHVFP+2X"
+         },
+         "price_level" : 2,
+         "rating" : 3.8,
+         "reference" : "ChIJp-7Ldu4ZE2sRpPb610FG4jk",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "restaurant",
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 90,
+         "vicinity" : "1 Railway Station Square, Wollongong"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : 
+         {
+            "location" : 
+            {
+               "lat" : -34.4259603,
+               "lng" : 150.8877674
+            },
+            "viewport" : 
+            {
+               "northeast" : 
+               {
+                  "lat" : -34.42454367010728,
+                  "lng" : 150.8892048798927
+               },
+               "southwest" : 
+               {
+                  "lat" : -34.42724332989273,
+                  "lng" : 150.8865052201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Where in the world espresso bar",
+         "opening_hours" : 
+         {
+            "open_now" : false
+         },
+         "photos" : 
+         [
+            {
+               "height" : 4000,
+               "html_attributions" : 
+               [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/103753970920403389168\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "ATplDJZqddjL5sDXSCxv5tuQk756gihJaWDkbThQo_peROaOjPrhxT7m-ls9YF7T_n3EFmq3BuCSDeSXUbqCvbaQxZb2g6d4AfZ6jEkGBH6zRRrDSKBCuNuR0xyIs_9QVxlMWHejfaCe9PC16GfM6FxmuR915ksoyRnLz9tIQWqvBaacO5J5",
+               "width" : 3000
+            }
+         ],
+         "place_id" : "ChIJH47slNsZE2sRldGbABipyjY",
+         "plus_code" : 
+         {
+            "compound_code" : "HVFQ+J4 Wollongong, New South Wales",
+            "global_code" : "4RQGHVFQ+J4"
+         },
+         "rating" : 5,
+         "reference" : "ChIJH47slNsZE2sRldGbABipyjY",
+         "scope" : "GOOGLE",
+         "types" : 
+         [
+            "cafe",
+            "clothing_store",
+            "store",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 10,
+         "vicinity" : "25/341-349 Crown St, Wollongong"
+      }
+   ],
+   "status" : "OK"
+}
