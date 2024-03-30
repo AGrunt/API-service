@@ -1,19 +1,7 @@
-import urllib.request, json 
-
-with urllib.request.urlopen("https://maps.googleapis.com/maps/api/geocode/json?address=google&key=AIzaSyCo0U_grJFvSAc5SLPFFn9mipWIZ3uTjEA") as url:
-    data = json.load(url)
-    print(data)
-
-PARAMS = {'address':location}
-
-
-# Spliting area for equal rectangles for search
-
-
-#Function for getting latitude and longitude.
-
 from math import asin, atan2, cos, degrees, radians, sin
 
+# Spliting area for equal rectangles for search
+#Function for getting latitude and longitude.
 def get_point_at_distance(lat1, lon1, d, bearing, R=6371):
     """
     lat: initial latitude, in degrees
@@ -34,20 +22,103 @@ def get_point_at_distance(lat1, lon1, d, bearing, R=6371):
     )
     return (degrees(lat2), degrees(lon2),)
 
+"""
+Area of interest:
+start laitude:
+   -34.29770246404621
+start longitude:
+   150.94208464547222
+"""
 
-#test
-#   
+startLat = -34.29770
+startLon = 150.94208
+
+"""
+end laitude:
+   -34.59866418267474 
+end longitude:
+   150.74770345360713
+"""
+
+endLat = -34.59866
+endLon = 150.74770
+
+#Get initial points for lat and lon
+iniLats = [startLat] 
+iniLons = [startLon] 
+
+lat = startLat
+lon = startLon
+
+distance = 3
+bearing = 180
+
+while lat > endLat:
+    lat2, lon2 = get_point_at_distance(lat, lon, distance, bearing)
+    iniLats.append(round(lat2,5))
+    lat = lat2
+iniLats.append(endLat)
+
+if iniLats[-2] < iniLats[-1]:
+    del(iniLats[-2])
+
+distance = 1.7
+bearing = 270
+
+while lon > endLon:
+    lat2, lon2 = get_point_at_distance(lat, lon, distance, bearing)
+    iniLons.append(round(lon2, 5))
+    lon = lon2
+iniLons.append(round(endLon, 5)) 
+
+# Sometime calculations go beyond the boundaries.
+if iniLons[-2] < iniLons[-1]:
+    del(iniLons[-2])
+
+# Print resulted lists
+#print(f"iniLats {iniLats}")
+#print(f"iniLons {iniLons}")
+
+# Make list for center points of each cell 
+centerPoints = []
+
+# Set initial values
+lat = startLat
+lon = startLon
+
+# Generating starting poionts
+for lonItem in iniLons:
+    centerPoints.append([startLat, lonItem])
+
+for index, latItem in enumerate(iniLats):
+    if index > 0:
+        centerPoints.append([latItem, startLon])
+
+# Generating center poionts for each cell
+for point in centerPoints:    
+    bearing = 213
+    distance = 1.79
+    lat2, lon2 = get_point_at_distance(point[0], point[1], distance, bearing)
+    if lat2 > endLat and lon2 > endLon:
+        centerPoints.append([round(lat2,5), round(lon2,5)])
+
+#Print results
+#print(f"centerPoints \n{centerPoints}")
+#print(f"Statistic\nInitial latitudes: {len(iniLats)}\nInitial longitudes: {len(iniLons)}\nnumber of center points indide the area: {len(centerPoints)} ")
+
+#START SCRAPING NOW
+
+#Надо написать закпрос на получение кафе
+        
+
+
+
+#Надо написать запрос на получение отзывов по каждлому кафе по времени. Нужно имя и оценка по placeId
+
+#REQUESTS HERE
+    
+
+#required steps:
+# 1. Create table for cafes. Table for features. Table for 
 #
 #
-#
-lat = 52.20472
-lon = 0.14056
-distance = 15
-bearing = 90
-lat2, lon2 = get_point_at_distance(lat, lon, distance, bearing)
-
-# lat2  52.20444 - the lat result I'm hoping for
-# lon2  0.36056 - the long result I'm hoping for.
-
-print(lat2, lon2)
-# prints "52.20451523755824 0.36067845713550956"
