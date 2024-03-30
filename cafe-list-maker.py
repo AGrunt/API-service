@@ -109,7 +109,9 @@ for point in centerPoints:
 #START SCRAPING NOW
 
 #Надо написать закпрос на получение кафе
-        
+
+for index, point in enumerate(centerPoints):
+    blablabla = 0        
 
 
 
@@ -122,3 +124,16 @@ for point in centerPoints:
 # 1. Create table for cafes. Table for features. Table for 
 #
 #
+
+""" 
+places.accessibilityOptions, places.addressComponents, places.adrFormatAddress, places.businessStatus, places.displayName, places.formattedAddress, places.googleMapsUri, places.iconBackgroundColor, places.iconMaskBaseUri, places.id, places.location, places.name*, places.photos, places.plusCode, places.primaryType, places.primaryTypeDisplayName, places.shortFormattedAddress, places.subDestinations, places.types, places.utcOffsetMinutes, places.viewport
+
+* The places.name field contains the place resource name in the form: places/PLACE_ID. Use places.displayName to access the text name of the place.
+
+The following fields trigger the Nearby Search (Advanced) SKU:
+
+places.currentOpeningHours, places.currentSecondaryOpeningHours, places.internationalPhoneNumber, places.nationalPhoneNumber, places.priceLevel, places.rating, places.regularOpeningHours, places.regularSecondaryOpeningHours, places.userRatingCount, places.websiteUri
+
+The following fields trigger the Nearby Search (Preferred) SKU:
+
+places.allowsDogs, places.curbsidePickup, places.delivery, places.dineIn, places.editorialSummary, places.evChargeOptions, places.fuelOptions, places.goodForChildren, places.goodForGroups, places.goodForWatchingSports, places.liveMusic, places.menuForChildren, places.parkingOptions, places.paymentOptions, places.outdoorSeating, places.reservable, places.restroom, places.reviews, places.servesBeer, places.servesBreakfast, places.servesBrunch, places.servesCocktails, places.servesCoffee, places.servesDesserts, places.servesDinner, places.servesLunch, places.servesVegetarianFood, places.servesWine, places.takeout """
