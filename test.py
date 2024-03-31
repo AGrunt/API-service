@@ -7,7 +7,7 @@ import requests
 
 # Params initialisation       
 # Key for API
-APIKEY = "AIzaSyDjo40rexGJZbQYLzMrPLuzgZ4Li62n_1s"
+APIKEY = ""
 
 
 #TEST LOCATION:
