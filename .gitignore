@@ -47,3 +47,6 @@ venv.bak/
 
 # output folder
 output
+
+# temp folder
+docs/temp/
