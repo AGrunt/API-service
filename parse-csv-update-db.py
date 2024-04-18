@@ -9,7 +9,7 @@ def open_csv(file):
 #Creating db connector
 mydb = mysql.connector.connect(
   host="api-db",
-  port="3306",
+  port="33060",
   user="sample",
   password="sample")
 
