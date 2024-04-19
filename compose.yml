@@ -23,7 +23,7 @@ services:
       retries: 55    
     volumes:
       - api-db:/var/lib/mysql
-      - ./scripts/V001_coffee_mate.sql:/docker-entrypoint-initdb.d/V001_coffee_mate.sql
+      - ./scripts/V002_coffee_mate.sql:/docker-entrypoint-initdb.d/V002_coffee_mate.sql
         
   coffee-api-service:
     image: flask/application
