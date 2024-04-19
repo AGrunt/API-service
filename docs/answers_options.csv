@@ -1,0 +1,37 @@
+questionId,questionLabel,answerValue,answerLabel
+1,Origin of cofee bean,0,Unknown
+1,Origin of cofee bean,1,South America
+1,Origin of cofee bean,2,Central America
+1,Origin of cofee bean,3,The Middle East
+1,Origin of cofee bean,4,Africa
+1,Origin of cofee bean,5,Southeast Asia
+2,Roast level,0,Unknown
+2,Roast level,1,Light
+2,Roast level,2,Medium
+2,Roast level,3,Dark
+3,Acidity level,0,Unknown
+3,Acidity level,1,4.85
+3,Acidity level,2,4.90
+3,Acidity level,3,4.95
+3,Acidity level,4,5.00
+3,Acidity level,5,5.05
+3,Acidity level,6,5.10
+4,Body level,0,Unknown
+4,Body level,1,Thin
+4,Body level,2,Medium
+4,Body level,3,Full
+5,Brewing method,0,Unknown
+5,Brewing method,1,"Boiling(Cowboy, Turkish)"
+5,Brewing method,2,Steeping
+5,Brewing method,3,Dripping
+5,Brewing method,4,Pressure
+6,Price range,0,Unknown
+6,Price range,1,under5
+6,Price range,2,5to7
+6,Price range,3,7to10
+6,Price range,4,over10
+7,Cofee type,0,Unknown
+7,Cofee type,1,Arabica
+7,Cofee type,2,Robusta
+7,Cofee type,3,Excelsa
+7,Cofee type,4,Liberica

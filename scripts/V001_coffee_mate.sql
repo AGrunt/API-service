@@ -38,3 +38,18 @@ predicitonValue DECIMAL(3, 2),
 predictionTimeStamp varchar(255),
 PRIMARY KEY (predictionIndex)
 );
+
+-- This table holds cafes's params
+CREATE TABLE cafes(
+cafeIndex INT AUTO_INCREMENT,
+cafeId varchar(255),
+displayName varchar(255),
+formattedAddress varchar(255),
+latitude varchar(255),
+longitude varchar(255),
+servesCoffee varchar(255),
+takeout varchar(255),
+goodForChildren varchar(255),
+goodForGroups varchar(255),
+PRIMARY KEY (cafeIndex)
+);

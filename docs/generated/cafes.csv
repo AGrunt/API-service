@@ -1,0 +1,662 @@
+fileN|fileName|cafeId|displayName|formattedAddress|latitude|longitude|servesCoffee|takeout|goodForChildren|delivery|goodForGroups
+0|0_location.json|ChIJq6paFw3gEmsRYeJZ24otRJk|Earth Walker & Co General Store & Cafe|749 Lawrence Hargrave Dr, Coledale NSW 2515, Australia|-34.2920715|150.9445067|True|false|True|False|True
+0|0_location.json|ChIJhcctpAjhEmsR9zp_ab0ds9M|Headlands Hotel Brasserie & Bar Austinmer|1b Headland Ave, Austinmer NSW 2515, Australia|-34.3012222|150.9407508|True|false|True|False|True
+0|0_location.json|ChIJ16SvcwDhEmsRGz46V7X0l8o|Rosie’s Fish & Chips|757 Lawrence Hargrave Dr, Coledale NSW 2515, Australia|-34.2924033|150.9444839|false|false|false|false|false
+0|0_location.json|ChIJz2DwG6HhEmsRe0Fj7pudvdE|Saltie Dog - Coffee & Crêpes Coledale|748 Lawrence Hargrave Dr, Coledale NSW 2515, Australia|-34.2913911|150.94425669999998|True|false|false|false|false
+0|0_location.json|ChIJVx6cmqfhEmsR6nJkcDVb9PM|The 5th Alarm|747A Lawrence Hargrave Dr, Coledale NSW 2515, Australia|-34.2917643|150.94476699999998|false|false|false|false|false
+0|0_location.json|ChIJ0bX25RrgEmsRFti94N-KsbQ|Headlands Bistro|1 Headland Ave, Scarborough NSW 2515, Australia|-34.300460099999995|150.9384847|True|false|True|False|True
+0|0_location.json|ChIJx82R4hvgEmsRA6gFYnL_HWI|Austinmer Gardens B&B|4 Boyce Ave, Austinmer NSW 2515, Australia|-34.3029072|150.9367205|false|false|True|false|false
+1|100_location.json|ChIJU8qCndoeE2sRh6IX7J31YPI|7-Eleven|138/146 Princes Hwy, Corrimal NSW 2518, Australia|-34.3699144|150.8977555|false|false|false|false|false
+1|100_location.json|ChIJJ0jNZNAeE2sRnLxdcVFc6ec|Corrimal RSL Memorial Club|168 Princes Hwy, Corrimal NSW 2518, Australia|-34.3704612|150.89759260000002|false|false|false|false|false
+9|108_location.json|ChIJS3KX_ToZE2sRdH1FOMngNeM|Woolworths Fairy Meadow|66 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.391579|150.89386|false|false|false|True|false
+9|108_location.json|ChIJzSZrQxYZE2sRqeT7LPO2S2c|KFC Fairy Meadow|109 Princes Hwy Cnr, McGrath St, Fairy Meadow NSW 2519, Australia|-34.4008379|150.8913119|False|false|True|True|True
+9|108_location.json|ChIJCaI45DwZE2sRiD6UtTk5o1s|The Fraternity Club|11 Bourke St, Fairy Meadow NSW 2519, Australia|-34.39673990000001|150.8940582|false|false|false|false|false
+9|108_location.json|ChIJ-aOtAwgZE2sRF_3flK62T9c|Guzman y Gomez - Fairy Meadow|103/105 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4002763|150.8913805|True|false|True|True|True
+9|108_location.json|ChIJT0OUTTwZE2sRGqTBzXiJncA|Cabbage Tree Hotel|73 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3961319|150.8921206|false|false|True|True|True
+9|108_location.json|ChIJ1dAzsTEZE2sRs1Qnm8z8IbA|Domino's Pizza Fairy Meadow|Shop 1/493-495 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3861589|150.8941197|False|false|True|True|false
+9|108_location.json|ChIJ31dNunkZE2sRGe4N7hGjjg0|Evil Eye Cafe|3 Vereker St, Fairy Meadow NSW 2519, Australia|-34.397177|150.88736799999998|True|false|True|True|True
+9|108_location.json|ChIJT83F6xYZE2sRkyyoCJZybHQ|Pizza Hut Fairy Meadow|12-16 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3875256|150.89468359999998|False|false|True|True|false
+9|108_location.json|ChIJc6pNijwZE2sRNxh_2x3jEBs|Pasticceria Massimo Papa|130 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.395143|150.892983|false|false|false|false|false
+9|108_location.json|ChIJgaNKYTQZE2sRLH3cgxDLn5M|Al Amir Restaurant|Shop 6, 118/124 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3942767|150.8930194|True|false|True|True|True
+9|108_location.json|ChIJDX1_5IIZE2sRVB8kZaaEdy4|Foodiezz Stop|30-34 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3892108|150.8940538|false|false|True|True|false
+9|108_location.json|ChIJWffrFDsZE2sRZGfmm81DmL4|Fujiyama Tepan Restaurant|12 Daisy St, Fairy Meadow NSW 2519, Australia|-34.3926533|150.8943391|false|false|True|True|True
+9|108_location.json|ChIJp57nGSYZE2sRqn9RJeM7AP8|Big K Kebab House Fairy Meadow|Shop 1 7/9 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.38917920000001|150.8933528|True|false|True|True|false
+9|108_location.json|ChIJWz01d80ZE2sR8KZjVcPXEf8|Charles Hotel|98 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.39316480000001|150.89342249999999|false|false|false|False|True
+9|108_location.json|ChIJ79tZdTsZE2sRF_4FVcCzvOI|Two Doors Up Cafe & Bar|shop 1/31 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3928031|150.89293279999998|True|false|True|True|True
+9|108_location.json|ChIJd4lL1ToZE2sRtsvs_ORkCXI|Zweefers Cakes|43 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3936553|150.8928019|false|false|false|True|false
+9|108_location.json|ChIJXdCPyZgZE2sRW2xSEAh-coA|Fairy Meadow Kebabs & Pide|Shop 12, 118-126 Princes Hwy, Entry via, Ambiance mall, Elliotts Rd, Fairy Meadow NSW 2519, Australia|-34.3943276|150.89372989999998|false|false|True|True|false
+9|108_location.json|ChIJlZQxCDsZE2sRVTjcE67lnIU|Xavier's Place|shop 4/19/21 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3922709|150.8929742|True|false|True|False|True
+9|108_location.json|ChIJkdSKCTsZE2sRUWAyW3WhHqc|Dhok Koon Thai Restaurant|1/23-25 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3924564|150.8929813|False|false|True|True|True
+9|108_location.json|ChIJNVy4j0YZE2sRTgE2TA31X9k|Jade Court Chinese Restaurant|126 Balgownie Rd, Balgownie NSW 2519, Australia|-34.3884968|150.8793278|True|false|True|True|True
+10|109_location.json|ChIJfQ3kHwkZE2sRpNDpEPiKeEo|North Wollongong Hotel|3 Flinders St, North Wollongong NSW 2500, Australia|-34.4131052|150.89293859999998|false|false|false|False|True
+10|109_location.json|ChIJg6Y-hKIZE2sRdNqIGkGAaUc|7-Eleven|346 Crown St, Wollongong NSW 2500, Australia|-34.4250513|150.8850162|false|false|false|false|false
+10|109_location.json|ChIJL-Yb1aUZE2sRN4qJ1R6I6LI|Guzman y Gomez - Wollongong|Tenancy GD W116, Wollongong Central Shopping Centre, Keira St, Wollongong NSW 2500, Australia|-34.4240221|150.8932074|False|false|True|True|True
+10|109_location.json|ChIJWQN8H6gZE2sRJzhStiHOjBM|The Builders Club|61 Church St, Wollongong NSW 2500, Australia|-34.4205228|150.8969482|True|false|false|False|false
+10|109_location.json|ChIJd7rOxaUZE2sRkm_pyIg-V_A|His Boy Elroy|Keira St, Wollongong NSW 2500, Australia|-34.423855599999996|150.893249|True|false|True|True|True
+10|109_location.json|ChIJUQLiJ6MZE2sR9u97rHzMvpQ|Lighthouse|1 Railway Station Square, Wollongong NSW 2500, Australia|-34.4275|150.8872222|false|false|false|False|false
+10|109_location.json|ChIJY4hsI6QZE2sRkTOEXfDHjII|Kneading Ruby|5 Crown Ln, Wollongong NSW 2500, Australia|-34.4247741|150.8919055|True|false|True|false|True
+10|109_location.json|ChIJN3eLfKYZE2sRyVJXMvVQWTw|Kinn Thai Restaurant|Shop GDW 117 Wollongong Central, Wollongong NSW 2500, Australia|-34.4241035|150.8931426|false|false|True|True|True
+10|109_location.json|ChIJEb-KuqcZE2sRPy9vM1fwnJU|Domino's Pizza Wollongong City|Cnr Smith And, Keira St, Wollongong NSW 2500, Australia|-34.4212284|150.8941279|False|false|True|True|True
+10|109_location.json|ChIJla3zrKcZE2sR5fG-9dk_8ak|Amigos Mexican Restaurant|116 Keira St, Wollongong NSW 2500, Australia|-34.4218292|150.8936157|True|false|True|True|True
+10|109_location.json|ChIJgV-Lww4ZE2sRl8ZP3Fj-cYA|RASHAYS Casual Dining - North Wollongong|2/4 Stafford St, North Wollongong NSW 2500, Australia|-34.4131508|150.8919017|True|false|True|True|True
+10|109_location.json|ChIJfQoinKMZE2sRRrx0seqs9Sk|Dicey Riley's Hotel|329-333 Crown St, Wollongong NSW 2500, Australia|-34.425847999999995|150.888976|True|false|False|False|True
+10|109_location.json|ChIJgSUga5gZE2sRBHayRbtRseg|McDonald's Wollongong Central II|Shop 022/174/200 Crown St, Wollongong NSW 2500, Australia|-34.4244323|150.8929657|True|false|True|True|True
+10|109_location.json|ChIJHRLL2vUZE2sReVec-5udxfg|Harbourside Fish Market and Cafe|2a/6 Flinders St, North Wollongong NSW 2500, Australia|-34.413144599999995|150.8918611|True|false|True|True|True
+10|109_location.json|ChIJF9wjFacZE2sR8kdFqDBDl1I|Collegians Rugby League Football Club|3A Charlotte St, Wollongong NSW 2500, Australia|-34.4203713|150.8923438|false|false|false|false|false
+10|109_location.json|ChIJia3zrKcZE2sR7h9LN3YE58E|Opus Coffee Brewers|118/120 Keira St, Wollongong NSW 2500, Australia|-34.4219779|150.8936494|True|false|false|True|false
+10|109_location.json|ChIJQdqo06UZE2sRH1syyjivY8Q|KFC Wollongong Central|200 Crown St, Wollongong NSW 2500, Australia|-34.423840399999996|150.8931326|false|false|True|True|True
+10|109_location.json|ChIJAyfYVF8ZE2sR85SrplTYM8w|Miss Lee's|155 Keira St, Wollongong NSW 2500, Australia|-34.4230142|150.89370990000003|True|false|True|True|True
+10|109_location.json|ChIJ6dp51KUZE2sR8y67X7T1GbY|Grill'd Wollongong|Wollongong Central Shopping Centre GD, W125/200 Crown St, Wollongong NSW 2500, Australia|-34.4246777|150.8929172|False|false|True|True|True
+10|109_location.json|ChIJgz4pw6UZE2sRk5zLIf-vtbA|Kürtősh - Wollongong|Wollongong Central Globe Lane, 200 Crown St, Wollongong NSW 2500, Australia|-34.4255024|150.894261|True|false|false|True|false
+12|110_location.json|ChIJr82RA8AZE2sR0fjG4fOZrsA|Coniston Hotel Wollongong|28 Bridge St, Coniston NSW 2500, Australia|-34.437954999999995|150.884513|false|false|True|false|false
+12|110_location.json|ChIJ5f6Rn-oZE2sRSgQWBkVVmog|Westside Petroleum|136-138 Gladstone Ave, Coniston NSW 2500, Australia|-34.438601999999996|150.8838571|false|false|false|false|false
+12|110_location.json|ChIJ64pNV8AZE2sR9f0l3h32Dzc|Fresh at 5 Bridge St|5 Bridge St, Coniston NSW 2500, Australia|-34.4398578|150.887079|True|false|True|False|True
+12|110_location.json|ChIJDdykvOkZE2sR2usFLFPBALc|THE MEALWORKS|LOT 1 Springhill Rd, Spring Hill NSW 2500, Australia|-34.4435211|150.8820758|false|false|false|false|false
+12|110_location.json|ChIJ__8bouoZE2sRA77TPgi3yfs|The Dragon's Kebab|136-138 Gladstone Ave, Coniston NSW 2500, Australia|-34.4385567|150.8838121|false|false|false|True|false
+14|112_location.json|ChIJ42GIRBkXE2sRbxnw7jIamOQ|KFC Warrawong|Corner King St and Kemblawarra Place, Warrawong NSW 2502, Australia|-34.4936358|150.88907559999998|True|false|True|True|True
+14|112_location.json|ChIJuxeiIRwXE2sRgJPmMmTDG0s|Subway|145-149 King St, Warrawong NSW 2502, Australia|-34.4959864|150.88944329999998|True|false|True|True|True
+14|112_location.json|ChIJpeAXWN4WE2sRWrAK4mxBj-A|The Rosy Lea Cafe|45a Illowra Cres, Primbee NSW 2502, Australia|-34.500808|150.88138|True|false|True|False|True
+14|112_location.json|ChIJ5T6Sax4XE2sRKjZXJFSBLUU|Take It to Go|157-161 King St, Warrawong NSW 2502, Australia|-34.497541|150.889716|True|false|false|True|false
+14|112_location.json|ChIJv_58jRoXE2sR3CWe3B3ImkE|Kemblawarra Sandwich Shop|Shellharbour Rd, Warrawong NSW 2505, Australia|-34.4934041|150.89321139999998|True|false|True|True|false
+14|112_location.json|ChIJK4EgcyMXE2sR3Q5GveS-6Ak|The Taste of Portuguese Cuisine|156 Shellharbour Rd, Warrawong NSW 2505, Australia|-34.4925415|150.8926319|True|false|True|false|True
+14|112_location.json|ChIJdemrizgRE2sRcDSwiew5iD8|B queNch'd|4a/145-149 King St, Warrawong NSW 2506, Australia|-34.4963608|150.8906082|True|false|True|False|false
+18|116_location.json|ChIJfeg0OTQZE2sRZgRClBWRRPw|Reub Goldberg Brewing Machine|81 Meadow St, Tarrawanna NSW 2518, Australia|-34.3815854|150.8882424|false|false|false|False|True
+18|116_location.json|ChIJSdNJOTQZE2sRELzI90rxnzA|Le Rose Thai Cuisine|3/81 Meadow St, Tarrawanna NSW 2518, Australia|-34.3815631|150.88810400000003|false|false|True|True|True
+18|116_location.json|ChIJO97yPzQZE2sRaO9BTcEgz9k|Tarrawanna Fish Shop|79 Meadow St, Tarrawanna NSW 2518, Australia|-34.3814209|150.8881155|False|false|True|False|false
+18|116_location.json|ChIJhZZExusZE2sRZjHBWZlKut0|Gringa|Shop 2/81 Meadow St, Tarrawanna NSW 2518, Australia|-34.3815938|150.88816799999998|False|false|True|True|True
+18|116_location.json|ChIJf6GWmacZE2sRTee9Yf_HaNQ|Little Bird & Co|83 Meadow St, Tarrawanna NSW 2518, Australia|-34.381750499999995|150.8880379|True|false|True|False|True
+18|116_location.json|ChIJh5obNzcZE2sRY8c3EkU4OM4|Essentially Aromatherapy|83 Meadow St, Tarrawanna NSW 2518, Australia|-34.3818091|150.88797380000003|false|false|false|True|false
+18|116_location.json|ChIJIaAuaQAZE2sR-Ygyf8XGWVk|bindarrah south australia|37 Corrimal St, Tarrawanna NSW 2518, Australia|-34.378844799999996|150.8862431|True|false|false|false|false
+27|124_location.json|ChIJR3x55okZE2sR8mXlpR9gCUE|Bread, Espresso & Gwynneville|Unit 1/4 Murphys Ave, Gwynneville NSW 2500, Australia|-34.4122009|150.8814627|True|false|True|False|false
+27|124_location.json|ChIJ7SB8aTcZE2sRTEhWBrMWBZc|Ugly Duckling. 2|University of Wollongong, 21 Northfields Ave, Keiraville NSW 2500, Australia|-34.4044801|150.87557669999998|True|false|True|False|True
+27|124_location.json|ChIJIxW8QAcZE2sRUE3CrR12QHw|Hemingway Cafe and Bar|BLD 67 Level 1 McKinnon Building, University of Wollongong, Northfields Ave, Keiraville NSW 2500, Australia|-34.4051063|150.87731209999998|True|false|True|False|True
+27|124_location.json|ChIJVVVVVZkZE2sRBRiwIBkxFsc|Panizzi Cafe|Ground, Building 16 - UOW Library, Wollongong NSW 2500, Australia|-34.4064344|150.8785007|True|false|False|False|True
+27|124_location.json|ChIJp7VdLa8ZE2sR7IhhqwsFxow|Praha @ UOW|UniActive sports centre, Recreation & Aquatic Centre, Keiraville NSW 2500, Australia|-34.4046392|150.8808238|True|false|True|True|True
+27|124_location.json|ChIJFwa1MnIZE2sRObwu2Q72Trc|Subway|67 Northfields Ave, Keiraville NSW 2500, Australia|-34.405078599999996|150.8771973|false|false|True|False|True
+27|124_location.json|ChIJQdFlrdkZE2sRoXhB4w3qhz4|Piccolo Me UoW|University of Wollongog Building, Unit 11/2 Northfields Ave, Keiraville NSW 2522, Australia|-34.4075085|150.87927929999998|True|false|True|True|false
+27|124_location.json|ChIJW7TLJ3IZE2sRccEOHGSMTfY|Gypsy Jones Cafe|University of Wollongong Building, 17 Northfields Ave, North Wollongong NSW 2500, Australia|-34.4074525|150.8785297|True|false|True|False|True
+27|124_location.json|ChIJjRxvHm4ZE2sRYj9WyDiIIn8|Kew Thai|67 McKinnon Building, Northfields Ave, North Wollongong NSW 2500, Australia|-34.4052055|150.8772811|false|false|True|True|True
+27|124_location.json|ChIJiaALOHIZE2sRu67QqM2mLm8|Delish|Keiraville NSW 2500, Australia|-34.4076366|150.8797992|false|false|True|True|false
+27|124_location.json|ChIJ40X81usZE2sRrfRbG6YQE-w|Garden Grounds|Murphys Ave, Keiraville NSW 2500, Australia|-34.411617|150.87755149999998|True|false|True|False|True
+27|124_location.json|ChIJw_RUmiIZE2sRxrt4_IgtHjU|BackStreet Kitchen|Building 11, Room GTN2 University of Wollongong, Northfields Ave, Gwynneville NSW 2500, Australia|-34.40757|150.8796083|false|false|True|True|True
+27|124_location.json|ChIJEZ3ZY4kZE2sRojtqJN5ek2s|Zambrero UOW Wollongong|Room GS6, Northfield avenue University of Wollongong Gound Floor UOW Pulse Building 11, Keiraville NSW 2522, Australia|-34.4077042|150.8796974|false|false|True|false|false
+27|124_location.json|ChIJw0t6Rg0ZE2sRv04E4wr11p4|TwentyTwenty Training Restaurant|Foleys Ln, North Wollongong NSW 2500, Australia|-34.40819760000001|150.8850718|True|false|false|false|True
+27|124_location.json|ChIJA43BN3IZE2sRVXklBC0qVNg|Okuma Sushi|51 Northfields Ave, Gwynneville NSW 2500, Australia|-34.407689999999995|150.87978579999998|false|false|True|false|false
+27|124_location.json|ChIJN8xHe4oZE2sRlPjsWWiONjY|Bee Sweet 21|1 Northfields Ave, Keiraville NSW 2522, Australia|-34.4076643|150.8797674|True|false|True|false|True
+27|124_location.json|ChIJPZJgOHIZE2sREg-cwabit7U|Kathmandu Curry|GA, 11 1 Northfields Ave, Keiraville NSW 2522, Australia|-34.4075959|150.8797499|false|false|True|false|false
+27|124_location.json|ChIJvxY0e1UZE2sRshBd4u2VPNc|Deja Brew Coffee UOW|building7/2 Northfields Ave, Keiraville NSW 2522, Australia|-34.4070537|150.8817254|True|false|false|false|false
+28|125_location.json|ChIJUQLiJ6MZE2sR9u97rHzMvpQ|Lighthouse|1 Railway Station Square, Wollongong NSW 2500, Australia|-34.4275|150.8872222|false|false|false|False|false
+28|125_location.json|ChIJr82RA8AZE2sR0fjG4fOZrsA|Coniston Hotel Wollongong|28 Bridge St, Coniston NSW 2500, Australia|-34.437954999999995|150.884513|false|false|True|false|false
+28|125_location.json|ChIJjT_iLb0ZE2sRDRZo_jyrrIU|Moon Sushi Wollongong|3/26 Gladstone Ave, Wollongong NSW 2500, Australia|-34.4277655|150.8867424|False|false|True|false|True
+28|125_location.json|ChIJG-WCr5AZE2sRJ2Ihx-RJapQ|Tony's Chicken Shop|449 Crown St, Wollongong NSW 2500, Australia|-34.4261572|150.8775191|True|false|True|True|True
+28|125_location.json|ChIJszY74_IZE2sR9pcdHvoFjJo|Mangerton Corner Store|71 St Johns Ave, Mangerton NSW 2500, Australia|-34.4356101|150.8699005|True|false|True|False|True
+28|125_location.json|ChIJF4ADGpAZE2sRjnVYYRP5auw|Bangkok Balcony|2/497 Crown St, West Wollongong NSW 2500, Australia|-34.4253893|150.8732332|False|false|True|True|True
+28|125_location.json|ChIJ5f6Rn-oZE2sRSgQWBkVVmog|Westside Petroleum|136-138 Gladstone Ave, Coniston NSW 2500, Australia|-34.438601999999996|150.8838571|false|false|false|false|false
+28|125_location.json|ChIJ3eIiH5AZE2sR-4R1tIlzg8Y|Crazy Noodle Shop|503 Crown St, West Wollongong NSW 2500, Australia|-34.4254064|150.8728281|False|false|True|True|True
+28|125_location.json|ChIJofTclHQZE2sRkFvkn3SVYrA|CAFE HASHTAG WOLLONGONG|451 Crown St, Wollongong NSW 2500, Australia|-34.4261753|150.87735999999998|True|false|True|True|false
+28|125_location.json|ChIJxSaxaSYZE2sR2QNww7GSbWg|Charlotte Café|Loftus St, Wollongong NSW 2500, Australia|-34.4252604|150.88351269999998|True|false|True|false|false
+28|125_location.json|ChIJ71-dsY4ZE2sRai-pNSxpH6Q|Ariel's - Auburn St|98 Auburn St, Wollongong NSW 2500, Australia|-34.4341398|150.8877198|True|false|True|True|True
+28|125_location.json|ChIJo12n784ZE2sR1lW_xABY0s8|Coogs Cafe|1/130 Auburn St, Coniston NSW 2500, Australia|-34.4364334|150.8872705|True|false|True|True|false
+28|125_location.json|ChIJkfhu0loZE2sR0Ys7IJdQNCs|Saints Espresso|429 Crown St, Wollongong NSW 2500, Australia|-34.426179999999995|150.87944199999998|True|false|True|false|false
+28|125_location.json|ChIJlf0-0pkZE2sRdfv1bxl_Cck|Café Ravello|Wollongong NSW 2500, Australia|-34.4259246|150.88100599999999|True|false|false|false|false
+28|125_location.json|ChIJ__8bouoZE2sRA77TPgi3yfs|The Dragon's Kebab|136-138 Gladstone Ave, Coniston NSW 2500, Australia|-34.4385567|150.8838121|false|false|false|True|false
+28|125_location.json|ChIJtQ7OoOoZE2sRBLGVey-HoEE|Coniston Lunches|134 Gladstone Ave, Coniston NSW 2500, Australia|-34.437591499999996|150.8846754|True|false|false|false|false
+28|125_location.json|ChIJBypHvJAZE2sRe95T5h6iD1c|Julio's Pizza|Julio's Pizza, 453 Crown St, West Wollongong NSW 2500, Australia|-34.426271799999995|150.8771562|True|false|True|True|false
+28|125_location.json|ChIJ_UAeE1oZE2sR6cXrYpmg2PA|Samira’s Salon|27 Gladstone Ave, Wollongong NSW 2500, Australia|-34.4291672|150.88697009999998|false|false|false|false|false
+28|125_location.json|ChIJCYBRMgkZE2sRSrrb0SCsyRA|Sushi bar|26 Gladstone Ave, Wollongong NSW 2500, Australia|-34.428030899999996|150.8862359|false|false|false|false|false
+28|125_location.json|ChIJB0eTaucZE2sR5UALmzChKRA|Paris Pearl Brow and Beauty Hands And Feet lounge|Back Block first level, Unit 3/23 Heaslip St, Coniston NSW 2500, Australia|-34.4365502|150.88300619999998|false|false|false|false|false
+29|126_location.json|ChIJlVj47RoXE2sRpuKeUuVKz9A|Atin Ito Filipino Finest Cuisine|Shop 2/7-9 Lake Ave, Cringila NSW 2502, Australia|-34.4669326|150.8726428|false|false|True|True|false
+29|126_location.json|ChIJD78r7E8XE2sRPbimqkBzMjw|Crini Kebabs|Shop 7/95 Five Islands Rd, Cringila NSW 2502, Australia|-34.466017|150.872051|False|false|false|false|false
+30|127_location.json|ChIJ1XxoEBcXE2sRpONVLHEaekc|McDonald's|Cnr King Street &, Northcliffe Dr, Warrawong NSW 2502, Australia|-34.486867499999995|150.88714249999998|True|false|True|True|True
+30|127_location.json|ChIJx3USvCYXE2sRQgcS9lDoCFc|Illawarra Yacht Club|1 Northcliffe Dr, Warrawong NSW 2502, Australia|-34.492321|150.8749695|false|false|false|false|false
+30|127_location.json|ChIJS8LLrJMXE2sRxtQgLyE1Byk|Starbucks Warrawong|Shop 1/86 King St, Warrawong NSW 2502, Australia|-34.4862786|150.8870427|True|false|false|false|True
+30|127_location.json|ChIJfer_S-wXE2sR-g3Z3yUzY5w|RASHAYS - Warrawong|King Street & Cowper Street Tenancy 1, Warrawong Plaza, Warrawong NSW 2502, Australia|-34.4856408|150.88810429999998|True|false|True|True|True
+30|127_location.json|ChIJjyE-o0oXE2sRiMzec-zBMOQ|Paninoteca Hub|Shop 1a/20-22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.4810277|150.8720885|True|false|True|false|True
+30|127_location.json|ChIJg1gAGLcXE2sRhES6teli4gw|Carl's Jr. Warrawong|27-41 King St, Warrawong NSW 2502, Australia|-34.4832549|150.8877255|True|false|True|True|True
+30|127_location.json|ChIJjWjxQhkXE2sRFzbUUX6xraI|Domino's Pizza Warrawong|130 Northcliffe Dr, Warrawong NSW 2502, Australia|-34.4863535|150.8871676|False|false|True|True|false
+30|127_location.json|ChIJo71h0hUXE2sRmwG--aft3xQ|Pizza Hut Warrawong|Shop 4, 32/40 King St, Warrawong NSW 2502, Australia|-34.4832527|150.8868923|False|false|True|True|false
+30|127_location.json|ChIJQwMwFl8XE2sRoHDcPIjHwLE|Sushi Hub Warrawong|Shop 11, Warrawong Plaza Cnr King and, Cowper St, Warrawong NSW 2502, Australia|-34.4861761|150.88812289999998|false|false|True|True|false
+30|127_location.json|ChIJ2cB6oDAXE2sRJSVDgQ0JuL8|El Danny's Pizza|22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.481198899999995|150.8723349|False|false|True|True|True
+30|127_location.json|ChIJW2TCCz0XE2sRIxtFi22HLrg|Rustic Thai Restaurant|256 Cowper St, Warrawong NSW 2502, Australia|-34.4854179|150.8862384|True|false|True|True|True
+30|127_location.json|ChIJrzzapc8XE2sRxVzUkk_v4Z0|Kingz Charcoal Chicken|32-40 King St, Warrawong NSW 2502, Australia|-34.483286199999995|150.8868976|True|false|True|True|True
+30|127_location.json|ChIJKwI937kXE2sRbEkLO5qINlk|Baaz indian restaurant & cafe|22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.481178899999996|150.8722713|True|false|True|True|True
+30|127_location.json|ChIJIZVY9hYXE2sRrxdFNtI-qho|Burek House Warrawong|72/74 King St, Warrawong NSW 2502, Australia|-34.4856021|150.88728279999998|false|false|false|false|false
+30|127_location.json|ChIJW82niNAXE2sR2buLQUiHINE|Oporto Warrawong|Lot 4/86 King St, Warrawong NSW 2502, Australia|-34.4862786|150.8870427|false|false|True|False|True
+30|127_location.json|ChIJSULaRBYXE2sRNUNKBFDb92g|Giuliani's Family Pizzeria|234-236 Cowper St, Warrawong NSW 2502, Australia|-34.4852273|150.886697|True|false|True|True|True
+30|127_location.json|ChIJrZZY9hYXE2sRTrRjYdCh5q0|Kebab Express Cafe 2000|6/72-74 King St, Warrawong NSW 2502, Australia|-34.4855453|150.8871371|False|false|True|True|false
+30|127_location.json|ChIJ3RIAeJgXE2sRRzm_XvF2iAE|Hungry Jack's Burgers Warrawong|130 Northcliffe Dr, Warrawong NSW 2502, Australia|-34.4863654|150.8866656|false|false|True|True|false
+30|127_location.json|ChIJjzKFkRYXE2sRfUQ2g5_mC1E|Amarin Thai Cuisine (Warrawong, NSW)|9/200-208 Cowper St, Warrawong NSW 2502, Australia|-34.4852231|150.8878527|false|false|False|True|True
+30|127_location.json|ChIJgQUr8RYXE2sR9HRDZHjclcQ|Chefs Delight Chinese Cuisine|76 King St, Warrawong NSW 2502, Australia|-34.485694699999996|150.8874792|false|false|True|True|True
+31|128_location.json|ChIJS-H2usQWE2sR4hiHeS_gQUk|Port Kembla Golf Club|Golf Pl, Primbee NSW 2505, Australia|-34.5084546|150.8798405|false|false|false|false|false
+31|128_location.json|ChIJp66ZzJEXE2sRkuRCDmHAjLU|Seasonings Restaurant @ 24 Golf Place|24 Golf Pl, Primbee NSW 2502, Australia|-34.5074767|150.8764968|True|false|True|True|True
+32|129_location.json|ChIJS51Udg8UE2sRB55CratBKzs|Pep's Takeaway|3 Reddall Parade, Lake Illawarra NSW 2528, Australia|-34.546037999999996|150.8695885|True|false|True|False|True
+36|132_location.json|ChIJ_f84CE4eE2sRSkMGl9Dx_4E|Balgownie Hotel|141 Balgownie Rd, Balgownie NSW 2519, Australia|-34.3887443|150.87730399999998|false|false|false|False|True
+36|132_location.json|ChIJEeMz8sMZE2sRynqdMW4YF9g|Ariel’s Balgownie|Shop 3/167-172 Balgownie Rd, Balgownie NSW 2519, Australia|-34.3884213|150.87704019999998|True|false|True|True|True
+36|132_location.json|ChIJJf_h5I4ZE2sRxxqRYTOqFX8|Mad Cup Cafe|28/145 Balgownie Rd, Balgownie NSW 2519, Australia|-34.3888616|150.8767694|True|false|True|False|True
+36|132_location.json|ChIJ0WDyF0QZE2sRsE1bNltdnrE|Nourished at Bally|139 Balgownie Rd, Balgownie NSW 2519, Australia|-34.3887599|150.87764199999998|True|false|True|false|True
+36|132_location.json|ChIJzVRKwjAZE2sRTBkXPfH5-bs|Coffee Roasters Mount Pleasant|11a banks road, Mount Pleasant NSW 2000, Australia|-34.3967094|150.86662970000003|True|false|false|false|false
+36|132_location.json|ChIJq6qq6mYZE2sRZQHU7ePoS7I|Shannon Cafe|11A Banks Rd, Mount Pleasant NSW 2000, Australia|-34.3964937|150.868205|True|false|false|False|false
+36|132_location.json|ChIJd1rV22YZE2sRKFtv7CU6j10|Leng Caffe|11A Banks Rd, Mount Pleasant NSW 2000, Australia|-34.3954026|150.8676626|True|false|false|false|false
+36|132_location.json|ChIJd1rV22YZE2sR6bctPAOCqTk|Best Roasted Beans Coffee|11A Banks Rd, Mount Pleasant NSW 2000, Australia|-34.3954026|150.8676626|True|false|false|false|false
+43|139_location.json|ChIJMyUOsYIZE2sRuhF_Qjn-878|The White Rabbit|Shop 2/50 Grey St, Keiraville NSW 2500, Australia|-34.4148117|150.8720588|True|false|True|false|True
+43|139_location.json|ChIJF4ADGpAZE2sRjnVYYRP5auw|Bangkok Balcony|2/497 Crown St, West Wollongong NSW 2500, Australia|-34.4253893|150.8732332|False|false|True|True|True
+43|139_location.json|ChIJleuPrYIZE2sRICsamlhsrMw|Zanders Cafe|Shop 1/215-217 Gipps Rd, Keiraville NSW 2500, Australia|-34.4146919|150.8723602|True|false|True|False|True
+43|139_location.json|ChIJg14Xu4IZE2sRjJGTyrsyFpI|The Giddy Goat|4/207-211 Gipps Rd, Keiraville NSW 2500, Australia|-34.414763|150.8725737|True|false|True|False|True
+43|139_location.json|ChIJ3eIiH5AZE2sR-4R1tIlzg8Y|Crazy Noodle Shop|503 Crown St, West Wollongong NSW 2500, Australia|-34.4254064|150.8728281|False|false|True|True|True
+43|139_location.json|ChIJIaEss4IZE2sR2TFLlBtethU|Keiraville Fine Cuisine|207-211 Gipps Rd, Keiraville NSW 2500, Australia|-34.414937|150.872562|false|false|True|false|True
+43|139_location.json|ChIJd611xzMZE2sRa76F1iLmDvg|lil bird|422 Crown St, West Wollongong NSW 2500, Australia|-34.4252731|150.8748291|false|false|false|True|false
+45|140_location.json|ChIJl2nTePEZE2sRsIiXphXrGVs|Brown Sugar|5/103 St Johns Ave, Mount St Thomas NSW 2500, Australia|-34.4390004|150.8694998|True|false|True|False|false
+45|140_location.json|ChIJpavVhPYZE2sRoHVpG0uQGtQ|Figtree Sports|120 The Avenue, Figtree NSW 2525, Australia|-34.4376258|150.8645019|false|false|false|false|false
+45|140_location.json|ChIJB_musfcZE2sRvvWlQws2I-U|Collegians Figtree|147 The Avenue, Figtree NSW 2525, Australia|-34.4393999|150.8626242|True|false|True|False|True
+45|140_location.json|ChIJocZRy20ZE2sR6govS7nA6nw|Curry Village Indian Restaurant Mangerton|4/103 St Johns Ave, Mangerton NSW 2500, Australia|-34.438998|150.869452|false|false|True|True|True
+45|140_location.json|ChIJL7J9H_AZE2sR1Y1VPA0PcAI|Bellissimo Gourmet Pizza & Pasta|16, 2 Drummond St, Mount St Thomas NSW 2500, Australia|-34.4441322|150.8720298|False|false|false|True|false
+45|140_location.json|ChIJXXXtPywZE2sRsgAQCc2T6FA|Plant Room Cafe|5 Edney Ln, Spring Hill NSW 2500, Australia|-34.4439675|150.8639797|True|false|True|false|True
+45|140_location.json|ChIJfc8MYY4ZE2sRBhxXRr8IQHI|Wonder Boba|2/103 St Johns Ave, Mangerton NSW 2500, Australia|-34.4390107|150.8693544|True|false|false|True|false
+46|141_location.json|ChIJjyE-o0oXE2sRiMzec-zBMOQ|Paninoteca Hub|Shop 1a/20-22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.4810277|150.8720885|True|false|True|false|True
+46|141_location.json|ChIJbXV0rUgXE2sRlxeYIMX2T_8|Burek @ Pece’s|Shop1/43 Newcastle St, Cringila NSW 2502, Australia|-34.4697903|150.8719078|True|false|True|False|True
+46|141_location.json|ChIJ2cB6oDAXE2sRJSVDgQ0JuL8|El Danny's Pizza|22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.481198899999995|150.8723349|False|false|True|True|True
+46|141_location.json|ChIJKwI937kXE2sRbEkLO5qINlk|Baaz indian restaurant & cafe|22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.481178899999996|150.8722713|True|false|True|True|True
+46|141_location.json|ChIJlVj47RoXE2sRpuKeUuVKz9A|Atin Ito Filipino Finest Cuisine|Shop 2/7-9 Lake Ave, Cringila NSW 2502, Australia|-34.4669326|150.8726428|false|false|True|True|false
+46|141_location.json|ChIJpys3WU8XE2sRhzhaF_vdZ2Q|Wollongong City Patisserie|39 Bethlehem St, Cringila NSW 2502, Australia|-34.468921|150.8722415|false|false|false|True|false
+46|141_location.json|ChIJexU7gE8XE2sRADi3aBJWAy4|Munoochi Pizzeria|Shop 3/43 Newcastle St, Cringila NSW 2502, Australia|-34.4699473|150.8718558|False|false|True|false|false
+46|141_location.json|ChIJD78r7E8XE2sRPbimqkBzMjw|Crini Kebabs|Shop 7/95 Five Islands Rd, Cringila NSW 2502, Australia|-34.466017|150.872051|False|false|false|false|false
+46|141_location.json|ChIJM18QUU8XE2sRtIjPWJhk6RA|5 Star Burek|42 Newcastle St, Cringila NSW 2502, Australia|-34.4694382|150.872064|false|false|True|False|false
+46|141_location.json|ChIJm5DUNykXE2sRU1RYtCg6dZw|Graze@LHCD|20-22 Weringa Ave, Lake Heights NSW 2502, Australia|-34.481071|150.872172|false|false|false|false|false
+48|143_location.json|ChIJMfkj86kWE2sRcVebCGBLYxM|Club Windang|2-6 Judbooley Parade, Windang NSW 2528, Australia|-34.5331003|150.8671889|false|false|false|false|false
+48|143_location.json|ChIJ68ONDakWE2sR1tzeTMDpEBM|Oh Dang! Espresso|2/314 Windang Rd, Windang NSW 2528, Australia|-34.53169510000001|150.8685724|True|false|True|True|True
+48|143_location.json|ChIJsXgz92gVE2sRswLxTuSJ1cs|Embers Fusion Indian Cuisine|shop 2/233 Windang Rd, Windang NSW 2528, Australia|-34.5322718|150.8688743|True|false|True|True|True
+48|143_location.json|ChIJ98elkMQXE2sRCM3ERdVG4pg|At Thai Corner|Shop 2/286 Windang Rd, Windang NSW 2528, Australia|-34.5297915|150.86894379999998|false|false|True|True|True
+48|143_location.json|ChIJb_81pqkWE2sRqVV4n5-jyM0|Windang Fast Chicken|3/239 Windang Rd, Windang NSW 2528, Australia|-34.5325092|150.8688315|True|false|True|false|false
+48|143_location.json|ChIJVVUJCKkWE2sRFLPpBNRoHzc|Cakes Delight & Café|shop 2/233 Windang Rd, Windang NSW 2528, Australia|-34.5323182|150.8689092|True|false|True|False|false
+48|143_location.json|ChIJJdyq1a4WE2sRkospzLYs0FU|Windang Hotel Restaurant|193 Windang Rd, Windang NSW 2528, Australia|-34.5294599|150.86956800000002|True|false|false|False|True
+48|143_location.json|ChIJ5R22oDoXE2sRHIsWbCjemw4|Windang Takeaway & Ice Creamery|1/233 Windang Rd, Windang NSW 2528, Australia|-34.5323182|150.8689092|false|false|True|false|false
+48|143_location.json|ChIJQ_f9XqkWE2sRmxCy92RnTV4|Lake Illawarra Bed and Breakfast|54 Oakland Ave, Windang NSW 2528, Australia|-34.5303853|150.8668765|false|false|True|false|false
+49|144_location.json|ChIJZ_2tZfUTE2sR1n9gTMuA8i4|McDonald's Warilla|Shellharbour Rd, Warilla NSW 2528, Australia|-34.5515|150.8595782|True|false|True|True|True
+49|144_location.json|ChIJVeXXrXcUE2sR4c1LEP_0J0E|Warilla Bowls & Recreation Club|Jason Ave, Barrack Heights NSW 2528, Australia|-34.5611114|150.8648681|false|false|false|false|false
+49|144_location.json|ChIJ4RZYdHYUE2sRk_-jeSTIPcI|Warilla Sports Club|54 McGregor Ave, Barrack Heights NSW 2528, Australia|-34.5586967|150.86204519999998|True|false|True|True|True
+49|144_location.json|ChIJQQc5misVE2sRycXllsxAgDk|THE HAPPY FOX|17 George St, Warilla NSW 2528, Australia|-34.5524178|150.861782|True|false|True|False|True
+49|144_location.json|ChIJQeX-wQkUE2sRWlg3wjSZefs|Warilla Hotel|61 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5475165|150.86177999999998|false|false|false|False|false
+49|144_location.json|ChIJS51Udg8UE2sRB55CratBKzs|Pep's Takeaway|3 Reddall Parade, Lake Illawarra NSW 2528, Australia|-34.546037999999996|150.8695885|True|false|True|False|True
+49|144_location.json|ChIJZfVqbm8VE2sRMCIF4y0RKCo|Warilla Beach Cafe|7 Osborne Parade, Warilla NSW 2528, Australia|-34.5493917|150.8687047|True|false|True|False|True
+49|144_location.json|ChIJRbFov4kTE2sR2cGtdRFW-Fk|Billy's Kebab's|258 Shellharbour Rd, Barrack Heights NSW 2528, Australia|-34.559272299999996|150.8594325|False|false|True|True|false
+49|144_location.json|ChIJDToCyAkUE2sREF8a919pVBw|Cafe Els|47 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5464947|150.8623812|True|false|True|True|True
+49|144_location.json|ChIJnc-RW_UTE2sR7wjKoztC7ys|Vespa Pizzeria|1/115 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5520762|150.8604121|false|false|True|True|True
+49|144_location.json|ChIJVzw0N1YTE2sRwv8ppLqtqc8|Kebab House Warilla|119A Shellharbour Rd, Warilla NSW 2528, Australia|-34.552258699999996|150.8603956|false|false|True|True|false
+49|144_location.json|ChIJKeOIuIkTE2sR6QAEH-WeEmY|Enhance Barrack Heights|254-256 Shellharbour Rd, Barrack Heights NSW 2528, Australia|-34.5594249|150.8594128|false|false|false|false|false
+49|144_location.json|ChIJaTh9pAoUE2sRABj1nn7PHHQ|Billy's Fish n Chips|11 George St, Warilla NSW 2528, Australia|-34.5524534|150.86141519999998|True|false|True|false|false
+49|144_location.json|ChIJpUSZ7E8TE2sR2uaeIaPduXc|Go Gallo Chickens|176 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5526406|150.8596821|True|false|True|True|false
+49|144_location.json|ChIJF0y0qQkUE2sR48XqzQsFP6w|Subway Warilla|Warilla Grove Shopping Centre 7, 43-57 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5467011|150.8633936|false|false|True|True|True
+49|144_location.json|ChIJHfSlnnMTE2sRk6JVPt-EN3M|Baogers on the go|232 Shellharbour Rd, Warilla NSW 2528, Australia|-34.557246299999996|150.85909379999998|false|false|false|True|false
+49|144_location.json|ChIJafQ7rwoUE2sRgLYtKFK5GmE|Sam's Pizza Restaurant|1/21 George St, Warilla NSW 2528, Australia|-34.5524437|150.8619685|True|false|True|True|True
+49|144_location.json|ChIJ1RrOQ8gTE2sRytjbAJF-sxc|Peggy's Bistro|54 McGregor Ave, Barrack Heights NSW 2528, Australia|-34.5587375|150.8620154|True|false|True|False|True
+49|144_location.json|ChIJ__9zw4kTE2sR0jyTbQVqFIU|Red Sands Bar & Grill(Warilla Bowls & Recreation)|Jason Ave, Warilla NSW 2528, Australia|-34.561475699999995|150.8647399|True|false|True|False|True
+49|144_location.json|ChIJ3cKMpQkUE2sRrFMnLsNq0-8|Gloria Jean's Coffees Warilla|Shop 8, Warilla Grove Shopping Centre, Shellharbour Rd, Warilla NSW 2528, Australia|-34.5468051|150.8633843|True|false|True|False|True
+50|145_location.json|ChIJKTi4e1cVE2sRqFkyg3CxCjM|Waterfront Tavern|11 Marina Dr, Shell Cove NSW 2529, Australia|-34.5880569|150.8675776|True|false|True|False|True
+50|145_location.json|ChIJCQ-2foIUE2sROLgkAiuMmfE|7-Eleven|202 Cnr Shellharbour &, Wattle Rd, Shellharbour NSW 2529, Australia|-34.5801064|150.8611705|false|false|false|false|false
+50|145_location.json|ChIJoblk4oMUE2sReE2p2hXWOnU|Ocean Beach Hotel|2 Addison St, Shellharbour NSW 2529, Australia|-34.57818210000001|150.8697537|false|false|false|False|True
+50|145_location.json|ChIJH0xHVIYUE2sRkgpetnADrYI|Harbour Thai Restaurant|4/7 Addison St, Shellharbour NSW 2529, Australia|-34.5785025|150.870045|True|false|True|True|True
+50|145_location.json|ChIJCQCrC0MVE2sR23ue67MWlIo|Georgia Rose|1/9 Marina Dr, Shell Cove NSW 2529, Australia|-34.5879707|150.86704459999999|false|false|false|True|True
+50|145_location.json|ChIJLx9_94YUE2sRZYv4PAB3Sn8|Andaman Thai Restaurant|2/13 Addison St, Shellharbour NSW 2529, Australia|-34.5786432|150.8694009|True|false|True|True|True
+50|145_location.json|ChIJhasQzMkVE2sRkrdo6qyGZjc|Domino's Pizza Shellharbour Village|6/32 Addison St, Shellharbour NSW 2529, Australia|-34.5793988|150.86611499999998|False|false|True|True|false
+50|145_location.json|ChIJu6HA0m0VE2sRJ84PM7jvhig|ZAIQA INDIAN RESTAURANT|16b Addison St, Shellharbour NSW 2529, Australia|-34.5787597|150.86806869999998|false|false|True|True|True
+50|145_location.json|ChIJv3-Ml4YVE2sRwsc5EY8Eigw|Leaf Cafe & Co Shell Cove|Shop 7/100 Cove Blvd, Shell Cove NSW 2529, Australia|-34.5881897|150.86597870000003|True|false|True|True|True
+50|145_location.json|ChIJqePs_IYUE2sRsMfJg_QjUBI|Relish on Addison|upstairs no lift access, Shop 4/6 Addison St, Shellharbour NSW 2529, Australia|-34.5781019|150.86888650000003|True|false|false|False|True
+50|145_location.json|ChIJCYtosYYUE2sRBl_oaIYG1DA|Bean Roasted Espresso Bar|Shop 1/20-26 Addison St, Shellharbour NSW 2529, Australia|-34.57917|150.86719639999998|True|false|True|False|false
+50|145_location.json|ChIJ75lbuIYUE2sRLdGCj0MXW3I|Acai Brothers Shellharbour|Shop 5/20-26 Addison St, Shellharbour NSW 2529, Australia|-34.5790432|150.8675683|True|false|True|True|True
+50|145_location.json|ChIJj8l_uYYUE2sRPddj46-ukO0|Moon's Sushi Shellharbour|30 Addison St, Shellharbour NSW 2529, Australia|-34.579338899999996|150.8666285|True|false|True|false|True
+50|145_location.json|ChIJOY-kproVE2sRrIiP_YCQiNA|Bayside Pantry|26 Mary St, Shellharbour NSW 2529, Australia|-34.579135199999996|150.8665466|True|false|True|False|True
+50|145_location.json|ChIJU03Nu6kVE2sRqoPyhmA5XlI|Taste of Asia Shellharbour|29 Addison St, Shellharbour NSW 2529, Australia|-34.5793596|150.86786419999999|True|false|True|True|True
+50|145_location.json|ChIJkSdU4SUVE2sRwMdKBS8ktYs|Hooked Fish and Chips + Scoops Ice Cream|5 Addison St, Shellharbour NSW 2529, Australia|-34.5784993|150.8702452|false|false|True|True|false
+50|145_location.json|ChIJVxRErYYUE2sRR8_SHgsFd1g|Tandoori Junction Restaurant|39 Addison St, Shellharbour NSW 2529, Australia|-34.5795052|150.8673345|false|false|True|True|True
+50|145_location.json|ChIJY7L1XmUVE2sRCV70czCqsXo|RawR Cafe- Eatery and Coffee Roasters|shop 20/23 Addison St, Shellharbour NSW 2529, Australia|-34.579224599999996|150.86848419999998|True|false|True|True|True
+50|145_location.json|ChIJP_hWolQVE2sRBnWLKmkftis|J's on the deck|1/19 Addison St, Shellharbour NSW 2529, Australia|-34.5788051|150.86906299999998|True|false|True|True|True
+50|145_location.json|ChIJH0xHVIYUE2sRiprnwGrb05U|Santorini By The Sea|2/7 Addison St, Shellharbour NSW 2529, Australia|-34.578466299999995|150.8700241|True|false|True|True|True
+51|146_location.json|ChIJUcwUCFQbE2sROWr2i3fb0XU|Mount Keira Lookout Kiosk|Queen Elizabeth Dr, Mount Keira NSW 2500, Australia|-34.4023137|150.8569919|True|false|True|False|True
+58|152_location.json|ChIJObE3n_UZE2sRCUQJU3ijB7E|McDonald's Figtree|22 Princes Hwy, Figtree NSW 2525, Australia|-34.4345484|150.8623256|True|false|True|True|True
+58|152_location.json|ChIJ3Z5XBB0aE2sRGNtsnxxrop0|Chicko's Chickens & Quality Foods|49 Princes Hwy, Figtree NSW 2525, Australia|-34.438894999999995|150.8586153|True|false|True|False|True
+58|152_location.json|ChIJ21hqpx0aE2sRrweQSco4zwU|Hungry Jack's Burgers Figtree|41-45 Princes Hwy, Figtree NSW 2525, Australia|-34.43217750000001|150.8660013|True|false|True|True|True
+58|152_location.json|ChIJ3Z5XBB0aE2sRxTQ1_my_mgY|Figtree Hotel|47 Princes Hwy, Figtree NSW 2525, Australia|-34.438732099999996|150.8589782|false|false|false|False|True
+58|152_location.json|ChIJ21hqpx0aE2sRVwv05jmeXQU|Domino's Pizza Figtree|45 Princes Hwy, Figtree NSW 2525, Australia|-34.432448|150.8657898|False|false|True|True|false
+58|152_location.json|ChIJpavVhPYZE2sRoHVpG0uQGtQ|Figtree Sports|120 The Avenue, Figtree NSW 2525, Australia|-34.4376258|150.8645019|false|false|false|false|false
+58|152_location.json|ChIJUffRyvQZE2sRezQmxSFKpNY|Figtree Gourmet Kitchen|1-3/101 Bellevue Rd, Figtree NSW 2525, Australia|-34.427665|150.8537658|True|false|True|false|True
+58|152_location.json|ChIJB_musfcZE2sRvvWlQws2I-U|Collegians Figtree|147 The Avenue, Figtree NSW 2525, Australia|-34.4393999|150.8626242|True|false|True|False|True
+58|152_location.json|ChIJExlJuIoZE2sRiZWywM1YH3c|Kiss & Drop|6/31 Thames St, West Wollongong NSW 2500, Australia|-34.431013899999996|150.86223999999999|True|false|True|False|True
+58|152_location.json|ChIJ84owDG8bE2sRO_nE3zOE714|Rest Cafe|20 Walang Ave, Figtree NSW 2525, Australia|-34.4249675|150.8574467|True|false|True|False|True
+58|152_location.json|ChIJ86ICjvUZE2sR7UYFo7pp0b8|Figtree Fish & Chips|5/34 Princes Hwy, Figtree NSW 2525, Australia|-34.435139899999996|150.8614355|False|false|True|True|false
+58|152_location.json|ChIJ21hqpx0aE2sRnU8clu9G73A|Subway Figtree|3/45 Princes Hwy, Figtree NSW 2525, Australia|-34.4324122|150.86584829999998|false|false|True|True|false
+58|152_location.json|ChIJC4EVgvUZE2sR9oxQDmgVezM|Thai Basil Restaurant|18 Arrow Ave, Figtree NSW 2525, Australia|-34.4340956|150.8612374|false|false|True|True|True
+58|152_location.json|ChIJHRLL2vUZE2sR-HXFAD_AN1Q|San Choi Chinese Restaurant|19 Princes Hwy, Figtree NSW 2525, Australia|-34.4373802|150.8631345|True|false|True|True|True
+58|152_location.json|ChIJe671ePYZE2sRrZLg9p21Rps|The Corner Point Cafe|88/19 Princes Hwy, Figtree NSW 2525, Australia|-34.43717|150.863313|True|false|True|True|True
+58|152_location.json|ChIJTZNy6LQZE2sRTmUK2ePHvBw|Sauce Figtree|34 Princes Hwy, Figtree NSW 2525, Australia|-34.4353045|150.86155119999998|True|false|True|True|True
+58|152_location.json|ChIJrYGK2PUZE2sRzeJtqpztINo|Jacaranda Café|19 Princes Hwy, Figtree NSW 2525, Australia|-34.436924600000005|150.8629358|True|false|True|False|True
+58|152_location.json|ChIJLT1-xfQZE2sRiWBN0p8y6EM|The Wollongong Hellenic Club|57 Princes Hwy, West Wollongong NSW 2500, Australia|-34.433060399999995|150.8648417|false|false|false|false|false
+58|152_location.json|ChIJ28VUMMkZE2sRibtKs-gHDGY|Ariel's Figtree|SHOP 116/19 Princes Hwy, Figtree NSW 2525, Australia|-34.4373016|150.8630063|True|false|True|True|True
+58|152_location.json|ChIJT_rJ_gQZE2sRmxikUVWJHXU|Star kebab house|1/45 Princes Hwy, West Wollongong NSW 2525, Australia|-34.432444499999995|150.86567639999998|false|false|True|True|false
+59|153_location.json|ChIJ5ZApmboQE2sRs-1tDcHt6u4|Try Our Buns|3/7 Lady Penrhyn Dr, Unanderra NSW 2526, Australia|-34.460150999999996|150.848916|True|false|True|false|false
+59|153_location.json|ChIJUZPV7q4QE2sRD26W1zWvaB0|Illawarra Premium Food & Beverages|1/13 Resolution Dr, Unanderra NSW 2526, Australia|-34.4563693|150.8533081|True|false|false|false|false
+59|153_location.json|ChIJhRpeCKUQE2sRSwmDCzv6G3c|Hot Box|1/237-239 Berkeley Rd, Unanderra NSW 2526, Australia|-34.455726000000006|150.849784|false|false|false|false|false
+60|154_location.json|ChIJh3SKmTsRE2sRbUgn8MKvGoo|Aish's Seafood and Takeaway|480 Northcliffe Dr, Berkeley NSW 2506, Australia|-34.483908299999996|150.85454869999998|False|false|True|False|True
+60|154_location.json|ChIJwUchR9oQE2sRK8ContjWJFk|Berkeley Sports Club|5 Wilkinson St, Berkeley NSW 2506, Australia|-34.482486699999995|150.84741209999999|True|false|false|false|false
+62|156_location.json|ChIJQeX-wQkUE2sRWlg3wjSZefs|Warilla Hotel|61 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5475165|150.86177999999998|false|false|false|False|false
+62|156_location.json|ChIJDToCyAkUE2sREF8a919pVBw|Cafe Els|47 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5464947|150.8623812|True|false|True|True|True
+62|156_location.json|ChIJbfL1TJoVE2sRBh4KzFsU5-k|World Burger Shellharbour|37 Shellharbour Rd, Lake Illawarra NSW 2528, Australia|-34.545080299999995|150.8628666|false|false|True|True|True
+62|156_location.json|ChIJs_UarSMTE2sRbfkYAzL4fQ4|The Fern & Anchor|76A Addison Ave, Lake Illawarra NSW 2528, Australia|-34.5413052|150.85703340000003|True|false|True|false|True
+62|156_location.json|ChIJr5hLRFUTE2sRqA_avKfez_Y|Dirty Fries|28 Queen St, Lake Illawarra NSW 2528, Australia|-34.5470119|150.8555551|false|false|True|True|True
+62|156_location.json|ChIJF0y0qQkUE2sR48XqzQsFP6w|Subway Warilla|Warilla Grove Shopping Centre 7, 43-57 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5467011|150.8633936|false|false|True|True|True
+62|156_location.json|ChIJ3cKMpQkUE2sRrFMnLsNq0-8|Gloria Jean's Coffees Warilla|Shop 8, Warilla Grove Shopping Centre, Shellharbour Rd, Warilla NSW 2528, Australia|-34.5468051|150.8633843|True|false|True|False|True
+62|156_location.json|ChIJVQH9-g0VE2sR4zIMeVDsuPM|King Chinese Food|Shop 4/43-57 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5468313|150.86299069999998|false|false|True|True|false
+62|156_location.json|ChIJR8DsGagTE2sRcwxgZlXb0MI|Greedy Buggers Pit Stop|26 Queen St, Lake Illawarra NSW 2528, Australia|-34.546893499999996|150.855546|True|false|True|True|false
+62|156_location.json|ChIJzQY3QoQVE2sReWLBTMyfCo0|Akira sushi warilla|43-57 Shellharbour Rd, Warilla NSW 2528, Australia|-34.5468313|150.86299069999998|false|false|false|True|True
+62|156_location.json|ChIJOQbtyEUTE2sRoZOdLLBHlG8|#letsroll|80b Addison Ave, Lake Illawarra NSW 2528, Australia|-34.5413847|150.8567335|false|false|false|False|false
+63|157_location.json|ChIJ9WUH038UE2sRxM0ILqI68cI|Shellharbour Resort & Conference Centre|400 Shellharbour Rd, Shellharbour NSW 2529, Australia|-34.5729751|150.8624572|false|false|True|false|false
+63|157_location.json|ChIJRbFov4kTE2sR2cGtdRFW-Fk|Billy's Kebab's|258 Shellharbour Rd, Barrack Heights NSW 2528, Australia|-34.559272299999996|150.8594325|False|false|True|True|false
+63|157_location.json|ChIJ0TurgskVE2sRMDKZF1x-e4I|Riggsy's takeaway|20 Lagoon St, Barrack Heights NSW 2528, Australia|-34.5616056|150.86161439999998|False|false|True|False|false
+63|157_location.json|ChIJKeOIuIkTE2sR6QAEH-WeEmY|Enhance Barrack Heights|254-256 Shellharbour Rd, Barrack Heights NSW 2528, Australia|-34.5594249|150.8594128|false|false|false|false|false
+63|157_location.json|ChIJ9WUH038UE2sRsqVnuuPx_JY|Branches Restaurant|400 Shellharbour Rd, Shellharbour NSW 2529, Australia|-34.5731745|150.8624647|True|false|True|True|True
+63|157_location.json|ChIJ__9zw4kTE2sR0jyTbQVqFIU|Red Sands Bar & Grill(Warilla Bowls & Recreation)|Jason Ave, Warilla NSW 2528, Australia|-34.561475699999995|150.8647399|True|false|True|False|True
+64|158_location.json|ChIJxSWKW30TE2sRCBqH8iVReCg|The Links Shell Cove|1 Golf Dr, Shell Cove NSW 2529, Australia|-34.5976041|150.8488629|false|false|false|false|false
+64|158_location.json|ChIJSUAw0EQTE2sR4YudJ9EsVFM|The Tavern at the Links Shell Cove|Golf Dr, Shell Cove NSW 2529, Australia|-34.597595999999996|150.84884449999998|True|false|false|False|True
+64|158_location.json|ChIJ8W-2aAATE2sRcaHiQAVRFPw|Backyard Brew|1 Golf Dr, Shell Cove NSW 2529, Australia|-34.5976876|150.849042|True|false|True|false|false
+72|165_location.json|ChIJbVUWDxcRE2sRtA2IgDFt8eM|McDonald's Unanderra|45 Princes Hwy, Unanderra NSW 2526, Australia|-34.4507238|150.84885989999998|True|false|True|True|True
+72|165_location.json|ChIJke42OqQQE2sRudYqqO1P9jg|KFC Unanderra|74-84 Princes Hwy, Unanderra NSW 2526, Australia|-34.453657199999995|150.84551629999999|False|false|True|True|True
+72|165_location.json|ChIJ19DqWKEQE2sRmniHGmehHX4|Wests Illawarra|1 Hargreaves St, Unanderra NSW 2526, Australia|-34.4516667|150.8427778|false|false|false|false|false
+72|165_location.json|ChIJcQA6878RE2sRe3fvkYjCe6w|Guzman y Gomez - Unanderra|52/68 Princes Hwy, Unanderra NSW 2526, Australia|-34.453144699999996|150.8459427|True|false|True|True|True
+72|165_location.json|ChIJH-vwdagQE2sRLLAZSLsqLmA|7-Eleven Unanderra|41 Princes Hwy, Unanderra NSW 2526, Australia|-34.4502338|150.8493409|false|false|false|false|false
+72|165_location.json|ChIJER6C7AARE2sROhvVtmOJt2Q|Ambiance Ristorante|4/63 - 67 Princes Hwy, Unanderra NSW 2526, Australia|-34.452512999999996|150.8474882|True|false|True|false|True
+72|165_location.json|ChIJYWuqbKQQE2sRwIQu7G5vN3s|D'amato's Family Restaurant|106 Central Rd, Unanderra NSW 2526, Australia|-34.4537255|150.8445242|True|false|True|True|True
+72|165_location.json|ChIJfY1VaaYQE2sRMjvdLvwqZ5w|Harbour View Thai Unanderra|1/63 Princes Hwy, Unanderra NSW 2526, Australia|-34.4521612|150.8477211|false|false|True|True|True
+72|165_location.json|ChIJKz-ca6QQE2sRO12h_I-wBYc|Unanderra Peacock Palace|110 Central Rd, Unanderra NSW 2526, Australia|-34.453973999999995|150.8446434|false|false|True|True|True
+72|165_location.json|ChIJd1GhVs8RE2sRCchSMRA18T8|Unanderra Fish & Chips|2 Tallegalla St, Unanderra NSW 2526, Australia|-34.454219|150.8430692|false|false|True|True|false
+72|165_location.json|ChIJUR_iaKYQE2sR-oAe1wS86wY|$iki $iki Baba Kebab House|shop 3/63-67 Princes Hwy, Unanderra NSW 2526, Australia|-34.4522675|150.8476455|False|false|True|True|True
+72|165_location.json|ChIJ6V3zZaQQE2sRRPn1zsn7mb0|Cosy Cafe Delight|102-108 Princes Hwy, Unanderra NSW 2526, Australia|-34.4545883|150.8446107|True|false|True|False|True
+72|165_location.json|ChIJu3iWsgoaE2sRO_OiR6gxzW4|Cordeaux Caffeine|Shop 1A/26 Derribong Dr, Cordeaux Heights NSW 2526, Australia|-34.4450497|150.8377231|True|false|True|False|True
+72|165_location.json|ChIJmQbHBjsRE2sRfDeFe5GQMTs|Awesome Cafe|13 First Ave, Unanderra NSW 2526, Australia|-34.4493878|150.8509867|True|false|false|False|True
+72|165_location.json|ChIJtVj-sgoaE2sRb6Wy2Fc1hJc|Fernandos Pizza|Shops, 26 Derribong Dr, Cordeaux Heights NSW 2526, Australia|-34.4449426|150.83815049999998|True|false|True|True|True
+72|165_location.json|ChIJ_fDXE8cbE2sRx4ltPbaeVpI|Little Fig Cafe Figtree|1 Suttor Pl, Figtree NSW 2525, Australia|-34.4395735|150.8510562|True|false|True|False|false
+72|165_location.json|ChIJlY9mSKEQE2sRM4yaUkdQXh4|Artisan Eatery|1 Hargreaves St, Unanderra NSW 2526, Australia|-34.4509251|150.8428357|True|false|True|false|True
+73|166_location.json|ChIJpV2PNt0QE2sRI7qh9aV-K58|7-Eleven|47 Nolan St, Berkeley NSW 2506, Australia|-34.4768182|150.83944839999998|false|false|false|false|false
+73|166_location.json|ChIJX_H1YpsRE2sRBt7Np2dZttg|Captain Pizza|7/65 Winnima Way, Berkeley NSW 2506, Australia|-34.4806246|150.8463078|false|false|True|True|false
+73|166_location.json|ChIJA1fzMrgQE2sRcgeD1C1c39w|Dew Drop Inn Tea House|180 Berkeley Rd, Berkeley NSW 2506, Australia|-34.4658655|150.8481641|True|false|True|False|True
+73|166_location.json|ChIJs1V-9tkRE2sR3nsNUeED2Jo|Burek House Berkeley|1/2/4 Kelly St, Berkeley NSW 2506, Australia|-34.4763893|150.8395067|false|false|false|True|false
+73|166_location.json|ChIJpdpmtTsRE2sRYwIhKjBEubk|Nan Tien Arts Cafe|231 Nolan St, Unanderra NSW 2526, Australia|-34.464172|150.8470345|True|false|True|false|True
+73|166_location.json|ChIJs1EvkacRE2sR0yn6eurg3rE|Berkeley Kebabs|Shop 3 2-4 Corner Nolan &, Kelly St, Berkeley NSW 2506, Australia|-34.4763252|150.8395622|False|false|True|True|false
+73|166_location.json|ChIJURas0sIQE2sRLMbqGCCfsGA|The Munch House|1/6 Kelly St, Berkeley NSW 2506, Australia|-34.4764781|150.8399356|False|false|True|True|false
+73|166_location.json|ChIJ3UJ_PUsRE2sRECNg9eUoYDQ|Berkeley Fish & Chips|60 Winnima Way, Berkeley NSW 2506, Australia|-34.4804297|150.8468206|false|false|True|True|false
+73|166_location.json|ChIJ2bI3ptsQE2sRB2qe1akw0bY|Stamp Thai Restaurant|7 Devon St, Berkeley NSW 2506, Australia|-34.4808636|150.84558869999998|false|false|True|True|True
+76|169_location.json|ChIJ5bx92pMTE2sR0QEGuPKkg5w|Georges Take Away Foods|u1/7 Jones Ave, Mount Warrigal NSW 2528, Australia|-34.553722799999996|150.845684|False|false|True|True|false
+76|169_location.json|ChIJo0d4V9sTE2sR8G1kP2EfRto|Matthew Marcs Cafe|9/25 Captain Cook Dr, Barrack Heights NSW 2528, Australia|-34.557653|150.8476776|True|false|True|True|false
+76|169_location.json|ChIJC3eE9Z0TE2sRKvocH3TSXZU|Gozleme 4U & Burek Shop|17 Jones Ave, Mount Warrigal NSW 2528, Australia|-34.5534412|150.84561779999999|false|false|True|True|false
+79|171_location.json|ChIJg3r3rrgbE2sRcQtMFe855u0|Retro Roast Coffee Van|Cordeaux Rd, Mount Kembla NSW 2526, Australia|-34.4322747|150.8297454|True|false|True|false|false
+80|172_location.json|ChIJy5HtxYUaE2sRTr4ej7SGJzw|Ruby's Mount Kembla Restaurant|39 Harry Graham Dr, Kembla Heights NSW 2526, Australia|-34.430160799999996|150.8073583|True|false|False|False|True
+81|173_location.json|ChIJy5HtxYUaE2sRTr4ej7SGJzw|Ruby's Mount Kembla Restaurant|39 Harry Graham Dr, Kembla Heights NSW 2526, Australia|-34.430160799999996|150.8073583|True|false|False|False|True
+84|176_location.json|ChIJQcr_g6QQE2sRadjE9jbb2V0|Steam Heads|2 Tannery St, Unanderra NSW 2526, Australia|-34.4552341|150.8444197|True|false|True|false|True
+84|176_location.json|ChIJo6_LhaQQE2sRklcdnbP7elU|Country Grocer Unanderra|1/130 Princes Hwy, Unanderra NSW 2526, Australia|-34.455470999999996|150.844008|false|false|false|False|false
+84|176_location.json|ChIJ56n3h6QQE2sRF3pHQKKqL3s|Domino's Pizza Unanderra|Unit 1/114 - 118 Princes Hwy, Unanderra NSW 2526, Australia|-34.455190699999996|150.84435009999999|False|false|True|True|false
+84|176_location.json|ChIJ-Qw80M8RE2sRp7KluKg4U6g|The Hungry Greek|Shop 1B/120 Princes Hwy, Unanderra NSW 2526, Australia|-34.4553054|150.8441045|True|false|True|false|True
+84|176_location.json|ChIJua3RJ-sQE2sROqH-05YmkY0|Unanderra Charcoal Chickens & Take-Away|185 Princes Hwy, Unanderra NSW 2526, Australia|-34.4576038|150.8425442|False|false|True|True|false
+84|176_location.json|ChIJSYD3h74QE2sRS2cJ0v3E8vw|4M Espresso Bar|1/2 Waverley Dr, Unanderra NSW 2526, Australia|-34.462306999999996|150.8405914|True|false|False|False|True
+84|176_location.json|ChIJ6xwthqQQE2sR-JgJxK_diNc|Subway Unanderra|Shop 7/2 Tannery St, Unanderra NSW 2526, Australia|-34.454965099999995|150.84412279999998|True|false|True|True|True
+84|176_location.json|ChIJSV3_i6QQE2sR72X0PyMCTac|Coastal Thai (Location at Unanderra)|127 Princes Hwy, Unanderra NSW 2526, Australia|-34.4554006|150.84464079999998|false|false|True|True|True
+84|176_location.json|ChIJd1GhVs8RE2sRCchSMRA18T8|Unanderra Fish & Chips|2 Tallegalla St, Unanderra NSW 2526, Australia|-34.454219|150.8430692|false|false|True|True|false
+84|176_location.json|ChIJAweEFbsQE2sR8oAVG4lnirc|Cafe Fourteen|14 Investigator Dr, Unanderra NSW 2526, Australia|-34.459323999999995|150.84537559999998|True|false|True|True|True
+84|176_location.json|ChIJ28aTr70QE2sRdY1pukM-Lcw|Eddy & Sandra's|163 Princes Hwy, Unanderra NSW 2526, Australia|-34.4560837|150.8440454|True|false|True|True|True
+84|176_location.json|ChIJ6V3zZaQQE2sRRPn1zsn7mb0|Cosy Cafe Delight|102-108 Princes Hwy, Unanderra NSW 2526, Australia|-34.4545883|150.8446107|True|false|True|False|True
+84|176_location.json|ChIJMSIrn6QQE2sR4bXii7YhiCc|Sun Lee Chinese Take Away Food|157 Princes Hwy, Unanderra NSW 2526, Australia|-34.4558841|150.8440796|False|false|True|True|false
+84|176_location.json|ChIJ28aTr70QE2sRCwoRXsXex3o|Jacky's modern asian|17B Farmborough Rd, Unanderra NSW 2526, Australia|-34.4594569|150.83987900000002|True|false|True|false|True
+84|176_location.json|ChIJ7d4kxXERE2sRIADcbCkQW6Q|Coastal thai (Location at Unanderra)|127 Princes Hwy, Unanderra NSW 2526, Australia|-34.455407699999995|150.8446496|false|false|True|True|True
+84|176_location.json|ChIJq6o2i74QE2sRcqmJLfRit1k|Custom Coffee Brands|Rear Building, 260 Nolan St, Unanderra NSW 2526, Australia|-34.462934499999996|150.8408339|True|false|false|false|false
+84|176_location.json|ChIJ9epPFLsQE2sRmcCZNqsRjJQ|14 Catering|14 Investigator Dr, Unanderra NSW 2526, Australia|-34.459323999999995|150.84537559999998|false|false|false|false|false
+87|179_location.json|ChIJbcjf5r8TE2sRXT5Aj_M0TIs|il lago pizzeria|Shop 2/19/21 MacKenzie Ave, Mount Warrigal NSW 2528, Australia|-34.547969|150.83718819999999|True|false|True|True|True
+87|179_location.json|ChIJkdtN5r8TE2sRkBYAjccwwpY|Amrak Cafe|1/25 MacKenzie Ave, Mount Warrigal NSW 2528, Australia|-34.547985|150.837079|True|false|True|False|True
+87|179_location.json|ChIJeeNCv7YTE2sR2J6x5lc9Rio|TBW Take Away|Shop/No/1/17 MacKenzie Ave, Mount Warrigal NSW 2528, Australia|-34.548022599999996|150.8373816|false|false|True|false|false
+87|179_location.json|ChIJR3cq4b8TE2sRRDtsEwKPmm0|Mt Warrigal Take Away|17 MacKenzie Ave, Mount Warrigal NSW 2528, Australia|-34.5479939|150.83739079999998|false|false|false|false|false
+89|180_location.json|ChIJl42yi7MTE2sRNE01xl8AREk|KFC Shellharbour|Outside Shellharbour Square, 1 Holm Pl, Shellharbour City Centre NSW 2529, Australia|-34.5638193|150.83702100000002|False|false|True|True|True
+89|180_location.json|ChIJ2TWCFKcTE2sRSzHLdC0ede0|Lakeview Hotel Motel|4 Government Rd, Oak Flats NSW 2529, Australia|-34.562229099999996|150.8305358|false|false|True|false|false
+89|180_location.json|ChIJqWgBZKcTE2sRIJb_n-bT2-E|Hungry Jack's Burgers Shellharbour|1 Range Rd, Shellharbour City Centre NSW 2529, Australia|-34.5642728|150.8305488|True|false|True|True|True
+89|180_location.json|ChIJ0X_yTKATE2sRl5qDYLLFCH0|Central Hotel Shellharbour|3 Memorial Dr, Shellharbour City Centre NSW 2529, Australia|-34.5644444|150.8355556|True|false|True|False|True
+89|180_location.json|ChIJi2IMQ6ATE2sRN-GFbiRAZfY|Rehal's Divine Indian Restaurant|17A/75 Cygnet Ave, Shellharbour City Centre NSW 2529, Australia|-34.565427199999995|150.8355796|false|false|True|True|True
+89|180_location.json|ChIJ-6c3BJ8TE2sR7X4TeDVa7yY|Guzman y Gomez - Shellharbour|Stockland Shellharbour Shopping Centre, Tenancy 2018/211 Lake Entrance Rd, Shellharbour NSW 2528, Australia|-34.5643628|150.83754969999998|True|false|True|True|True
+89|180_location.json|ChIJVxv76e1Fc2sRw90x_AuW48U|Pizza Hut Shellharbour|15 College Ave, Shellharbour City Centre NSW 2529, Australia|-34.567078099999996|150.8365742|False|false|True|True|false
+89|180_location.json|ChIJ5-SLtqETE2sRomDyqbMTKHI|Domino's Pizza Shellharbour|Shop 5 Shellharbour City Centre Lot, Memorial Dr, Shellharbour NSW 2529, Australia|-34.5639503|150.8364504|False|false|True|True|false
+89|180_location.json|ChIJ0SVAHJ8TE2sRbnVa9cLSgLk|McDonald's Stocklands Shellharbour Food Court|211 Lake Entrance Rd, Shellharbour NSW 2529, Australia|-34.5646032|150.84033589999999|True|false|True|True|True
+89|180_location.json|ChIJDRi3sIYUE2sRPAIN4cTA82w|Red Rooster Shellharbour|230 New Lake Entrance Rd, Shellharbour NSW 2529, Australia|-34.5651386|150.82861069999998|False|false|True|True|True
+89|180_location.json|ChIJ-4W253kTE2sRmfnq0Cy3KFY|Hanok Korean BBQ Shellharbour|cnr college ave and holm pl, 2021B shellharbour square, Shellharbour NSW 2529, Australia|-34.5648251|150.8368629|False|false|True|false|True
+89|180_location.json|ChIJDRi3sIYUE2sRU1fL1we5tZg|Crust Shellharbour City|2022 Lake Entrance Rd, Shellharbour City Centre NSW 2529, Australia|-34.5648151|150.8369526|false|false|True|True|True
+89|180_location.json|ChIJY-w9v58TE2sRB_CH57S7Z8s|Grill'd Shellharbour|2021a/211 Lake Entrance Rd, Shellharbour City Centre NSW 2529, Australia|-34.564338|150.837255|False|false|True|True|True
+89|180_location.json|ChIJIcIgkYUTE2sRqQtc9sVc3To|Amigos Shellharbour|shop1/8 Memorial Dr, Shellharbour City Centre NSW 2529, Australia|-34.563904199999996|150.83445179999998|True|false|True|True|True
+89|180_location.json|ChIJQw7PCx0TE2sRRL0GbTayQc8|Hong Kong Chef Shellharbour|Shop 2020 Shellharbour Stockland, Shellharbour City Centre NSW 2529, Australia|-34.5643938|150.8370966|false|false|True|True|True
+89|180_location.json|ChIJMeGyFJ8TE2sRkw6qtLBUHfY|Zeus Street Greek Shellharbour|Shop 2019/211 Lake Entrance Rd, Shellharbour City Centre NSW 2529, Australia|-34.5645133|150.8369821|False|false|True|True|True
+89|180_location.json|ChIJtxGO6zkTE2sRMFXtd99Ey-A|Sushi Hub Shellharbour|Kiosk K204, Stockland Shellharbour, 211 Lake Entrance Rd, Shellharbour City Centre NSW 2529, Australia|-34.564775000000004|150.8378768|false|false|True|True|false
+89|180_location.json|ChIJAzVE1qETE2sR1D2szjrhpzs|The Coffee Club Café - Shellharbour|Stocklands Shellharbour, Lake Entrance Rd, Shellharbour NSW 2529, Australia|-34.5643059|150.8375556|True|false|True|True|True
+89|180_location.json|ChIJiXTCGp8TE2sRE7pbJEVjqLw|Oporto Food Court|Shop/1119 Lake Entrance Rd, Shellharbour City Centre NSW 2529, Australia|-34.5646735|150.83997689999998|false|false|True|False|True
+89|180_location.json|ChIJa4IU1gkTE2sRsgp4Chf76QY|KFC Shellharbour Food Court|2528 New Lake Entrance Road Stockland Shellharbour Shop 214 Food Court Ground Floor, Shellharbour City Centre NSW 2529, Australia|-34.5648465|150.8402338|false|false|True|True|True
+96|187_location.json|ChIJnR-n_hAXE2sRit4dacqQj6E|The German Club|636A Northcliffe Dr, Kembla Grange NSW 2526, Australia|-34.471553799999995|150.8301086|false|false|false|false|false
+97|188_location.json|ChIJn9vu2goRE2sRMObx_HUAZg4|Kanahooka Takeaway|2/58-60 Lakeside Dr, Kanahooka NSW 2530, Australia|-34.500299999999996|150.816719|True|false|True|False|false
+97|188_location.json|ChIJdT004n8RE2sRwmoJX1zi0Ck|The Licorice Shop|Shop 1/58 Lakeside Dr, Kanahooka NSW 2530, Australia|-34.500287900000004|150.81673849999999|false|false|false|True|false
+106|196_location.json|ChIJOYtZq68RE2sRFnpR0jRWhRA|Dandaloo Hotel Motel|336 Kanahooka Rd, Dapto NSW 2530, Australia|-34.4857284|150.8074072|false|false|True|False|True
+106|196_location.json|ChIJ7fIUI3MRE2sRHgQb-Am1cA0|Passionate Palate|1 Stanthorpe Dr, Kanahooka NSW 2530, Australia|-34.4917559|150.81942809999998|True|false|True|false|True
+106|196_location.json|ChIJ9Z5iPQARE2sRnxmD2zP_VsA|Krema & Co Cafe|41-49 Brownsville Ave, Brownsville NSW 2530, Australia|-34.485419199999995|150.8066283|True|false|True|False|True
+106|196_location.json|ChIJM4dqVq4RE2sRpyZ1iWiMHWM|Ho's Chinese Asian Restaurant|41-47 Brownsville Ave, Brownsville NSW 2530, Australia|-34.4854863|150.80662289999998|false|false|True|True|True
+106|196_location.json|ChIJwVx85K4RE2sROlmLxDNlZuU|Dandaloo Village Takeaway|41 Brownsville Ave, Brownsville NSW 2530, Australia|-34.485391|150.806626|True|false|True|false|false
+109|199_location.json|ChIJyTtPvR0TE2sRk-DFhKSiVS8|Playmaze for Kids|1/39 Durgadin Dr, Albion Park Rail NSW 2527, Australia|-34.5749784|150.8159393|false|false|false|false|false
+109|199_location.json|ChIJ09wxFB0TE2sRSFbiHWmgnU0|Ready Set Play|2/10 Shaban St, Albion Park Rail NSW 2527, Australia|-34.573331599999996|150.8161269|false|false|false|false|false
+109|199_location.json|ChIJTUkrwAATE2sR6dvofu7KLVs|Oak Flats Charcoal Chicken and Curry Hut|65A Central Ave, Oak Flats NSW 2529, Australia|-34.5638581|150.81900059999998|True|false|True|True|false
+109|199_location.json|ChIJsVuBKZATE2sR5EIbF9qEhKc|The Patisserie Oak Flats|Shop 3/64 Central Ave, Oak Flats NSW 2529, Australia|-34.564214|150.8195537|false|false|false|false|false
+109|199_location.json|ChIJ0d-p6gATE2sRrGzo5S59ywY|Chicken King catering Oak Flats|67 Central Ave, Oak Flats NSW 2529, Australia|-34.5636812|150.8187815|True|false|True|True|True
+109|199_location.json|ChIJU4J63gATE2sREHi04zi8rAo|Cafe Niche|3/55 Central Ave, Oak Flats NSW 2529, Australia|-34.5646522|150.8190975|True|false|True|False|True
+109|199_location.json|ChIJvQzyuQATE2sRHyE7auNJBdk|Thai Central in oak flats|1/72 Central Ave, Oak Flats NSW 2529, Australia|-34.5635483|150.81943479999998|True|false|True|True|True
+109|199_location.json|ChIJYyWhsAATE2sRCyN0aikAH6M|Central Cafe|72 Central Ave, Oak Flats NSW 2529, Australia|-34.5635541|150.8194279|True|false|True|True|True
+109|199_location.json|ChIJ7V1QocITE2sRuZToZ2jfNeA|Rathas Place|84 Central Ave, Oak Flats NSW 2529, Australia|-34.5625111|150.8192176|True|false|True|False|True
+109|199_location.json|ChIJU63kZtITE2sR-K1syenV8GE|Industrial Road Take Away|8/17-19 Industrial Rd, Oak Flats NSW 2529, Australia|-34.5703685|150.81833319999998|True|false|True|False|false
+109|199_location.json|ChIJSea73QATE2sRkpBfqXUpz8I|Angie's Takeaway|57A Central Ave, Oak Flats NSW 2529, Australia|-34.5645404|150.8190503|false|false|True|True|false
+109|199_location.json|ChIJE3e5IwETE2sRPCnFGq2Q7A4|Oak Flats Lucky Inn Chinese Restaurant|47A Central Ave, Oak Flats NSW 2529, Australia|-34.5653982|150.8191958|false|false|True|false|True
+109|199_location.json|ChIJ-1HQackTE2sR7tt3XIytZzg|Hayleys Takeaway|3/33-37 Durgadin Dr, Albion Park Rail NSW 2527, Australia|-34.5749638|150.8164653|True|false|True|True|false
+109|199_location.json|ChIJ6ybmvwATE2sR0wAsvUCTLWA|Feast on Central|69C Central Ave, Oak Flats NSW 2529, Australia|-34.5634898|150.8188867|True|false|True|True|false
+109|199_location.json|ChIJsacuD6oTE2sRhi0unx4EFps|Oak flats take away Ofta.com.au|1/88 Central Ave, Oak Flats NSW 2529, Australia|-34.5621666|150.8191469|False|false|True|false|false
+109|199_location.json|ChIJl8vylQATE2sRF6YrqjufJWQ|Kai's Asian Take-Away|1/71 Central Ave, Oak Flats NSW 2529, Australia|-34.5634529|150.8189213|False|false|false|True|false
+109|199_location.json|ChIJ19XzNZsTE2sRPLLJue1IPtY|Batch 10 Cafe|10 Colden Dr, Albion Park Rail NSW 2527, Australia|-34.57347920000001|150.8131271|True|false|True|False|false
+109|199_location.json|ChIJ2R_hsdcTE2sRCpEZs3Bb-T8|Feast @ The Rail|3/33-37 Durgadin Dr, Albion Park Rail NSW 2527, Australia|-34.5749638|150.8164653|True|false|True|false|false
+109|199_location.json|ChIJdd4xD6oTE2sR7z2bsEJNuIk|Old with New Creations|3/88 Central Ave, Oak Flats NSW 2529, Australia|-34.562278|150.81917460000003|false|false|false|false|false
+109|199_location.json|ChIJzfLyPGsTE2sRSJRLW2oU4Vg|Unleashed Nutrition|3/33-37 Durgadin Dr, Albion Park Rail NSW 2527, Australia|-34.5749638|150.8164653|false|false|True|True|True
+115|203_location.json|ChIJsZtCbm4PE2sRjC2FD-fQHms|Smiths Ln Dairy|57 Smiths Ln, Wongawilli NSW 2530, Australia|-34.472969000000006|150.76312249999998|True|false|True|False|True
+117|205_location.json|ChIJKZ1t6ZYRE2sRgdPie0aFsdo|Dapto Citizens' Bowling Club|102-104 Fowlers Rd, Dapto NSW 2530, Australia|-34.500155299999996|150.80027099999998|false|false|false|false|false
+117|205_location.json|ChIJE9WozZ4RE2sRjoGltZyZXSs|Bayfish|Koonawarra NSW 2530, Australia|-34.5021999|150.8088368|False|false|false|false|false
+117|205_location.json|ChIJAQAAI74RE2sRggj1ZP1G7Jo|Sunny Sushi|75-87 Princes Hwy, Dapto NSW 2530, Australia|-34.4949916|150.7953475|false|false|True|True|false
+117|205_location.json|ChIJ6XNeVr4RE2sRs2xcwCsEkAo|Julio's Pizza Dapto|76 Byamee St, Dapto NSW 2530, Australia|-34.495621299999996|150.7981403|false|false|True|True|True
+117|205_location.json|ChIJT57K85URE2sRq6nMrQiAzWI|Daily Grind|Moombara St, Dapto NSW 2530, Australia|-34.4960448|150.7957054|True|false|false|false|false
+117|205_location.json|ChIJHTpdSlwRE2sRDR1Lxb3nDZM|The Cleveland Catering Co|Shop 2/89-99 Princes Hwy, Dapto NSW 2530, Australia|-34.4974857|150.795105|True|false|True|false|True
+117|205_location.json|ChIJY6_TxGcRE2sRDL1BIxHSSWs|Dapto Chicken|Dapto Mall, Moombara St, Dapto NSW 2530, Australia|-34.4945576|150.7956898|false|false|false|False|false
+120|208_location.json|ChIJ_1f77ZoTE2sRPgxMhGA2PFE|Layla'z CATERING|10 Whitewood Pl, Albion Park Rail NSW 2527, Australia|-34.5744666|150.80735930000003|false|false|false|True|false
+121|209_location.json|ChIJ_TPgv74RE2sRv9KCzrS0AMo|Pizza Hut Dapto|Shop 2/32 Princes Hwy, Dapto NSW 2530, Australia|-34.491691599999996|150.7955634|False|false|True|True|false
+121|209_location.json|ChIJCc9FaJURE2sRD7ChkdZCwx0|KFC Dapto|136-142 Princes Hwy, Dapto NSW 2530, Australia|-34.4955277|150.7927292|False|false|True|True|True
+121|209_location.json|ChIJmXmGtL8RE2sR62Pidf03of0|Ambers Cafe & Restaurant|106 Princes Hwy, Dapto NSW 2530, Australia|-34.4939451|150.7938694|True|false|True|True|True
+121|209_location.json|ChIJmR2LZpURE2sRhpH63R_qu3w|Domino's Pizza Dapto|1/130 Princes Hwy, Dapto NSW 2530, Australia|-34.4953626|150.792976|False|false|True|True|false
+121|209_location.json|ChIJtzxSu74RE2sRBnJMIKbOFPg|Thunderbird Chickens|20 Princes Hwy, Dapto NSW 2530, Australia|-34.491598599999996|150.79562819999998|True|false|True|True|True
+121|209_location.json|ChIJ-cI1CrsRE2sRkC4QCmfwx98|Ambers Cafe & Restaurant|106 Princes Hwy, Dapto NSW 2530, Australia|-34.4939724|150.79404929999998|True|false|True|True|True
+121|209_location.json|ChIJG8hP8L4RE2sRfAgZPfCUBXU|Pinocchio's Pizza Dapto|8 52/44 Princes Hwy, Dapto NSW 2530, Australia|-34.4923084|150.79494760000003|False|false|False|True|false
+121|209_location.json|ChIJq9hPXr4RE2sRk_qwaBAdlu4|Ban chiang Restaurant|Shop 1/37-39 Princes Hwy, Dapto NSW 2530, Australia|-34.4929432|150.7952838|false|false|True|True|True
+121|209_location.json|ChIJKTgv674RE2sRoG8tPZqKmtI|Chicken King|36 Princes Hwy, Dapto NSW 2530, Australia|-34.491898|150.795468|False|false|True|True|True
+121|209_location.json|ChIJFZTQwTgRE2sRNxZ2i9C0fWY|Diamond Dogs Lounge|shop 2/6/10 Princes Hwy, Dapto NSW 2530, Australia|-34.490704|150.796493|True|false|True|True|True
+121|209_location.json|ChIJj96zebARE2sRmshpPtofrIs|Hello Harry The Burger Joint (Dapto)|66 Princes Hwy, Dapto NSW 2530, Australia|-34.4930192|150.794772|True|false|True|True|True
+121|209_location.json|ChIJi2xXWVcRE2sRkTs38DooIC8|Kitchen 42|42 Princes Hwy, Dapto NSW 2530, Australia|-34.4920445|150.7954025|True|false|True|True|True
+121|209_location.json|ChIJDTYw8b4RE2sRQgMnv7DYqDY|Subway Dapto|7/44-54 Princes Hwy, Dapto NSW 2530, Australia|-34.4925097|150.79501489999998|false|false|True|True|True
+121|209_location.json|ChIJq0U8vL8RE2sRzfYXUIygwDg|Treasure Court|Bong Bong Road &, Station St, Dapto NSW 2530, Australia|-34.4931865|150.7928805|True|false|True|True|True
+121|209_location.json|ChIJg6mLV74RE2sRrSJcIDDzies|Crust Pizza Dapto|64 Princes Hwy, Dapto NSW 2530, Australia|-34.4928765|150.7947897|False|false|True|True|false
+121|209_location.json|ChIJXydplhkSE2sRMmXMoSO9F0Q|Dapto Hotel|Princes Highway &, Bong Bong Rd, Dapto NSW 2530, Australia|-34.4940794|150.7938184|false|false|false|False|True
+121|209_location.json|ChIJKTgv674RE2sRU4uFhHn3Ojw|Thanh Thanh Hotbake|2/36-38 Princes Hwy, Dapto NSW 2530, Australia|-34.491827|150.7955122|false|false|false|True|false
+121|209_location.json|ChIJNaj5LL4RE2sRGFgI0oSkTjE|The Shed Dapto|Princes Hwy, Dapto NSW 2530, Australia|-34.4946829|150.7942828|True|false|True|False|True
+121|209_location.json|ChIJ55mbT74RE2sRmKeU45DUI5A|Kam Tong Restaurant|3/51-53 Princes Hwy, Dapto NSW 2530, Australia|-34.4936153|150.7948369|True|false|True|True|True
+121|209_location.json|ChIJG64x3LcRE2sRA5deVoI2Lzc|KRISP|2/70 Prince Edward Dr, Dapto NSW 2530, Australia|-34.4886899|150.7984434|false|false|false|false|false
+123|210_location.json|ChIJN2eB-DYRE2sRS000jPRnbMg|Two Nine Five|84 Bong Bong Rd, Horsley NSW 2530, Australia|-34.490614|150.778244|True|false|True|False|True
+123|210_location.json|ChIJ92c8rb4RE2sRT_EYbY2q0zU|Mays Restaurant|4/84 Bong Bong Rd Horsley, Dapto NSW 2530, Australia|-34.4906782|150.7784696|True|false|True|True|True
+123|210_location.json|ChIJw9_5SuIPE2sRmK1L8nxQprg|Plant Room Cafe|116 Shone Ave, Horsley NSW 2530, Australia|-34.488700099999996|150.7662417|True|false|True|false|false
+124|211_location.json|ChIJw9_5SuIPE2sRmK1L8nxQprg|Plant Room Cafe|116 Shone Ave, Horsley NSW 2530, Australia|-34.488700099999996|150.7662417|True|false|True|false|false
+126|213_location.json|ChIJYSZ4MWkSE2sRAPntprLknyo|Hungry Jack's Burgers Haywards Bay|10 Macquarie Pl, Haywards Bay NSW 2530, Australia|-34.54049|150.78553359999998|True|false|True|True|True
+126|213_location.json|ChIJlTX9dmsSE2sRt1SmeAa5gvQ|Woolshed Kitchen by Fine Spun|601 Princes Hwy, Yallah NSW 2530, Australia|-34.5357968|150.7864429|True|false|True|False|True
+126|213_location.json|ChIJ4U06_VcTE2sR0P5V4keUYEE|Go Kids Play|1-4/24 Rivulet Cres, Albion Park Rail NSW 2527, Australia|-34.5473733|150.7891606|false|false|True|false|false
+126|213_location.json|ChIJk5K_Km8SE2sRRzuvNpA-Zcc|Hunger Buster|6 Macquarie Pl, Haywards Bay NSW 2530, Australia|-34.5409783|150.7852495|True|false|True|True|True
+126|213_location.json|ChIJVVWVc2sSE2sRCOXTaF8sZnQ|Fine Spun Group|601 Princes Hwy, Yallah NSW 2530, Australia|-34.5358462|150.786538|false|false|false|false|false
+126|213_location.json|ChIJk6IjRAATE2sRabrlyjwPyNY|Jimmy’s Burger Truck|6 Macquarie Pl, Haywards Bay NSW 2530, Australia|-34.5408873|150.7853206|false|false|false|false|false
+127|214_location.json|ChIJseyaJrdZkWsRIrM7PcTGIQA|McDonald's Albion Park Rail|251 Princes Hwy, Albion Park NSW 2527, Australia|-34.567226999999995|150.803021|True|false|True|True|True
+127|214_location.json|ChIJBRXt8fQSE2sR029NLuyWJ_8|7-Eleven|138 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.5589467|150.79361409999999|false|false|false|false|false
+127|214_location.json|ChIJ5_yXC_QSE2sRH_UGKfg7U2w|C1 Speed Indoor Karting & Laser Tag|176-178 Princes Highway, Enter via, Hargraves Ave, Albion Park Rail NSW 2527, Australia|-34.5616316|150.79563|false|false|True|false|false
+127|214_location.json|ChIJLbl8G7oZE2sR1g4mx6j1QSE|SmashLAB Rage Room|176-178 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.5616316|150.79563|false|false|false|false|false
+127|214_location.json|ChIJ67clu_oSE2sRy5-mJM0i5Ws|Sams Kebab|253 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.567592499999996|150.8033855|False|false|True|True|false
+127|214_location.json|ChIJpRtrpPoSE2sRRefj5KM77Qg|Enhance Albion Park Rail|253 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.56769630000001|150.8032677|false|false|false|false|false
+127|214_location.json|ChIJ5day7eYTE2sR5ZJLidsHmhk|NPG Urbanista Cafe & Convenience|172-174 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.5611487|150.7956363|false|false|false|false|false
+127|214_location.json|ChIJA3k7VfESE2sRTwmWjDCwFyw|The Golden Loy|193 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.561963|150.79698900000002|True|false|True|True|True
+127|214_location.json|ChIJA3k7VfESE2sR7lGrE4gjJU4|Leong Ho Cafe|5/179 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.561068399999996|150.79627499999998|false|false|True|True|True
+127|214_location.json|ChIJYXv2AwMTE2sRlCokXfocIvg|Bean Roasted Espresso Bar Albion Park Rail|158 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.560117999999996|150.7946891|True|false|false|False|false
+127|214_location.json|ChIJ98l0YkITE2sRQFOOFdszWoo|Sams Kebab|Warrigal Care, 2 Pine St, Albion Park Rail NSW 2527, Australia|-34.5719579|150.7998992|false|false|True|false|True
+127|214_location.json|ChIJdduwpycTE2sRBeNMT6Pu00c|OffTheRailsNutrition|Shop 3/10 Ash Ave, Albion Park Rail NSW 2527, Australia|-34.5710625|150.800785|false|false|false|False|false
+127|214_location.json|ChIJQzrYaZATE2sRL7t2pbiym80|Cove Café|Shellharbour Airport, Airport Rd, Albion Park Rail NSW 2527, Australia|-34.5602685|150.7903443|True|false|True|True|True
+127|214_location.json|ChIJUzRVsYwSE2sROau_d_sZyos|Cafe Connie|58 Airport Rd, Yellow Rock Ridge NSW 2527, Australia|-34.5612441|150.7905504|True|false|True|false|True
+128|215_location.json|ChIJE9FgYUwTE2sRxV_sRlqrSr0|Zeuses Souvla|Shop 1/132 Burdekin Dr, Albion Park NSW 2527, Australia|-34.58827430000001|150.78607309999998|false|false|True|True|false
+129|216_location.json|ChIJQ4CHspQRE2sRwf_el_19JVs|7-Eleven|125 Princes Hwy &, Fowles Rd, Dapto NSW 2530, Australia|-34.49874|150.7914059|false|false|false|false|false
+129|216_location.json|ChIJedPmIZURE2sR1SB4awCREmM|Fresh Cut Kebab Van Dapto|192-194 Princes Hwy, Dapto NSW 2530, Australia|-34.4985765|150.7906475|False|false|false|false|false
+129|216_location.json|ChIJc82mzuoRE2sRei3qsMB-hGc|Backstreet Cafe & Catering|17/20 Marshall St, Dapto NSW 2530, Australia|-34.4958273|150.79083029999998|True|false|True|True|True
+132|219_location.json|ChIJP7OCJ7ETE2sRMRg8dF-cO10|Taco Bell Albion Park Rail|Shop 3/61 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.5530459|150.7895033|False|false|True|True|True
+132|219_location.json|ChIJu_mEQWASE2sRW6tpwKZ5z5Q|Oporto Albion Park Drive Thru|59 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.5527446|150.789119|True|false|True|True|True
+132|219_location.json|ChIJ4U06_VcTE2sR0P5V4keUYEE|Go Kids Play|1-4/24 Rivulet Cres, Albion Park Rail NSW 2527, Australia|-34.5473733|150.7891606|false|false|True|false|false
+132|219_location.json|ChIJ33IWJgATE2sRQRVk_jogMNE|El Jannah Charcoal Chicken Albion Park|104 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.55706180000001|150.791452|false|false|True|True|false
+132|219_location.json|ChIJY3yIAmASE2sRmI_5Cm_3Y68|bp Truckstop|83 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.554497999999995|150.79058799999999|false|false|false|false|false
+132|219_location.json|ChIJ08H1D2ASE2sRuCEaVIec3jc|Sneaky Burger Albion Park|83 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.554555|150.790573|False|false|True|True|True
+132|219_location.json|ChIJ1yezbaQTE2sRRmT5GPonT24|Subway|Unit 1/61 Princes Hwy, Albion Park Rail NSW 2527, Australia|-34.5530421|150.7894861|True|false|True|false|True
+132|219_location.json|ChIJ0ZxsD3gTE2sRAaCAX8tRRpo|La Riviera Cafe|6 Rivulet Cres, Albion Park Rail NSW 2527, Australia|-34.548422099999996|150.7868786|True|false|True|True|True
+132|219_location.json|ChIJCUjft2YSE2sRhqtVxO8_1-4|Rivulet Takeaway|1/6 Rivulet Cres, Albion Park Rail NSW 2527, Australia|-34.5484216|150.786905|True|false|True|True|false
+132|219_location.json|ChIJVZ9rUWASE2sRDj8Nh8hGzHs|Amf|Albion Park Rail NSW 2527, Australia|-34.5524163|150.7887049|True|false|True|false|True
+132|219_location.json|ChIJh5OdEQATE2sRCa44eOBkyKw|Taco Bell|Shop 3/61 Princes Hwy, Albion Park NSW 2527, Australia|-34.5530459|150.7895033|false|false|false|false|false
+132|219_location.json|ChIJQzrYaZATE2sRL7t2pbiym80|Cove Café|Shellharbour Airport, Airport Rd, Albion Park Rail NSW 2527, Australia|-34.5602685|150.7903443|True|false|True|True|True
+134|220_location.json|ChIJWTnM_qQSE2sRREy62tMeKIs|Three Flamingos Espresso|136 Terry St, Albion Park NSW 2527, Australia|-34.5789822|150.77700149999998|True|false|True|True|True
+134|220_location.json|ChIJvz3c_aQSE2sRFX9EwTImjN8|Pinocchio's Pizza Albion Park|148 Terry St, Albion Park NSW 2527, Australia|-34.5792466|150.7770329|False|false|True|True|false
+134|220_location.json|ChIJPasx_aQSE2sR6XdqezKbK00|Terry Street Take Away|1/156 Terry St, Albion Park NSW 2527, Australia|-34.579455599999996|150.7772929|False|false|True|False|false
+134|220_location.json|ChIJU9Sh-30TE2sRAAwrMVB8rSs|Taste of Thai Cuisine|156 Terry St, Albion Park NSW 2527, Australia|-34.5794207|150.7772522|false|false|True|True|True
+134|220_location.json|ChIJE9FgYUwTE2sRxV_sRlqrSr0|Zeuses Souvla|Shop 1/132 Burdekin Dr, Albion Park NSW 2527, Australia|-34.58827430000001|150.78607309999998|false|false|True|True|false
+138|224_location.json|ChIJ94cpBqISE2sRLL9zTaGdpW0|KFC Albion Park 2|145-147 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5710657|150.77433019999998|False|false|True|True|True
+138|224_location.json|ChIJnzGQSJ4TE2sRIDymY0o1nhk|McDonald’s Albion Park|135/139 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5708536|150.77544989999998|True|false|True|false|True
+138|224_location.json|ChIJoblk4oMUE2sRSEKNu9sFEeE|Albion Park Hotel|Cnr Tongarra &, Terry St, Albion Park NSW 2527, Australia|-34.5710754|150.7748107|false|false|True|false|false
+138|224_location.json|ChIJUX2tspkSE2sRSUQW4M3TO4M|Albion Park RSL|160 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5701347|150.7707814|false|false|false|false|false
+138|224_location.json|ChIJSWygAqISE2sRv4wtMYcREPA|Joe's Milkbar|Shop 11, Albion Park Shopping VIllage, Entrance to carpark on Russel St, Albion Park NSW 2527, Australia|-34.572317999999996|150.774752|True|false|True|True|True
+138|224_location.json|ChIJuX-IvusTE2sRvAzZMBi8ScI|Yummy Thai Cuisine|3/150 Tongarra Rd, Albion Park NSW 2527, Australia|-34.570672|150.773146|false|false|True|True|True
+138|224_location.json|ChIJaQTrvV0TE2sRhE2SG1sJl2k|Zambrero Albion Park|Shop 3, Albion Park Shopping Village, Albion Park NSW 2527, Australia|-34.5720215|150.774139|False|false|True|True|True
+138|224_location.json|ChIJO3-tUJ8SE2sRXoU2ICAG-JE|Domino's Pizza Albion Park|shop 1/150 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5707169|150.7731824|False|false|True|True|false
+138|224_location.json|ChIJd9mJWJ8SE2sR_c24I5ox1E0|Tongarra Chicken Kebab and Pizza Shop|154 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5707185|150.7728778|True|false|True|True|True
+138|224_location.json|ChIJp7gfaqATE2sRtLhUYR_z578|Moon Fresh Sushi|2/171 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5712|150.77287809999999|False|false|True|false|false
+138|224_location.json|ChIJ-eEGo5gSE2sRtaiM51N2YPM|Subway|10 Terry St, Albion Park NSW 2527, Australia|-34.5724513|150.7745428|false|false|True|True|True
+138|224_location.json|ChIJzWO_BqISE2sRMJ9AyjykbaQ|Delicious Delights|3/149 Tongarra Rd, Albion Park NSW 2527, Australia|-34.571025299999995|150.7741135|True|false|True|False|True
+138|224_location.json|ChIJA3V4WtgTE2sRhZc97w3hxsE|Nonno’s Olive Tree Cafe’|Shop 8/60 Terry St, Albion Park NSW 2527, Australia|-34.572474899999996|150.7744683|True|false|True|False|false
+138|224_location.json|ChIJ_yU-WqINE2sRl2XHG_f8LeM|Marley Janes|1/220 Tongarra Rd, Albion Park NSW 2527, Australia|-34.571304999999995|150.765493|True|false|True|False|True
+138|224_location.json|ChIJh6EMlpgSE2sRbXVAaQaEg88|Golden Century|134 Tongarra Rd, Albion Park NSW 2527, Australia|-34.570578|150.77525599999998|false|false|True|True|True
+138|224_location.json|ChIJSWygAqISE2sROXrGiUWgGKo|Niu's Kitchen|157 Tongarra Rd, Albion Park NSW 2527, Australia|-34.5710978|150.7736376|false|false|false|True|false
+138|224_location.json|ChIJq6o6p5gSE2sRhYF0widyAGw|Keah's Kitchen|143 Tongarra Rd, Albion Park NSW 2527, Australia|-34.570952399999996|150.774838|True|false|True|True|True
+141|227_location.json|ChIJFTXwmioNE2sRIwIJb6DN4Bk|Calderwood tavern|Calderwood NSW 2527, Australia|-34.557670200000004|150.7556348|True|false|false|false|True
+142|228_location.json|ChIJZa_ExlsNE2sRFWq0pcK2zWY|Blue Jay Cafe|Shop 1/7 Sophia St, Albion Park NSW 2527, Australia|-34.5740282|150.7610645|True|false|True|False|True
+142|228_location.json|ChIJM1oz93sNE2sR1C2uLYVMO10|Il Lago Pizzeria|3/7 Sophia St, Albion Park NSW 2527, Australia|-34.5741606|150.7609529|false|false|True|True|True
+142|228_location.json|ChIJm8PBO2wNE2sRHNq3j8zN_2s|Park Fish & Chips|Sophia St, Albion Park NSW 2527, Australia|-34.5741797|150.7609042|false|false|false|false|false
+145|230_location.json|ChIJuU3dDEYNE2sR0kb6gXqI4d4|Bean Roasted Espresso Bar Calderwood|Escarpment Dr, Calderwood NSW 2527, Australia|-34.573367999999995|150.7498474|True|false|True|False|True
+148|24_location.json|ChIJMdur09wfE2sRSRYiN8EtCd8|Thirroul Beach Pavilion|23 Cliff Parade, Thirroul NSW 2515, Australia|-34.316429899999996|150.9273991|True|false|True|False|True
+148|24_location.json|ChIJOSvEYNwfE2sRIhfkUFn3QjA|South Sailor|216-218 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3135171|150.9262997|False|false|True|False|True
+148|24_location.json|ChIJJfxPTx7gEmsRRGWBZFu4sYI|Austi Beach Cafe|104 Lawrence Hargrave Dr, Austinmer NSW 2515, Australia|-34.306629199999996|150.9342499|True|false|True|False|True
+148|24_location.json|ChIJj3r3_h_gEmsR0K3ZMo3ZnkQ|Moore Street General|38 Moore St, Austinmer NSW 2515, Australia|-34.3071846|150.930964|True|false|True|False|True
+148|24_location.json|ChIJJb7X0d0fE2sRBakmqGyOlWw|Bread, Espresso & THIRROUL|190 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.312364599999995|150.9282931|True|false|True|False|false
+148|24_location.json|ChIJXT4NDbwfE2sRcpAuWzG8BmM|Bóveda|258 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3145333|150.9234847|False|false|False|false|True
+148|24_location.json|ChIJ4yuOMKEfE2sRodNIDA4RH70|Sukkho Thai Restaurant Thirroul|1/264-270 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3148017|150.92308699999998|false|false|True|True|True
+148|24_location.json|ChIJv0f8SB7gEmsRQZVDv25PTf8|Shells Austinmer|106 Lawrence Hargrave Dr, Austinmer NSW 2515, Australia|-34.3066925|150.9341232|True|false|True|False|True
+148|24_location.json|ChIJUfXQiyRtE2sRh53bAQM71sI|Bar Padres Pasta|260 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3146871|150.92340339999998|false|false|True|False|True
+148|24_location.json|ChIJZRgovi8fE2sRhcXGFFbxtqg|The Old South|303-307 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3156652|150.922279|True|false|True|False|True
+148|24_location.json|ChIJzxzAR9sfE2sRyzJ8lfoU4EA|Crust Pizza Thirroul|6/271-273 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.314881|150.923692|False|false|True|True|false
+148|24_location.json|ChIJjwkSzsQfE2sR0h4p9ybDq18|The Old Siam Restaurant|shop 6/291 - 301 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3155153|150.9226291|false|false|True|True|True
+148|24_location.json|ChIJ2U-ST9sfE2sReMvJoBaT0B4|Finbox Boardstore|1/269 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.314799199999996|150.9240573|false|false|false|False|false
+148|24_location.json|ChIJIw1DNNsfE2sRXY08jiKi2K8|SUBWAY Thirroul|285 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3151636|150.9230163|False|false|True|True|True
+148|24_location.json|ChIJDeOfVDMfE2sRQNGd4GrvzwU|Blackbird Thirroul|Shop 3/2 McCauley St, Thirroul NSW 2515, Australia|-34.3157552|150.9228478|True|false|True|False|false
+148|24_location.json|ChIJsfATzsQfE2sRjA1jSfLdGek|Honest Dons|2a McCauley St, Thirroul NSW 2515, Australia|-34.3157754|150.9229465|True|false|True|False|True
+148|24_location.json|ChIJE6GqgMIfE2sRBUHDOSXh91c|Madam Choi|5/291-301 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.315445499999996|150.92256369999998|True|false|True|True|True
+148|24_location.json|ChIJDWKGjNwfE2sRBj3H9Xmuqtk|Jose Jones Restaurant & Bar|222-226 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3140068|150.92613219999998|True|false|false|False|True
+148|24_location.json|ChIJAWtZ1sQfE2sRaFBwkke9x7M|Coastal Thai ( Location at Thirroul)|305 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3157198|150.9222647|false|false|True|True|True
+148|24_location.json|ChIJT17gnlcfE2sRegDen_FeSfg|Ciro's Pizza|1 Raymond Rd, Thirroul NSW 2515, Australia|-34.315863799999995|150.9223359|false|false|True|false|True
+149|25_location.json|ChIJ_f84CE4eE2sRuauyEFdVDVk|Panorama House|811 Princes Hwy, Maddens Plains NSW 2508, Australia|-34.3031483|150.9098398|false|false|false|false|false
+149|25_location.json|ChIJ_f84CE4eE2sRex1f-EhCOcE|Southern Gateway Centre|Mount Ousley Rd, Bulli NSW 2516, Australia|-34.3090173|150.90280389999998|false|false|True|false|false
+149|25_location.json|ChIJTSU8vy0eE2sRhkT95LH4aDI|Altitude 1148 Dining|Southern Gateway Centre, Princes Hwy, Bulli NSW 2516, Australia|-34.3090595|150.9027338|True|false|True|False|True
+149|25_location.json|ChIJR_YRFs8fE2sRWA96ybAPjmI|The Hungry Monkey|Shop 3/369 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3177192|150.9172317|True|false|True|True|True
+149|25_location.json|ChIJVVWpEs8fE2sRuKw_BPzpvdw|Black Market Coffee Thirroul|Shop 2&3, 368-370 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173861|150.9175694|True|false|True|False|True
+149|25_location.json|ChIJVWhD3pXdEmsRN2sdu68jAPY|Franco Pizza Bar|shop 1/382-384 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173029|150.9170687|True|false|True|False|True
+149|25_location.json|ChIJLx8trSofE2sRlarGniZKB24|JIN'S PLACE|2/374 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173886|150.91749529999998|false|false|True|False|True
+149|25_location.json|ChIJeX8cFs8fE2sRncxcVktgjis|Toro Sushiya|1/369 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3178656|150.91702229999999|False|false|True|false|True
+149|25_location.json|ChIJZRgovi8fE2sRhcXGFFbxtqg|The Old South|303-307 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3156652|150.922279|True|false|True|False|True
+149|25_location.json|ChIJL6kSM20fE2sRNdIGdBbADZ4|Shahi Aroma Indian Cuisine|382 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173119|150.91715499999998|false|false|True|True|True
+149|25_location.json|ChIJvce_IMUfE2sRR2hM-xziIpM|Franks Wild Years|3/2 Raymond Rd, Thirroul NSW 2515, Australia|-34.31621|150.921925|false|false|false|False|false
+149|25_location.json|ChIJAWtZ1sQfE2sRaFBwkke9x7M|Coastal Thai ( Location at Thirroul)|305 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3157198|150.9222647|false|false|True|True|True
+149|25_location.json|ChIJXcPEDM8fE2sRr3Fed8QuECg|Two Mountains Merchant|364 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3172482|150.9179058|True|false|True|False|True
+149|25_location.json|ChIJIys1bM8fE2sR6ajn-cmnwv4|Cucina|353 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3175811|150.9178569|True|false|True|false|True
+149|25_location.json|ChIJZ_OnKsUfE2sR20-BbsLpP9M|Thirroul Kebabs|Thirroul Plaza, shop 6/282 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.315498999999996|150.9219474|True|false|True|True|false
+149|25_location.json|ChIJj4IFe88fE2sRZPVj_zExHaI|Martin Place Cafe and book lounge|3/345 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3174934|150.91856380000002|True|false|false|False|True
+149|25_location.json|ChIJicQaas8fE2sRMBT5aBTCdQM|Seafoam Cafe|6 Railway Parade, Thirroul NSW 2515, Australia|-34.3179265|150.9179705|True|false|True|False|false
+149|25_location.json|ChIJI9xoG88fE2sRUwHyBfVheQQ|Vinos Wine Bar & Trattoria|Lvl 1/138 Phillip St, Thirroul NSW 2515, Australia|-34.317071399999996|150.9166131|False|false|True|True|True
+149|25_location.json|ChIJJznOMNsfE2sRSAlBSFNUfiQ|Noel & Gladys|Shop 3/374 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3172324|150.91739529999998|false|false|false|False|false
+149|25_location.json|ChIJI9xoG88fE2sRRD5Ejlf8aac|Thai Chill Out The Ryan's Hotel|138 Phillip St, Thirroul NSW 2515, Australia|-34.3170916|150.9168699|false|false|True|True|True
+150|26_location.json|ChIJ_f84CE4eE2sRex1f-EhCOcE|Southern Gateway Centre|Mount Ousley Rd, Bulli NSW 2516, Australia|-34.3090173|150.90280389999998|false|false|True|false|false
+150|26_location.json|ChIJTSU8vy0eE2sRhkT95LH4aDI|Altitude 1148 Dining|Southern Gateway Centre, Princes Hwy, Bulli NSW 2516, Australia|-34.3090595|150.9027338|True|false|True|False|True
+154|2_location.json|ChIJ_f84CE4eE2sRuauyEFdVDVk|Panorama House|811 Princes Hwy, Maddens Plains NSW 2508, Australia|-34.3031483|150.9098398|false|false|false|false|false
+159|34_location.json|ChIJo2EIh6MfE2sRnhht2ZyhMzM|Bulli Beach Cafe|68 Trinity Row, Bulli NSW 2516, Australia|-34.3394292|150.9255175|True|false|True|False|True
+159|34_location.json|ChIJrwJIOaQfE2sRs0qXmZlHWm8|Ruby's Cafe Bulli|1 Farrell Rd, Bulli NSW 2516, Australia|-34.3409139|150.9236027|True|false|True|False|True
+170|44_location.json|ChIJR_YRFs8fE2sRWA96ybAPjmI|The Hungry Monkey|Shop 3/369 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3177192|150.9172317|True|false|True|True|True
+170|44_location.json|ChIJVVWpEs8fE2sRuKw_BPzpvdw|Black Market Coffee Thirroul|Shop 2&3, 368-370 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173861|150.9175694|True|false|True|False|True
+170|44_location.json|ChIJVWhD3pXdEmsRN2sdu68jAPY|Franco Pizza Bar|shop 1/382-384 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173029|150.9170687|True|false|True|False|True
+170|44_location.json|ChIJLx8trSofE2sRlarGniZKB24|JIN'S PLACE|2/374 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173886|150.91749529999998|false|false|True|False|True
+170|44_location.json|ChIJeX8cFs8fE2sRncxcVktgjis|Toro Sushiya|1/369 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3178656|150.91702229999999|False|false|True|false|True
+170|44_location.json|ChIJgba5rr4fE2sR17QTS1hn8g8|The Point Cafe Bulli|40A Point St, Bulli NSW 2516, Australia|-34.330182199999996|150.92338479999998|True|false|True|False|True
+170|44_location.json|ChIJL6kSM20fE2sRNdIGdBbADZ4|Shahi Aroma Indian Cuisine|382 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3173119|150.91715499999998|false|false|True|True|True
+170|44_location.json|ChIJvce_IMUfE2sRR2hM-xziIpM|Franks Wild Years|3/2 Raymond Rd, Thirroul NSW 2515, Australia|-34.31621|150.921925|false|false|false|False|false
+170|44_location.json|ChIJXcPEDM8fE2sRr3Fed8QuECg|Two Mountains Merchant|364 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3172482|150.9179058|True|false|True|False|True
+170|44_location.json|ChIJT17gnlcfE2sRegDen_FeSfg|Ciro's Pizza|1 Raymond Rd, Thirroul NSW 2515, Australia|-34.315863799999995|150.9223359|false|false|True|false|True
+170|44_location.json|ChIJIys1bM8fE2sR6ajn-cmnwv4|Cucina|353 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3175811|150.9178569|True|false|True|false|True
+170|44_location.json|ChIJj4IFe88fE2sRZPVj_zExHaI|Martin Place Cafe and book lounge|3/345 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3174934|150.91856380000002|True|false|false|False|True
+170|44_location.json|ChIJicQaas8fE2sRMBT5aBTCdQM|Seafoam Cafe|6 Railway Parade, Thirroul NSW 2515, Australia|-34.3179265|150.9179705|True|false|True|False|false
+170|44_location.json|ChIJI9xoG88fE2sRUwHyBfVheQQ|Vinos Wine Bar & Trattoria|Lvl 1/138 Phillip St, Thirroul NSW 2515, Australia|-34.317071399999996|150.9166131|False|false|True|True|True
+170|44_location.json|ChIJJznOMNsfE2sRSAlBSFNUfiQ|Noel & Gladys|Shop 3/374 Lawrence Hargrave Dr, Thirroul NSW 2515, Australia|-34.3172324|150.91739529999998|false|false|false|False|false
+170|44_location.json|ChIJI9xoG88fE2sRRD5Ejlf8aac|Thai Chill Out The Ryan's Hotel|138 Phillip St, Thirroul NSW 2515, Australia|-34.3170916|150.9168699|false|false|True|True|True
+170|44_location.json|ChIJ8xbSZ7kfE2sRcJ45qFwgQr0|Point Break Takeaway|40B Point St, Bulli NSW 2516, Australia|-34.3302285|150.9233219|false|false|false|false|false
+171|45_location.json|ChIJJRf6OX4fE2sRH6358kuz2HQ|Nani's Food Truck|73princes highway, Thirroul NSW 2515, Australia|-34.321205400000004|150.9092417|false|false|True|False|True
+181|54_location.json|ChIJjTCu_gUfE2sR6vEU-jcsUGA|North Break Cafe|Unit 1/1 Park Rd, Woonona NSW 2517, Australia|-34.3501104|150.91880419999998|True|false|True|False|True
+181|54_location.json|ChIJfwFcHwQfE2sR3abk096Btrs|Woonona Beach Shop|22 Park Rd, Woonona NSW 2517, Australia|-34.349157|150.9148|False|false|True|False|false
+181|54_location.json|ChIJ10MZRaAfE2sR4adjGzIDkTk|The Station Cafe and Takeaway|1 Park Rd, Woonona NSW 2517, Australia|-34.3492871|150.91396319999998|false|false|True|False|false
+182|55_location.json|ChIJFUcbLSkfE2sRZ_7iCzXp87c|Franks 'n Beans|1/15 Murray Rd, East Corrimal NSW 2518, Australia|-34.3769631|150.91312729999999|True|false|True|False|True
+182|55_location.json|ChIJ24w6YdgfE2sRO52ZxkqdPLg|Saltie Dog - Coffee & Crêpes|29 Birch Cres, East Corrimal NSW 2518, Australia|-34.3742101|150.91894|True|false|True|False|false
+182|55_location.json|ChIJpabVxVsfE2sR1EVmvCiK5lw|The Pantry @ Corrimal|4 Lake Parade, East Corrimal NSW 2518, Australia|-34.381138799999995|150.91544589999998|True|false|True|True|True
+186|59_location.json|ChIJ034LLpQXE2sRo2BXsdXmwr8|Cakes by Rach Cafe|190 Military Rd, Port Kembla NSW 2505, Australia|-34.489097199999996|150.9118954|True|false|True|False|True
+192|64_location.json|ChIJET6hSVUeE2sR4tPPiJsPySU|McDonald's Woonona|370-372 Princes Hwy, Woonona NSW 2517, Australia|-34.34039|150.90656199999998|True|false|True|True|True
+192|64_location.json|ChIJLWycaAsfE2sR2stLJawlzpg|Resin Brewing|8 Station St, Bulli NSW 2516, Australia|-34.335138|150.9139035|false|false|false|False|false
+192|64_location.json|ChIJ16n5jv8eE2sRXm9mjTHGqm0|bp Woonona|426 Princes Hwy, Woonona NSW 2517, Australia|-34.3419095|150.9054761|false|false|false|false|false
+192|64_location.json|ChIJ3-93cHAfE2sREKE1R5oPenQ|Two Sisters Garage|233 Princes Hwy, Bulli NSW 2516, Australia|-34.3333831|150.9135201|True|false|True|False|True
+192|64_location.json|ChIJOaCjrOAfE2sRfD4CJcd93n0|Samaras Restaurant Woonona|417 Princes Hwy, Woonona NSW 2517, Australia|-34.3425965|150.9052987|True|false|True|True|True
+192|64_location.json|ChIJf12YurMfE2sRiLxRKcdm92c|The Fitz Cafe & Bar|251 Princes Hwy, Bulli NSW 2516, Australia|-34.334447|150.913523|True|false|True|False|True
+192|64_location.json|ChIJNx7hmf8eE2sRrIOTxM7TArI|Domino's Pizza Woonona|413-415 Princes Highway (Cnr, Campbell St, Woonona NSW 2517, Australia|-34.3423022|150.90562989999998|False|false|True|True|false
+192|64_location.json|ChIJ6Unp6DUfE2sRrD127leAl9I|NEPTUNES BULLI|Shop 2/323 Princes Hwy, Bulli NSW 2517, Australia|-34.338600299999996|150.9096716|false|false|True|False|false
+192|64_location.json|ChIJX5-KYFUeE2sRcuiDWkionaM|Moon Sushi|392 Princes Hwy, Woonona NSW 2517, Australia|-34.3413706|150.90622829999998|False|false|True|True|True
+192|64_location.json|ChIJR25vE4YfE2sRuawOVDwhDIw|Chimichangas|323 Princes Hwy, Bulli NSW 2517, Australia|-34.3385398|150.9097434|True|false|True|True|True
+192|64_location.json|ChIJM11eg_8eE2sRK80CfXed8tc|Woonona Pizza Kitchen|20-22 Ball St, Woonona NSW 2517, Australia|-34.3419154|150.9051551|True|false|True|True|True
+192|64_location.json|ChIJVScGkv8eE2sRmpVV0s-p0Q0|Pai Tong Thai Restaurant|5/409-411 Princes Hwy, Woonona NSW 2517, Australia|-34.3421282|150.90573659999998|True|false|True|True|True
+192|64_location.json|ChIJq_fCM1UeE2sRqOKpA-lk6mg|Emerald Chinese Restaurant|366 Princes Hwy, Woonona NSW 2517, Australia|-34.340255|150.907154|False|false|True|True|True
+192|64_location.json|ChIJMc0T_a0fE2sRN3D-7pR4s9M|Stokes Lane Cafe|238 Princes Hwy, Bulli NSW 2516, Australia|-34.3337736|150.913038|True|false|True|False|True
+192|64_location.json|ChIJpYuxb7sfE2sR9EyeXNLNTuA|Big Birdz|1/2 Russell St, Woonona NSW 2517, Australia|-34.3412383|150.9072301|false|false|True|False|false
+192|64_location.json|ChIJral7A7sfE2sRUktrtKjbEsM|Woonona Kebab House|426 Princes Hwy, Woonona NSW 2517, Australia|-34.3417573|150.9057207|false|false|false|True|false
+192|64_location.json|ChIJM4Q7SlUeE2sRbcwOrWJqk4E|Blue River Chinese Restaurant|365 Princes Hwy, Woonona NSW 2517, Australia|-34.340678|150.907159|false|false|True|True|True
+192|64_location.json|ChIJz8uBfBwfE2sRNkr6VEol1Pk|Duck in Heaven|359 Princes Hwy, Woonona NSW 2517, Australia|-34.3403764|150.9075326|True|false|True|False|True
+192|64_location.json|ChIJxy6bkf8eE2sRqHjZEa7tUMM|Four Little Beans|2/411 Princes Hwy, Woonona NSW 2517, Australia|-34.3420401|150.90581229999998|True|false|True|False|True
+192|64_location.json|ChIJeRdtWVUeE2sRNwUFSW89JRQ|Buddy Thai Restaurant|383-387 Princes Hwy, Woonona NSW 2517, Australia|-34.341569|150.906678|false|false|True|True|True
+202|73_location.json|ChIJ72ft4sofE2sRgf_8Yvo2Mik|GF Eats|203 Rothery St, Bellambi NSW 2518, Australia|-34.3683988|150.9112137|True|false|True|False|True
+202|73_location.json|ChIJYyRc6xcfE2sRfZYDG5hrhMA|Olive's|Morgan Pl, Bellambi NSW 2518, Australia|-34.364159199999996|150.9201541|True|false|True|False|True
+202|73_location.json|ChIJk4xxICEfE2sRDC3MVpXwXhk|Kotez Chickens and Takeaway|1 Eastbourne Ave, Bellambi NSW 2518, Australia|-34.366854499999995|150.91046939999998|False|false|True|True|false
+202|73_location.json|ChIJkc4lhh8fE2sRK-vaQ3GldEM|Bellambi Lane Cafe|Unit 1/1 Brompton Rd, Bellambi NSW 2518, Australia|-34.3625926|150.9096377|True|false|True|False|True
+202|73_location.json|ChIJ89x0jIcfE2sRcl8-Jf5_tck|Bellambi Kebabs|209 Rothery St, Bellambi NSW 2518, Australia|-34.3682619|150.9099497|false|false|True|True|false
+203|74_location.json|ChIJSQl8hSoZE2sRAP9fg6B830Q|Towradgi Beach Hotel|170 Pioneer Rd, Towradgi NSW 2518, Australia|-34.3890987|150.90467089999999|false|false|false|False|True
+203|74_location.json|ChIJoxbCYioZE2sR4307j6myrXQ|7-Eleven|162-166 Pioneer Rd, Towradgi NSW 2518, Australia|-34.3841672|150.9065387|false|false|false|false|false
+203|74_location.json|ChIJ1y9TuEUZE2sRFvk3qy_b6iM|Towradgi Beach Eatery by 10orio kitchen|Towradgi SLSC Building , Murranar Road corner, Marine Parade, Towradgi NSW 2518, Australia|-34.3869651|150.9115793|True|false|True|False|True
+203|74_location.json|ChIJnbZW9dcZE2sRF9tIZK4qXbo|Three Chefs Eatery|2A Towradgi Rd, Towradgi NSW 2518, Australia|-34.3852757|150.9133334|True|false|True|False|True
+204|75_location.json|ChIJi0TsfQQZE2sRfux3aa5nfEo|Diggies Cafe|1 Cliff Rd, North Wollongong NSW 2500, Australia|-34.4141052|150.9012295|True|false|True|False|True
+204|75_location.json|ChIJ70MbYwAZE2sRHtzF1K2uxXE|Levendi|81 Cliff Rd, Wollongong NSW 2500, Australia|-34.42169390000001|150.90478249999998|false|false|false|True|false
+204|75_location.json|ChIJkwQnn6oZE2sRkQuQcdqbWUQ|Steamers Bar and Grill|1 Marine Dr, Wollongong NSW 2500, Australia|-34.4228635|150.9060503|True|false|True|False|True
+204|75_location.json|ChIJXXj3FQAZE2sRAMQYb-56Qlo|Harbourfront Seafood Restaurant|2 Endeavour Dr, Wollongong NSW 2500, Australia|-34.421652|150.9063367|True|false|False|False|True
+204|75_location.json|ChIJF06JaWUZE2sRaSycbxjYeU8|North Beach Pavilion|5 Cliff Rd, North Wollongong NSW 2500, Australia|-34.415197|150.901291|True|false|True|False|True
+204|75_location.json|ChIJT_V3ROqzEmsR2azqsk5rDxQ|Bombora Seafood Cafe/Restaurant|2 Endeavour Dr, Wollongong NSW 2500, Australia|-34.421759400000006|150.9066326|True|false|True|False|True
+204|75_location.json|ChIJR3Ow2mMZE2sRCUo3R_cp5-U|Longboard Cafe|2/1 Marine Dr, Wollongong NSW 2500, Australia|-34.423436599999995|150.9057709|True|false|True|False|True
+204|75_location.json|ChIJ1SLTEgQZE2sROyrXljUA_k4|Lucia's By The Sea|16 Cliff Rd, Wollongong NSW 2500, Australia|-34.4152258|150.90053229999998|True|false|True|False|True
+204|75_location.json|ChIJ11rqyEkZE2sRh79u6BGtdpg|Evil Eye Beach Cafe|16/54-58 Cliff Rd, Wollongong NSW 2519, Australia|-34.4176736|150.9018232|True|false|True|True|True
+204|75_location.json|ChIJ-fULSwEZE2sRPTH-VDNm6lw|Aqua Restaurant|The Strand, 17/54-58 Cliff Rd, Wollongong NSW 2500, Australia|-34.417652|150.9018066|True|false|True|False|True
+204|75_location.json|ChIJweEjMQAZE2sR5xnY1zrbP6M|Yachties' Cafe|85 Endeavour Dr, Wollongong NSW 2500, Australia|-34.4206706|150.90641019999998|True|false|True|False|True
+204|75_location.json|ChIJK-V8FAQZE2sR3TC8BCIN0a4|Connies Cliff Road Cafe|1/16 Cliff Rd, Wollongong NSW 2500, Australia|-34.4152495|150.9006804|True|false|True|True|True
+204|75_location.json|ChIJcdPhs-AZE2sR2st5OMnv_Wg|Seaside Shahi - Shahi Dining Wollongong|18 Cliff Rd, Wollongong NSW 2500, Australia|-34.4153387|150.90053419999998|False|false|True|True|True
+204|75_location.json|ChIJs-IZv4YZE2sRMX6g3MmCm8I|Basin Cafe|7 Wilson St, Wollongong NSW 2500, Australia|-34.4206083|150.9028064|True|false|True|False|false
+204|75_location.json|ChIJi0TsfQQZE2sR3l0ieemn7l8|North Beach Kiosk|1 Cliff Rd, Wollongong NSW 2500, Australia|-34.41417860000001|150.9011674|True|false|True|False|false
+204|75_location.json|ChIJMZ01MakZE2sRZ_6tb94yuMU|The Anchorage Restaurant|3-9 Wilson St, Wollongong NSW 2500, Australia|-34.4206809|150.9029998|True|false|false|False|True
+204|75_location.json|ChIJg2kpuaQZE2sR2l6mfwJiaV4|Bread, Espresso & - North Wollongong|16 Cliff Rd, North Wollongong NSW 2500, Australia|-34.4151486|150.9004981|True|false|True|False|false
+204|75_location.json|ChIJWW8nKjcZE2sRUeAt_QrnCeM|Amara’s North Beach|5/16 Cliff Rd, Wollongong NSW 2500, Australia|-34.415137|150.9004985|True|false|True|True|True
+204|75_location.json|ChIJybb41QEZE2sRFRUmOmCTiPI|nonabel.|2 Endeavour Dr, Wollongong NSW 2500, Australia|-34.4217082|150.9064465|True|false|True|False|True
+206|77_location.json|ChIJNT8XIBQXE2sR4L3BRR-UlbM|Lo Stretto Cafe Restaurant|Maritime Centre, Level 2/91 Foreshore Rd, Port Kembla NSW 2505, Australia|-34.4754387|150.9131531|True|false|True|False|True
+206|77_location.json|ChIJ7SZWeCIXE2sR3Aj7Ux0ZwZc|Ambrosia Eatery|Lot 5 Old Port Rd, Port Kembla NSW 2505, Australia|-34.4783554|150.9029083|True|false|false|false|false
+206|77_location.json|ChIJu8LodM0XE2sRlyk9REDDNcI|Hunger Hunt Wollongong|Lot 5 Old Port Rd, Port Kembla NSW 2505, Australia|-34.4783349|150.90288909999998|True|false|false|True|false
+212|82_location.json|ChIJu-cFkwIfE2sRzMxG_eJHlcM|Woonona Bowling and Recreation Club|5-9 Greta St, Woonona NSW 2517, Australia|-34.3508412|150.9088313|false|false|false|false|false
+212|82_location.json|ChIJD5zmb-ceE2sR7YCi-qpy8MA|Flat White With One|648 Princes Hwy, Russell Vale NSW 2517, Australia|-34.3594864|150.89949629999998|True|false|True|False|True
+212|82_location.json|ChIJCyj60TUfE2sRPO5_aCcEU5c|secret garden cafe woonona|479 Princes Hwy, Woonona NSW 2517, Australia|-34.3457258|150.9045105|True|false|True|False|True
+212|82_location.json|ChIJAY48Dk4fE2sRNd1LqvzMIEU|Cafe Roma|11 Watergum Way, Woonona NSW 2517, Australia|-34.3494203|150.90099429999998|True|false|True|False|false
+212|82_location.json|ChIJW4tO91obE2sRWlp42dOUL2g|Illawarra Private Chef Service|479 Princes Hwy, Woonona NSW 2517, Australia|-34.3457258|150.9045105|false|false|false|False|false
+222|91_location.json|ChIJoxbCYioZE2sR4307j6myrXQ|7-Eleven|162-166 Pioneer Rd, Towradgi NSW 2518, Australia|-34.3841672|150.9065387|false|false|false|false|false
+222|91_location.json|ChIJg9atw9EeE2sReRX1nTov5yg|Manjit's Indian Restaurant|241-243 Princes Highway Crn, Railway St, Corrimal NSW 2518, Australia|-34.3732973|150.8966199|True|false|True|True|True
+222|91_location.json|ChIJU8qCndoeE2sRh6IX7J31YPI|7-Eleven|138/146 Princes Hwy, Corrimal NSW 2518, Australia|-34.3699144|150.8977555|false|false|false|false|false
+222|91_location.json|ChIJ1dAzsTEZE2sRs1Qnm8z8IbA|Domino's Pizza Fairy Meadow|Shop 1/493-495 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.3861589|150.8941197|False|false|True|True|false
+222|91_location.json|ChIJFwPSeSofE2sROxR5DqNb1r8|Fishnets Takeaway & Catering|114 Pioneer Rd, East Corrimal NSW 2518, Australia|-34.3795055|150.9078385|False|false|True|false|True
+222|91_location.json|ChIJ6wP53tAfE2sRoPkU1lPOyYE|Thai Old Town Restaurant|242 Princes Hwy, shop 2/242 Princess Highway, Corrimal NSW 2518, Australia|-34.372469599999995|150.8971487|false|false|True|True|True
+222|91_location.json|ChIJJ0jNZNAeE2sRnLxdcVFc6ec|Corrimal RSL Memorial Club|168 Princes Hwy, Corrimal NSW 2518, Australia|-34.3704612|150.89759260000002|false|false|false|false|false
+222|91_location.json|ChIJz6qzZDIZE2sRGPvf7O1V7yA|Caesars Chicken|435 Princes Hwy, Corrimal NSW 2518, Australia|-34.382113|150.8949323|True|false|True|false|True
+222|91_location.json|ChIJA8mTbRofE2sR44iP9gCBtkI|Pizza Tree Corrimal|shop 1/110 Railway St, Corrimal NSW 2518, Australia|-34.3730878|150.89750709999998|False|false|True|True|false
+222|91_location.json|ChIJ4R3yMSgfE2sRhyDnHLXqrz4|Chris's Takeaway East Corrimal|1 Railway St, East Corrimal NSW 2518, Australia|-34.3748273|150.9083052|False|false|True|False|false
+222|91_location.json|ChIJy2DXk9EeE2sRxlz7Qc1Hlq0|Subway Corrimal|Shop 11/270 Princes Hwy, Corrimal NSW 2518, Australia|-34.373798|150.8978827|True|false|True|True|True
+222|91_location.json|ChIJRU13oCsZE2sR0LUw1uBfGlY|Sketch Coffee & Art|121 Towradgi Road Towradgi &, Coledale NSW 2518, Australia|-34.3841696|150.9031515|True|false|True|True|True
+222|91_location.json|ChIJp8g6Rv8ZE2sRygHzvf_ZLyk|Pizza Jet|3/417-421 Princes Hwy, Corrimal NSW 2518, Australia|-34.381201499999996|150.89592539999998|False|false|True|True|false
+222|91_location.json|ChIJX_7v6KgfE2sRkNKRvB_b89A|His & Hers cafe|313 Princes Hwy, Corrimal NSW 2518, Australia|-34.3781477|150.8960282|True|false|True|False|True
+222|91_location.json|ChIJzU_XsNEeE2sR_li-9pMdKno|Corrimal Chinese Takeaway|Shop3/108 Railway St, Corrimal NSW 2518, Australia|-34.3731017|150.8976767|False|false|True|True|false
+222|91_location.json|ChIJUyRfJSkfE2sRF_I9knHmJ9Y|Bonno's Pizzeria|1/1 Railway St, Corrimal NSW 2518, Australia|-34.3748064|150.90835629999998|False|false|false|True|false
+222|91_location.json|ChIJ8zn3O9AeE2sRyUQX8rKoIvs|Hevan Espresso|177/181 Princes Hwy, Corrimal NSW 2518, Australia|-34.3713177|150.89709|True|false|True|False|false
+222|91_location.json|ChIJhe2FEI4ZE2sRQkUy8KW0flI|sushi chat corrimal|270 Princes Hwy, Corrimal NSW 2518, Australia|-34.374252399999996|150.8974697|false|false|True|True|false
+222|91_location.json|ChIJ9TrchjIZE2sRlHKLvIK-48w|Gambinos|427 Princes Hwy, Corrimal NSW 2518, Australia|-34.3817742|150.8955514|True|false|True|True|True
+222|91_location.json|ChIJtUbOoSsZE2sRN53CUohoGSk|Towradgi Chicken Shop|3/121 Towradgi Rd, Towradgi NSW 2518, Australia|-34.3842588|150.903175|false|false|True|False|false
+223|92_location.json|ChIJkQ72tjEZE2sRWf26BcIEaOI|McDonald's Fairy Meadow|1 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4029638|150.8919651|True|false|True|True|True
+223|92_location.json|ChIJi0TsfQQZE2sRfux3aa5nfEo|Diggies Cafe|1 Cliff Rd, North Wollongong NSW 2500, Australia|-34.4141052|150.9012295|True|false|True|False|True
+223|92_location.json|ChIJT_qf9gQZE2sRTqH7Rn58ODY|Lagoon Seafood Restaurant|George Hanley Dr, North Wollongong NSW 2500, Australia|-34.4095941|150.9001337|True|false|True|False|True
+223|92_location.json|ChIJzSZrQxYZE2sRqeT7LPO2S2c|KFC Fairy Meadow|109 Princes Hwy Cnr, McGrath St, Fairy Meadow NSW 2519, Australia|-34.4008379|150.8913119|False|false|True|True|True
+223|92_location.json|ChIJ-aOtAwgZE2sRF_3flK62T9c|Guzman y Gomez - Fairy Meadow|103/105 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4002763|150.8913805|True|false|True|True|True
+223|92_location.json|ChIJqUM3ORYZE2sRVxphj564S7s|Hungry Jack's Burgers Fairy Meadow|212 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4018727|150.8919223|True|false|True|True|True
+223|92_location.json|ChIJUwjcyhEZE2sRFHIGLeXTmR0|Flip Out North Wollongong|1/20 Ralph Black Dr, North Wollongong NSW 2500, Australia|-34.408265199999995|150.8931678|false|false|True|false|false
+223|92_location.json|ChIJq7zLaQQZE2sRiunIy38JQPM|Pepe's On The Beach|2-14 Cliff Rd, North Wollongong NSW 2500, Australia|-34.4142472|150.9005116|false|false|false|False|True
+223|92_location.json|ChIJmecB4dRjnaoRiKjlFE10dR0|bp Truckstop|Northgate Ctr, 224/224 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4033|150.891583|false|false|false|false|false
+223|92_location.json|ChIJZxlz6RYZE2sRs31FvyDN3vs|Outback Steakhouse Wollongong|228 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4024905|150.8919831|True|false|True|True|True
+223|92_location.json|ChIJNxKPkhEZE2sRxPSMgKrS8-8|Red Rooster Mt. Ousley|226 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4021387|150.8920239|True|false|True|True|True
+223|92_location.json|ChIJKdlC9BYZE2sRVpO3Lt4ThtA|Subway|210 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4016747|150.89213759999998|false|false|True|True|True
+223|92_location.json|ChIJi0TsfQQZE2sR3l0ieemn7l8|North Beach Kiosk|1 Cliff Rd, Wollongong NSW 2500, Australia|-34.41417860000001|150.9011674|True|false|True|False|false
+223|92_location.json|ChIJi0l5shAZE2sR7PFg6tPD5s4|Seven Miles Coffee Roasters Wollongong|85 Montague St, North Wollongong NSW 2500, Australia|-34.404962499999996|150.8953252|false|false|false|False|false
+223|92_location.json|ChIJAQDA8BgZE2sRw7kkxhW1_Dc|Piccolo Me ICW Wollongong|iC Central, North Wollongong NSW 2500, Australia|-34.4025562|150.89919360000002|True|false|True|True|True
+223|92_location.json|ChIJX1frKhoZE2sRZEdUiv9Rfs4|Oakberry Acai Wollongong|2/14 Cliff Rd, North Wollongong NSW 2500, Australia|-34.4144535|150.9005802|True|false|True|True|false
+223|92_location.json|ChIJlUcF_BAZE2sRfpZZ0usxj6Y|Industri Cafè|13/6/8 Ralph Black Dr, North Wollongong NSW 2500, Australia|-34.4063087|150.8934406|True|false|True|True|True
+223|92_location.json|ChIJ4zr3EhsZE2sRTfFwj9XttmM|Lagoon Deck Bar|George Hanley Dr, North Wollongong NSW 2500, Australia|-34.4095389|150.9001803|True|false|True|False|True
+223|92_location.json|ChIJLZpd0usZE2sR52usxHttdF0|wildbean cafe|Northgate Ctr, 224 Princes Hwy, Fairy Meadow NSW 2519, Australia|-34.4035744|150.89171439999998|True|false|True|True|True
+223|92_location.json|ChIJ21pdbxAZE2sR2a8DNAZhkaM|Betta Lunches Cafe|1a/112 Montague St, North Wollongong NSW 2500, Australia|-34.4078763|150.8945133|True|false|True|True|false
+224|93_location.json|ChIJdeiUZa8ZE2sRLBJ4s8KNdsw|Woolworths Wollongong|63 Burelli St, Wollongong NSW 2500, Australia|-34.4269894|150.8962646|false|false|false|True|false
+224|93_location.json|ChIJVZFeNK4ZE2sRu50yqB_9fI8|McDonald's Wollongong|Cnr Burelli, Stewart, Corrimal St, Wollongong NSW 2500, Australia|-34.427337699999995|150.89982559999999|True|false|True|True|True
+224|93_location.json|ChIJnXmx8a4ZE2sRYc8LnmGS67k|Jasmine Rice|131 Corrimal St, Wollongong NSW 2500, Australia|-34.428250999999996|150.899673|True|false|True|True|True
+224|93_location.json|ChIJBxi0cw0ZE2sRv6EChWSZLkE|Student Biryani Wollongong|Shop 7/132 Corrimal St, Wollongong NSW 2500, Australia|-34.4265123|150.89953319999998|True|false|True|True|True
+224|93_location.json|ChIJZwmROakZE2sR-lJpJXYJrjw|Samaras Restaurant|22 corner of Market and, Corrimal St, Wollongong NSW 2500, Australia|-34.4242535|150.9003506|True|false|True|false|True
+224|93_location.json|ChIJqXcS06gZE2sRge8rLiUq0dQ|Lee and Me|87 Crown St, Wollongong NSW 2500, Australia|-34.4257598|150.89826119999998|True|false|True|True|True
+224|93_location.json|ChIJg1rS-P4ZE2sRxBrA5V1DL9Q|Asees Indian Restaurant Wollongong - Best Indian Food . Party Hall in Wollongong|52/54 Crown St, Wollongong NSW 2500, Australia|-34.4257432|150.8996708|false|false|True|True|True
+224|93_location.json|ChIJC1uR2LsZE2sR9n6vZn4fXTY|Da Orlando Pizzeria|348 Keira St, Wollongong NSW 2500, Australia|-34.4342717|150.89190879999998|True|false|True|True|True
+224|93_location.json|ChIJY6dwL6kZE2sRCzNUIPqsb7U|Omar's Kebab And Pide|66 Crown St, Wollongong NSW 2500, Australia|-34.425707599999996|150.8991897|False|false|True|True|True
+224|93_location.json|ChIJv2drCLsZE2sRHFHfP2Jf15E|Five Barrel Brewing|318 Keira St, Wollongong NSW 2500, Australia|-34.43180900000001|150.892125|false|false|false|False|false
+224|93_location.json|ChIJXxbGQKkZE2sRt9Gz2lJrN5Q|Sakura Sushi Japanese Restaurant|8/121-125 Corrimal St, Wollongong NSW 2500, Australia|-34.425263699999995|150.90026039999998|False|false|false|True|True
+224|93_location.json|ChIJpQuptK8ZE2sRSrJX9vrrUP8|Lili J|Unit 1/156 Corrimal St, Wollongong NSW 2500, Australia|-34.4294592|150.8987189|True|false|True|False|True
+224|93_location.json|ChIJ7WeiUnkZE2sR6fYCsXgUJGI|Toro Robata Sushi|9/129 Corrimal St, Wollongong NSW 2500, Australia|-34.426843999999996|150.899895|false|false|True|false|True
+224|93_location.json|ChIJv4LDz6gZE2sR_WvkKiY_6bA|Mr Crown|90 Crown St, Wollongong NSW 2500, Australia|-34.425256|150.8979551|false|false|false|False|True
+224|93_location.json|ChIJ4xnAN6kZE2sRz1vY0a53-84|JJ's Indian Restaurant Wollongong- Best Indian restaurant in Wollongong|3/50 Crown St, Wollongong NSW 2500, Australia|-34.42581010000001|150.90010909999998|True|false|True|True|True
+224|93_location.json|ChIJ_VG05h0ZE2sRg9oQ2ikPfBc|Meat & Grain Steakhouse|G06-07/101 Crown St, Wollongong NSW 2500, Australia|-34.425592699999996|150.8972005|false|false|True|False|True
+224|93_location.json|ChIJ6UQfRhAZE2sRbof1CUh-xBE|Dosa Houze & Dessert Corner|Shop 1-2/49 Harbour St, Wollongong NSW 2500, Australia|-34.4281375|150.9018845|True|false|True|True|True
+224|93_location.json|ChIJZ2pML6kZE2sRZ-zMLyUlbJQ|Lower East Cafe|70 Crown St, Wollongong NSW 2500, Australia|-34.4256611|150.8991083|True|false|True|False|True
+224|93_location.json|ChIJFRaz1K4ZE2sRen3X6fCy6uw|Howlin' Wolf Whiskey Bar Wollongong|103/53-61 Crown St, Wollongong NSW 2500, Australia|-34.426080999999996|150.89904199999998|false|false|false|False|True
+224|93_location.json|ChIJb2BakqsZE2sRSdOfSmNqPF0|2 Smoking Barrels Barbecue Joint & Food truck|2/83 Crown St, Wollongong NSW 2500, Australia|-34.425988|150.8983901|False|false|True|False|True
+226|95_location.json|ChIJ7dEIWe0XE2sR6XOtwtISvDs|The Servo Truck Food Bar|6-8 Wentworth St, Port Kembla NSW 2505, Australia|-34.4799236|150.90090279999998|false|false|false|False|True
+226|95_location.json|ChIJhwNv2QoXE2sRAKJrrXXyaD8|bp|71 Church St, Port Kembla NSW 2505, Australia|-34.483906499999996|150.90501079999999|false|false|false|false|false
+226|95_location.json|ChIJ-9L6AW0XE2sRBr4HDSRgYWI|The Iron Yampi|shop 18, The Wentworth, 96/106 Wentworth St, Port Kembla NSW 2505, Australia|-34.4823647|150.9032154|True|false|false|False|True
+226|95_location.json|ChIJU-59YMcXE2sRNZnCrSGMJSY|Arthur’s Food Store|78 Wentworth St, Port Kembla NSW 2505, Australia|-34.4818091|150.9025833|True|false|True|false|True
+226|95_location.json|ChIJrb9Lx3kXE2sRK3_JM04vftg|Port Beirut|38 Wentworth St, Port Kembla NSW 2505, Australia|-34.4808425|150.90173330000002|True|false|True|True|True
+226|95_location.json|ChIJAQAAzBYXE2sRpeASN36EYFo|Ariel's Warrawong|Cowper St, Warrawong NSW 2502, Australia|-34.4865432|150.8899524|True|false|True|True|True
+226|95_location.json|ChIJ2WikAMUXE2sRh23nS0P-HQ8|Country Grocer|Cowper Street and, King St, Warrawong NSW 2502, Australia|-34.4870446|150.8892937|false|false|false|false|false
+226|95_location.json|ChIJCeV7Kg4XE2sREftqxa2KzRg|Pete's Takeaway & Salads|128 Illawarra St, Port Kembla NSW 2505, Australia|-34.4884319|150.8958227|True|false|True|True|false
+226|95_location.json|ChIJ6_2N2goXE2sR6DL_JSzNBEw|The Galley|18 Church St, Port Kembla NSW 2505, Australia|-34.4841681|150.9052393|True|false|True|False|True
+226|95_location.json|ChIJz2OTvXQXE2sRXeModXswahI|The Vault Port Kembla|72-74 Wentworth St, Port Kembla NSW 2505, Australia|-34.481673|150.9025381|True|false|False|False|false
+226|95_location.json|ChIJu5fsM4sXE2sRw0Cr7kIN-5E|Fatmans Burgers and Grill|Warrawong Plaza, King St &, Cowper St, Warrawong NSW 2502, Australia|-34.486153|150.8896524|false|false|True|True|True
+226|95_location.json|ChIJ77nkO7EXE2sRtgF5o5_msvE|The HAPPY WHALE Coffee & Crafts|189-191 Wentworth St, Port Kembla NSW 2505, Australia|-34.4839445|150.90438369999998|True|false|false|False|false
+226|95_location.json|ChIJl28uKwsXE2sR3uw6S8jFY0A|The Foundery Cafe|132 Wentworth St, Port Kembla NSW 2505, Australia|-34.4834208|150.9041514|True|false|True|False|True
+226|95_location.json|ChIJ46TlLwsXE2sRIsCqFh0azj8|Scratch Coffee Co|173/175 Wentworth St, Port Kembla NSW 2505, Australia|-34.483731|150.903867|false|false|false|True|false
+226|95_location.json|ChIJuwIAfXMXE2sRsrsi1uYHnH8|Burek On Wentworth|32 Wentworth St, Port Kembla NSW 2505, Australia|-34.4805845|150.90129969999998|True|false|True|false|false
+226|95_location.json|ChIJh_TwteAXE2sRMNZEAy42-TQ|Little Thai at Port|96-106 Wentworth St, Port Kembla NSW 2505, Australia|-34.4822223|150.90324990000002|false|false|True|True|false
+226|95_location.json|ChIJ01-YXeAXE2sR0nh1UA40VGs|Chouchou Bebe Adventure Warrawong|Plaza In the food court next to Rashays, 43 Cowper St, Warrawong NSW 2502, Australia|-34.4864063|150.8898516|True|false|True|False|True
+226|95_location.json|ChIJ7SZWeCIXE2sR3Aj7Ux0ZwZc|Ambrosia Eatery|Lot 5 Old Port Rd, Port Kembla NSW 2505, Australia|-34.4783554|150.9029083|True|false|false|false|false
+226|95_location.json|ChIJ08Mg8xYXE2sRtOp4iOYwaKk|The Coffee Emporium Warrawong|Shop KR5, Level 1, Warrawong Plaza Cnr King Street &, Cowper St, Warrawong NSW 2502, Australia|-34.4861781|150.88927479999998|True|false|True|false|True
+226|95_location.json|ChIJcXzuRlYXE2sR8DkHXGnOFjE|Amos Adams General Store|28 Wentworth St, Port Kembla NSW 2505, Australia|-34.4805683|150.9012821|false|false|false|false|false
