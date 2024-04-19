@@ -24,7 +24,7 @@ services:
     volumes:
       - api-db:/var/lib/mysql
       - ./scripts/V001_coffee_mate.sql:/docker-entrypoint-initdb.d/V001_coffee_mate.sql
-
+        
   coffee-api-service:
     image: flask/application
     hostname: api-service
@@ -33,7 +33,7 @@ services:
     container_name: api-flask
     restart: always
     build:
-      dockerfile: api-servie.dockerfile
+      dockerfile: api-service.dockerfile
     depends_on:
       - coffee-api-service-db
     links: 
