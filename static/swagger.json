@@ -145,6 +145,9 @@
             "schema": {
               "$ref": "#/definitions/User"
             }
+          },
+          "404": {
+            "description": "Not found"
           }
         },
         "tags": [
@@ -175,6 +178,12 @@
         "responses": {
           "200": {
             "description": "Success"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "201": {
+            "description": "Created"
           }
         },
         "tags": [
@@ -218,6 +227,9 @@
             "schema": {
               "$ref": "#/definitions/Recommendations"
             }
+          },
+          "404": {
+            "description": "Not found"
           }
         },
         "tags": [
@@ -248,8 +260,14 @@
           }
         ],
         "responses": {
+          "201": {
+            "description": "Created"
+          },
           "200": {
             "description": "Success"
+          },
+          "404": {
+            "description": "Not found"
           }
         },
         "tags": [
@@ -290,6 +308,12 @@
         "responses": {
           "200": {
             "description": "Success"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "404": {
+            "description": "Not found"
           }
         },
         "tags": [
