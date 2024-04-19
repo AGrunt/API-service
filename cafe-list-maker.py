@@ -43,7 +43,6 @@ def PostRequestMapsAPI(latitude, longitude):
     }
 
     # Requested fields
-
     nearbyFields = ["places.id", "places.location", "places.displayName", "places.formattedAddress", "places.servesCoffee", "places.takeout", "places.delivery", "places.goodForChildren", "places.goodForGroups", "places.reviews"]
 
     # Request's headers 
@@ -109,10 +108,6 @@ iniLons.append(round(endLon, 5))
 if iniLons[-2] < iniLons[-1]:
     del(iniLons[-2])
 
-# Print resulted lists
-#print(f"iniLats {iniLats}")
-#print(f"iniLons {iniLons}")
-
 # Make list for center points of each cell 
 centerPoints = []
 
@@ -136,24 +131,11 @@ for point in centerPoints:
     if lat2 > endLat and lon2 > endLon:
         centerPoints.append([round(lat2,5), round(lon2,5)])
 
-#Print results
-#print(f"centerPoints \n{centerPoints}")
-#print(f"Statistic\nInitial latitudes: {len(iniLats)}\nInitial longitudes: {len(iniLons)}\nnumber of center points indide the area: {len(centerPoints)} ")
-
-#==========================================================
-        
-#START SCRAPING NOW
-
-#Надо написать закпрос на получение кафе
-
+#START SCRAPING
 for locationIndex, centerPoint in enumerate(centerPoints):
     response_json = PostRequestMapsAPI(centerPoint[0], centerPoint[1])
     with open(f"./output/{locationIndex}_location.json", "w") as outfile:
         json.dump(response_json, outfile)
 
-# Check google license for map api. How i can use data from API.
-        
-
-#What next??
-# read saved json files.
-
+# TODO:
+# * Check google license for map api. How i can use data from API.

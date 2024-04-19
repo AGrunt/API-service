@@ -2,22 +2,15 @@ import pandas as pd
 import mysql.connector
 from datetime import datetime
 
-def open_csv(file):
-    data = pd.open_csv
 #Creating db connector
 mydb = mysql.connector.connect(host="localhost", port="33060", user="sample", password="sample",database="coffee-mate")
 
 # Make a cursor
 cursor = mydb.cursor()
 
-#cursor.execute("show databases")
-#for x in cursor:
-#    print(x) 
-
 # load csv to dataframe
 def load_csv(path, file):
   data = pd.read_csv(f'{path}{file}.csv', delimiter= '|')
-
   return data
 
 #gender user's param transform to int
@@ -69,7 +62,6 @@ def insert_data(table_name, primary_key, data):
       columns_string += f'{key}'
       values_string += f'%s'
     key_value_tuple += tuple([data[key]])
-  #print(f'data_tuple: {key_value_tuple}, values_string:{values_string}, columns_string:{columns_string}')
 
   #make insert statement string
   insert_stmt = (
@@ -82,20 +74,21 @@ def insert_data(table_name, primary_key, data):
 def process_users_table():
   row_counter = 0
   path = './docs/generated/'
-  #inserting users and commit insertion every 200 rows
+  #inserting data and commit insertion every 200 rows
   for index, row in load_csv(path, 'reviews').iterrows():
     data = {
       'userId': row['userId'],
       'gender': transform_gender(row['gender']),
       'registrationTimeStamp': datetime.now()
     }
-    primary_key = {'userId': row['userId']}
+    primary_key = {
+      'userId': row['userId']
+      }
     print(f'primary_key:{primary_key}')
     insert_data('usersTable', primary_key, data)
     row_counter += 1
     if row_counter > 200:
       row_counter = 0
-      #print(f'')
       mydb.commit()
   mydb.commit()
 
@@ -104,7 +97,7 @@ def process_responces_table():
   path = './docs/generated/'
   questionValue = 0
   responseTimeStamp = '2024-04-19 20:33:21.744073'
-  #inserting users and commit insertion every 200 rows
+  #inserting data and commit insertion every 200 rows
   for index, row in load_csv(path, 'reviews').iterrows():
     for questionId in range(1,8):
       data = {
@@ -132,9 +125,8 @@ def process_rankings_table():
   row_counter = 0
   path = './docs/generated/'
   rankingTimeStamp = '2024-04-19 20:33:21.744073'
-  #inserting users and commit insertion every 200 rows
+  #inserting data and commit insertion every 200 rows
   for index, row in load_csv(path, 'reviews').iterrows():
-    #userId, cafeId, categoryId, rankingValue, rankingTimeStamp
     data = {
       'userId': f'{row['userId']}',
       'cafeId': f'{row['cafeId']}',
@@ -164,7 +156,7 @@ def process_cafes_table():
   total = 0 
   row_counter = 0
   path = './docs/generated/'
-  #inserting users and commit insertion every 200 rows
+  #inserting data and commit insertion every 200 rows
   for index, row in load_csv(path, 'cafes').iterrows():
     data = {
       'cafeId': f'{row['cafeId']}',
@@ -193,11 +185,11 @@ def process_cafes_table():
   return
 
 start = datetime.now()
-#process_users_table()
-#process_responces_table()
-#process_rankings_table()
+process_users_table()
+process_responces_table()
+process_rankings_table()
 process_cafes_table()
-print(datetime.now() - start)
+print(f'Elapsed time: {datetime.now() - start}')
 
 
 
