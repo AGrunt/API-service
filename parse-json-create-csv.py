@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import uuid
 
 # file maker function
 def csv_maker(filename, columns):
@@ -19,8 +20,8 @@ df_genders_names = pd.read_csv('./docs/name_gender_dataset.csv')
 
 #create csv files for venues and reviews
 csv_files = [
-    {'filename': 'cafes', 'columns': ['fileN', 'fileName', 'id', 'displayName', 'formattedAddress', 'latitude', 'longitude', 'servesCoffee', 'takeout', 'goodForChildren','delivery', 'goodForGroups']},
-    {'filename': 'reviews', 'columns': ['fileN', 'fileName', 'id', 'rating', 'userFirstName', 'userSecondName', 'gender']}]
+    {'filename': 'cafes', 'columns': ['fileN', 'fileName', 'cafeId', 'displayName', 'formattedAddress', 'latitude', 'longitude', 'servesCoffee', 'takeout', 'goodForChildren','delivery', 'goodForGroups']},
+    {'filename': 'reviews', 'columns': ['fileN', 'fileName', 'userId', 'cafeId', 'rating', 'userFirstName', 'userSecondName', 'gender']}]
 for file in csv_files:
     csv_maker(file['filename'], file['columns'])
 
@@ -43,7 +44,7 @@ def cafes_list(data, fileIndex, fileJSON):
     for index, place in data.iterrows():
         placeCombined = {'fileN': fileIndex,
                          'fileName': fileJSON,
-                         'id':  place['places']['id'],
+                         'cafeId':  place['places']['id'],
                          'displayName': place['places']['displayName']['text'],
                          'formattedAddress': place['places']['formattedAddress'],
                          'latitude': place['places']['location']['latitude'],
@@ -74,6 +75,7 @@ def reviews_list(data, fileIndex, fileJSON):
                     gender = 'NA'
                 reviewCombined = {'fileN': fileIndex,
                                 'fileName': fileJSON,
+                                'userId':  str(uuid.uuid4()),
                                 'cafeId': place['places']['id'],
                                 'rating': review['rating'],
                                 'userFirstName': userName[0],
