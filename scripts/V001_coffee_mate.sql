@@ -53,15 +53,3 @@ goodForChildren varchar(255),
 goodForGroups varchar(255),
 PRIMARY KEY (cafeIndex)
 );
-
-
--- This table holds reviews
-CREATE TABLE reviews(
-reviewIndex INT AUTO_INCREMENT,
-cafeId varchar(255),
-userFirstName varchar(255),
-userSecondName varchar(255),
-ranking  int(1),
-PRIMARY KEY (cafeIndex)
-);
-
