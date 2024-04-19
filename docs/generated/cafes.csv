@@ -1,4 +1,4 @@
-fileN|fileName|id|displayName|formattedAddress|latitude|longitude|servesCoffee|takeout|goodForChildren|delivery|goodForGroups
+fileN|fileName|cafeId|displayName|formattedAddress|latitude|longitude|servesCoffee|takeout|goodForChildren|delivery|goodForGroups
 0|0_location.json|ChIJq6paFw3gEmsRYeJZ24otRJk|Earth Walker & Co General Store & Cafe|749 Lawrence Hargrave Dr, Coledale NSW 2515, Australia|-34.2920715|150.9445067|True|false|True|False|True
 0|0_location.json|ChIJhcctpAjhEmsR9zp_ab0ds9M|Headlands Hotel Brasserie & Bar Austinmer|1b Headland Ave, Austinmer NSW 2515, Australia|-34.3012222|150.9407508|True|false|True|False|True
 0|0_location.json|ChIJ16SvcwDhEmsRGz46V7X0l8o|Rosie’s Fish & Chips|757 Lawrence Hargrave Dr, Coledale NSW 2515, Australia|-34.2924033|150.9444839|false|false|false|false|false
@@ -626,7 +626,7 @@ fileN|fileName|id|displayName|formattedAddress|latitude|longitude|servesCoffee|t
 224|93_location.json|ChIJBxi0cw0ZE2sRv6EChWSZLkE|Student Biryani Wollongong|Shop 7/132 Corrimal St, Wollongong NSW 2500, Australia|-34.4265123|150.89953319999998|True|false|True|True|True
 224|93_location.json|ChIJZwmROakZE2sR-lJpJXYJrjw|Samaras Restaurant|22 corner of Market and, Corrimal St, Wollongong NSW 2500, Australia|-34.4242535|150.9003506|True|false|True|false|True
 224|93_location.json|ChIJqXcS06gZE2sRge8rLiUq0dQ|Lee and Me|87 Crown St, Wollongong NSW 2500, Australia|-34.4257598|150.89826119999998|True|false|True|True|True
-224|93_location.json|ChIJg1rS-P4ZE2sRxBrA5V1DL9Q|Asees Indian Restaurant Wollongong - Best Indian Food | Party Hall in Wollongong|52/54 Crown St, Wollongong NSW 2500, Australia|-34.4257432|150.8996708|false|false|True|True|True
+224|93_location.json|ChIJg1rS-P4ZE2sRxBrA5V1DL9Q|Asees Indian Restaurant Wollongong - Best Indian Food . Party Hall in Wollongong|52/54 Crown St, Wollongong NSW 2500, Australia|-34.4257432|150.8996708|false|false|True|True|True
 224|93_location.json|ChIJC1uR2LsZE2sR9n6vZn4fXTY|Da Orlando Pizzeria|348 Keira St, Wollongong NSW 2500, Australia|-34.4342717|150.89190879999998|True|false|True|True|True
 224|93_location.json|ChIJY6dwL6kZE2sRCzNUIPqsb7U|Omar's Kebab And Pide|66 Crown St, Wollongong NSW 2500, Australia|-34.425707599999996|150.8991897|False|false|True|True|True
 224|93_location.json|ChIJv2drCLsZE2sRHFHfP2Jf15E|Five Barrel Brewing|318 Keira St, Wollongong NSW 2500, Australia|-34.43180900000001|150.892125|false|false|false|False|false
