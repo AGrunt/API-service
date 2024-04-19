@@ -14,14 +14,6 @@ swagger_ui_blueprint = get_swaggerui_blueprint(
     }
 )
 
-# Creating db connector
-mydb = mysql.connector.connect(
-  host="api-db",
-  port="3306",
-  user="sample",
-  password="sample"
-)
-
 # Make a cursor
 #cursor = mydb.cursor()
 
