@@ -48,5 +48,6 @@ venv.bak/
 # output folder
 output
 
-# temp folder
+# temps
 docs/temp/
+temp.py
