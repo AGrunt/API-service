@@ -5,6 +5,8 @@ services:
   coffee-api-service-db:
     image: mysql:8.0
     restart: always
+    networks:
+      apiNet:
     hostname: api-db
     ports:
       - "33060:3306"
@@ -14,7 +16,7 @@ services:
       MYSQL_USER: sample
       MYSQL_PASSWORD: sample
       MYSQL_ROOT_PASSWORD: sample
-      MYSQL_ROOT_HOST: '0.0.0.0'    
+      MYSQL_ROOT_HOST: '0.0.0.0'
     healthcheck:
       test: mysqladmin ping -h 127.0.0.1 -u $$MYSQL_USER --password=$$MYSQL_PASSWORD
       start_period: 5s
@@ -27,10 +29,12 @@ services:
         
   coffee-api-service:
     image: flask/application
+    networks:
+      apiNet:
     hostname: api-service
     ports:
       - "5000:5000"
-    container_name: api-flask
+    container_name: api-service
     restart: always
     build:
       dockerfile: api-service.dockerfile
@@ -41,3 +45,7 @@ services:
 
 volumes:
   api-db:
+
+networks:
+  apiNet:
+    name: apiNet
