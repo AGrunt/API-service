@@ -45,3 +45,8 @@ Every response is hardcoded now for test reasons.
 
 TemplateS for flask application. Home page.
 
+## Notes
+
+* update api-app.py:
+  docker cp ./api-app.py api-service:/app/ ; docker container restart api-service
+
