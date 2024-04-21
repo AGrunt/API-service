@@ -3,7 +3,13 @@ import mysql.connector
 from datetime import datetime
 
 #Creating db connector
-mydb = mysql.connector.connect(host="localhost", port="33060", user="sample", password="sample",database="coffee-mate")
+mydb = mysql.connector.connect(
+  host="localhost",
+  port="33060",
+  user="sample",
+  password="sample",
+  database="coffee-mate"
+  )
 
 # Make a cursor
 cursor = mydb.cursor()
@@ -190,47 +196,3 @@ process_responces_table()
 process_rankings_table()
 process_cafes_table()
 print(f'Elapsed time: {datetime.now() - start}')
-
-
-
-
-
-# TODO
-# 1. Make reviews table for obtained data
-# Нет одинаковых пользователей
-# каждый ревью сделан от уникального полдьзователя
-# значит на каждый ревью надо создать пользователя. сделать ему id, угадать его пол по имени. разбить его полное имя на имя и фамилию.  
-# 2. do something with cafes data 
-
-#NOW I NEED TO WRITE THESE DATA TO DB
-# 1. make tables in db
-# 2. import mysql.connector
-# 3. insert data by fields. 
-# 4. figurout how to generate user id. It must be GUID
-#examples:
-
-""" 
-Заполнить по cafeId
-Название
-Полный Адресс
-takeout
-delivery
-servesCoffee
-goodForChildren
-goodForGroups
-latitude
-longitude
-
-Make a table for cafe:
-cafeId
-latitude
-longitude
-displayName
-formattedAddress
-servesCoffee
-takeout
-delivery
-goodForChildren
-goodForGroups 
-
-"""
