@@ -1,8 +1,30 @@
 import json
+import time
 from flask import Flask, request, jsonify, render_template
 from flask_swagger_ui import get_swaggerui_blueprint
 import mysql.connector
 from datetime import datetime
+
+#wait for mysqlService
+
+while True:
+    try:
+        #Creating db connector
+        dbConnection = mysql.connector.connect(
+            host="api-db",
+            port="3306",
+            user="sample",
+            password="sample",
+            database="coffee-mate"
+            )
+
+        # Make a cursor
+        cursor = dbConnection.cursor()
+        print(f'Mysql service status: <CONNECTED>')
+        break
+    except Exception as err:
+        print(f'There is something wrong with Mysql service: <{err}>. Just wait 5 seconds')
+        time.sleep(5)
 
 #Creating db connector
 dbConnection = mysql.connector.connect(
