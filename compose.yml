@@ -31,10 +31,10 @@ services:
     image: flask/application
     networks:
       apiNet:
-    hostname: api-service
+    hostname: api-svc
     ports:
-      - "5000:5000"
-    container_name: api-service
+      - "5001:5000"
+    container_name: api-svc
     restart: always
     build:
       dockerfile: api-service.dockerfile
