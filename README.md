@@ -10,8 +10,8 @@
 
 ## How to use
 
-Service available at `http://localhost:5000`  
-Documentation for available methods accessable at `http://localhost:5000/swagger`  
+Service available at `http://localhost:5001`  
+Documentation for available methods accessable at `http://localhost:5001/swagger`  
 
 Swagger interface allow to try out methods and get service response.  
 To try out methods through swagger UI press `Try it out`, fill required fields, and press `Execute` button bellow  
@@ -50,3 +50,33 @@ TemplateS for flask application. Home page.
 * update api-app.py:
   `docker cp ./api-app.py api-svc:/app/ ; docker container restart api-svc`
 
+* update sql volume with latest sql script or rewrite spoiled schema:
+  1. delete mysql container and its volume:
+    `docker stop api-db ; docker rm api-db ; docker volume rm api-service_api-db`
+  2. rebuild container
+    `docker compose up --build`
+    
+docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm
+
+
+* Functions:
+
+  * Get user
+    GET /users/{id}
+    Status: ready
+
+  * Add user
+    PUT /users/{id}
+    Status: ready
+
+  * Get recommendations
+    GET /users/{id}/recommendations
+    Status: InProgress
+
+  * User's answers collection
+    PUT /users/{id}/responses
+    Status: ready
+
+  * User's cafe ranking collection
+    PUT /users/{id}/rankings/{cafeid} 
+    Status: ready
