@@ -20,10 +20,10 @@ while True:
 
         # Make a cursor
         cursor = dbConnection.cursor()
-        print(f'Mysql service status: <CONNECTED>')
+        print(f'Mysql woke up. Now Mysql service status is <CONNECTED>')
         break
     except Exception as err:
-        print(f'There is something wrong with Mysql service: <{err}>. Just wait 5 seconds')
+        print(f'Something wrong with Mysql service: <{err}>. It is slow. Let`s just wait for 5 seconds')
         time.sleep(5)
 
 #Creating db connector
@@ -109,7 +109,7 @@ def put_data(table, data):
         cursor.execute(insert_stmt, values)
         dbConnection.commit()
     except Exception as err:
-        return False, err, 500
+        return False, table, err, 500
     return True
 
 @app.route('/')
@@ -118,13 +118,12 @@ def index():
 
 @app.route('/users/<id>', methods=['GET'])
 def get_users(id):
+    # if id is empty
+    if len(id) == 0:
+        return f'Success', 200
     # combine data
     table = 'usersTable'
     data = {'userid': str(id)}    
-    match id:
-        case '':
-            return f'Success', 200
-    
     if not get_data(table, data, check=True):
         return f"Not found", 404
     result = get_data(table, data, check=False)
@@ -138,9 +137,9 @@ def get_users(id):
 
 @app.route('/users/<id>', methods=['PUT'])
 def put_users(id):
-    match id:
-        case '':
-            return f'Success', 200
+    # if id is empty
+    if len(id) == 0:
+        return f'Success', 200
     #Check if user exists already
     table = 'usersTable'
     data = {'userid': id}
@@ -148,6 +147,7 @@ def put_users(id):
         return f"Conflict", 409
     #Put user's data into database
     #combine data
+    table = 'usersTable'
     data = {
         'userId': str(id),
         'gender': int(request.json['gender']),
@@ -155,16 +155,17 @@ def put_users(id):
         'registrationTimeStamp': str(datetime.now()),
         'postcode': str(request.json['postcode'])
         }
-    results = put_data('usersTable', data)
+    results = put_data(table, data)
     if type(results) is not bool:
         return f'Something went wrong. Data :<{data}>. Results: <{results}>', 500
     return f'Created.', 201
 
 @app.route('/users/<id>/recommendations', methods=['GET'])
 def get_users_recommendations(id):
+    # if id is empty
+    if len(id) == 0:
+        return f'Success', 200
     match id:
-        case '':
-            return f"Success", 200
         case '01061add-1302-4846-bb8e-b8e0ffe7ac84':
             return jsonify({
                 'predictions': 
@@ -187,20 +188,35 @@ def get_users_recommendations(id):
         
 @app.route('/users/<id>/responses', methods=['PUT'])
 def put_responses(id):
-    match id:
-        case '':
-            return f'Success', 200
-        case '01061add-1302-4846-bb8e-b8e0ffe7ac84':
-            return f'Created', 201
-        case '25c26f74-d0eb-408b-8f97-26429032c832':
-            return f'Created', 201        
-        case '273cf928-a41f-43c6-9dac-c13385b2a29e':
-            return f'Created', 201
-    return f'Not found', 404
+    # if id is empty
+    if len(id) == 0:
+        return f'Success', 200
+    
+    #Check if user exists already
+    table = 'usersTable'
+    data = {'userid': id}
+    if not get_data(table, data, check=True):
+        return f'Not found', 404
+    #Put user's data into database
+    #Combine data
+    table = 'responses'
+    for question_response in request.json['responses']:
+        for dict in question_response:
+            data = {
+                'userId': str(id),
+                'questionId': question_response['questionId'],
+                'questionValue': question_response['value'],
+                'responseTimeStamp': datetime.now()
+                }
+        #Insert data
+        results = put_data(table, data)
+        if type(results) is not bool:
+            return f'Something went wrong. Data :<{data}>. Results: <{results}>', 500
+    return f'Created.', 201
 
 @app.route('/users/<id>/rankings/<cafeid>', methods=['PUT'])
 def put_ranking(id, cafeid):
-    #check if user exist and cafeid exist
+    #Check if user and cafeid exist
     #Check userId
     table = 'usersTable'
     data = {'userId': id}
@@ -214,18 +230,20 @@ def put_ranking(id, cafeid):
     
     #insert user ranking data intop database
     table = 'rankings'
-    data = {
-        'userId': id,
-        'cafeId': cafeid, 
-        'categoryId': request.json['rankings'][0]['categoryId'],
-        'rankingValue': request.json['rankings'][0]['rank'],
-        'rankingTimeStamp': datetime.now()
-        }
-    #Generating console output
-    results = put_data(table, data)
-    if type(results) is not bool:
-        return f'Something went wrong. Data :<{data}>. Results: <{results}>', 500
-    return f'Created', 201
+    for ranking in request.json['rankings']:
+        for dict in ranking:
+            data = {
+                'userId': id,
+                'cafeId': cafeid, 
+                'categoryId': ranking['categoryId'],
+                'rankingValue': ranking['rank'],
+                'rankingTimeStamp': datetime.now()
+                }
+        #Insert data
+        results = put_data(table, data)
+        if type(results) is not bool:
+            return f'Something went wrong. Data :<{data}>. Results: <{results}>', 500
+    return f'Created.', 201
 
 @app.route('/db_test')
 def bd_test():
@@ -237,8 +255,7 @@ def bd_test():
     dbs = ''
     for db in cursor.fetchall():
         dbs += f'{db}, '
-    
-    
+ 
     return dbs
 
 #Run swagger 
