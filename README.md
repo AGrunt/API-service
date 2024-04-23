@@ -25,6 +25,16 @@ To try out methods through swagger UI press `Try it out`, fill required fields, 
 
 Every response is hardcoded now for test reasons.
 
+## Expecting datatypes
+
+* userId - UUID formated string
+
+### Specific endpoints
+
+#### /users/<id>/rankings/<cafeid>
+
+* categoryId - is a string with catregory's Id. Now model use just starrating which is `categoryId = 1`
+
 ## References
 
 ### ./docs folder content
