@@ -51,32 +51,33 @@ TemplateS for flask application. Home page.
   `docker cp ./api-app.py api-svc:/app/ ; docker container restart api-svc`
 
 * update sql volume with latest sql script or rewrite spoiled schema:
+  * One way:
   1. delete mysql container and its volume:
     `docker stop api-db ; docker rm api-db ; docker volume rm api-service_api-db`
   2. rebuild container
     `docker compose up --build`
-    
-docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm
-
+  * Better way:
+    `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm`
+    `docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
 
 * Functions:
 
   * Get user
     GET /users/{id}
-    Status: ready
+    Status: Ready
 
   * Add user
     PUT /users/{id}
-    Status: ready
+    Status: Ready
 
   * Get recommendations
     GET /users/{id}/recommendations
-    Status: InProgress
+    Status: Ready
 
   * User's answers collection
     PUT /users/{id}/responses
-    Status: ready
+    Status: Ready
 
   * User's cafe ranking collection
     PUT /users/{id}/rankings/{cafeid} 
-    Status: ready
+    Status: Ready
