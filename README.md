@@ -59,7 +59,8 @@ TemplateS for flask application. Home page.
   * Better way:
     `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm`
     `docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
-
+    Oneline:
+    `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
 * Functions:
 
   * Get user
