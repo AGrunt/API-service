@@ -194,12 +194,12 @@
     "/users/{id}/recommendations": {
       "get": {
         "summary": "Get recommendations",
-        "description": "Returns recommndations for a given user",
+        "description": "Returns recommndations for a given user. User with generated recomendations '273cf928-a41f-43c6-9dac-c13385b2a29e'",
         "parameters": [
           {
             "in": "path",
             "name": "id",
-            "description": "User identifier",
+            "description": "User identifier. User with 38 generated recomendations '273cf928-a41f-43c6-9dac-c13385b2a29e'.",
             "schema": {
               "type": "string"
             }
@@ -207,7 +207,7 @@
           {
             "in": "query",
             "name": "start",
-            "description": "Zero-based position of the first prediction to return",
+            "description": "Natural based position of the first prediction to return.",
             "schema": {
               "type": "integer"
             }
