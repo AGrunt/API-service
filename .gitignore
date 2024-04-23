@@ -47,3 +47,8 @@ venv.bak/
 
 # output folder
 output
+
+# temps
+docs/temp/
+temp*.py
+__pycache__
