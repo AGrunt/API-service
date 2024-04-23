@@ -12,8 +12,8 @@
 
 ## How to update
 
-* Run `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
-* Run `docker compose up --build`
+1. Run `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
+2. Run `docker compose up --build`
 ## How to use
 
 Service available at `http://localhost:5001`  
