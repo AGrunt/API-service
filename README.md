@@ -8,6 +8,10 @@
 
 * Run `docker compose up`
 
+## How to update
+
+* Run `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
+* Run `docker compose up --build`
 ## How to use
 
 Service available at `http://localhost:5001`  
@@ -65,7 +69,7 @@ TemplateS for flask application. Home page.
     `docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
     Oneline:
     `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
-* Functions:
+* Functions status:
 
   * Get user
     GET /users/{id}
@@ -86,3 +90,11 @@ TemplateS for flask application. Home page.
   * User's cafe ranking collection
     PUT /users/{id}/rankings/{cafeid} 
     Status: Ready
+
+* Models status:
+  1. Group prediction
+      - Status: In progress
+  2. Collaborative filter based on groups
+      - Status: In progress
+  3. Collaborative filtering based on user's preferences
+      - Status: In progress
