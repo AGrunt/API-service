@@ -194,12 +194,12 @@
     "/users/{id}/recommendations": {
       "get": {
         "summary": "Get recommendations",
-        "description": "Returns recommndations for a given user. User with generated recomendations '273cf928-a41f-43c6-9dac-c13385b2a29e'",
+        "description": "Returns recommndations for a given user. User's ID with generated recomendations is '273cf928-a41f-43c6-9dac-c13385b2a29e'.",
         "parameters": [
           {
             "in": "path",
             "name": "id",
-            "description": "User identifier. User with 38 generated recomendations '273cf928-a41f-43c6-9dac-c13385b2a29e'.",
+            "description": "User identifier. User's ID with generated recomendations is '273cf928-a41f-43c6-9dac-c13385b2a29e'.",
             "schema": {
               "type": "string"
             }
