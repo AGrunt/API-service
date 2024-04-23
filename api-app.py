@@ -55,7 +55,7 @@ cursor = dbConnection.cursor()
 app = Flask(__name__)
 
 #Function for retrieving and checking existence of data in the database. Return true if data found.
-def get_data(table, data, check):
+def get_data(table, data, **kwargs):
     #Expected that data is a dictionarry.  with {columnName:value} format
     conditions_string = ''
     values = ()
@@ -67,7 +67,8 @@ def get_data(table, data, check):
             conditions_string +=  f'{column} = %s'
         values += tuple([data[column]])
     #make select stetment
-    if check:
+    if kwargs['check']:
+        #check if data in database 
         check_stmt = (
             f'SELECT COUNT(*) FROM {table} '
             f'WHERE {conditions_string}'
@@ -76,6 +77,19 @@ def get_data(table, data, check):
         myresult = cursor.fetchone()
         if int(myresult[0]) > 0:
             return True
+    elif kwargs['recommendations']:
+        #select * from predictions where userId = "273cf928-a41f-43c6-9dac-c13385b2a29e" order by predicitonValue DESC limit 10; 
+        #recomendation - {'size': valie,
+        #                 'offset': value
+        #                 }
+        select_stmt = (
+            f'SELECT * FROM {table} '
+            f'WHERE {conditions_string} order by predicitonValue DESC limit {kwargs['recommendation']['size']} offset {kwargs['recommendation']['offset']}'
+            )
+        cursor.execute(select_stmt, values)
+        result = cursor.fetchall()
+        print(result)
+        return result
     else:
         select_stmt = (
             f'SELECT * FROM {table} '
@@ -122,6 +136,7 @@ def get_users(id):
     if len(id) == 0:
         return f'Success', 200
     # combine data
+    #chek if id exists
     table = 'usersTable'
     data = {'userid': str(id)}    
     if not get_data(table, data, check=True):
@@ -165,6 +180,29 @@ def get_users_recommendations(id):
     # if id is empty
     if len(id) == 0:
         return f'Success', 200
+    
+    #check if user exist
+    table = 'usersTable'
+    data = {'userid': str(id)}    
+    if not get_data(table, data, check=True):
+        return f"Not found", 404
+    
+    #Get data
+    params ={
+        'startPosition': request.args['start'],
+        'size': request.args['size']
+        } 
+    table = 'predictions'
+    data = {'userid': str(id)}
+    result = get_data(table, data, recommendations = params)
+    #print(f'result: {result}')
+    # Creation output dictionary 
+    
+    return f'result: {result}', 200
+
+    #'273cf928-a41f-43c6-9dac-c13385b2a29e' - the only user with predictions now
+    
+    
     match id:
         case '01061add-1302-4846-bb8e-b8e0ffe7ac84':
             return jsonify({
