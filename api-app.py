@@ -54,21 +54,21 @@ cursor = dbConnection.cursor()
 
 app = Flask(__name__)
 
-#Function for retrieving and checking existence of data in the database. Return true if data found.
+# Function for retrieving and checking existence of data in the database. Return true if data found.
 def get_data(table, data, **kwargs):
-    #Expected that data is a dictionarry.  with {columnName:value} format
+    # Expected that data is a dictionarry.  with {columnName:value} format.
     conditions_string = ''
     values = ()
-    #combine data
+    # Combine data
     for index, column in enumerate(data.keys()):
         if index < len(data.keys()) - 1:
             conditions_string +=  f'{column} = %s AND '
         else:
             conditions_string +=  f'{column} = %s'
         values += tuple([data[column]])
-    #make select stetment
-    if kwargs['check']:
-        #check if data in database 
+    # Make stetment basic and for special cases
+    if kwargs.get('check'):
+        # Check if data in database 
         check_stmt = (
             f'SELECT COUNT(*) FROM {table} '
             f'WHERE {conditions_string}'
@@ -77,35 +77,31 @@ def get_data(table, data, **kwargs):
         myresult = cursor.fetchone()
         if int(myresult[0]) > 0:
             return True
-    elif kwargs['recommendations']:
-        #select * from predictions where userId = "273cf928-a41f-43c6-9dac-c13385b2a29e" order by predicitonValue DESC limit 10; 
-        #recomendation - {'size': valie,
-        #                 'offset': value
-        #                 }
+    elif kwargs.get('recommendations'):
+        # Get recommendations
         select_stmt = (
-            f'SELECT * FROM {table} '
-            f'WHERE {conditions_string} order by predicitonValue DESC limit {kwargs['recommendation']['size']} offset {kwargs['recommendation']['offset']}'
+            f'SELECT cafeId, predicitonValue FROM {table} '
+            f'WHERE {conditions_string} order by predicitonValue DESC limit {kwargs['recommendations']['size']} offset {kwargs['recommendations']['startPosition']}'
             )
         cursor.execute(select_stmt, values)
         result = cursor.fetchall()
-        print(result)
         return result
     else:
+        # All other cases
         select_stmt = (
             f'SELECT * FROM {table} '
             f'WHERE {conditions_string}'
             )
         cursor.execute(select_stmt, values)
         result = cursor.fetchall()
-        print(result)
         return result
     
 def put_data(table, data):
-#Expected that data is a dictionarry.  with {columnName:value} format
+# Expected that data is a dictionarry. With {columnName:value} format
     columns_string = ''
     values_string = ''
     values = ()
-    #combine data
+    # Combine data
     try: 
         for index, column in enumerate(data.keys()):
             if index < len(data.keys()) - 1:
@@ -115,7 +111,7 @@ def put_data(table, data):
                 columns_string += f'{column}'
                 values_string +=  f'%s'
             values += tuple([data[column]])
-        #make insert stetement
+        # Make insert stetement
         insert_stmt = (
         f'INSERT INTO {table} ({columns_string}) '
         f'VALUES ({values_string})'
@@ -132,16 +128,17 @@ def index():
 
 @app.route('/users/<id>', methods=['GET'])
 def get_users(id):
-    # if id is empty
+    # If id is empty. Ping?Pong!
     if len(id) == 0:
         return f'Success', 200
-    # combine data
-    #chek if id exists
+    # Combine data
+    # Check if user exists
     table = 'usersTable'
-    data = {'userid': str(id)}    
+    data = {'userId': id}
     if not get_data(table, data, check=True):
-        return f"Not found", 404
-    result = get_data(table, data, check=False)
+         return f'<userId>: <{id}>. Not found ', 404
+    # Get data from db 
+    result = get_data(table, data)
     # Creation output dictionary 
     output = {       
         'gender': result[0][1],
@@ -152,16 +149,16 @@ def get_users(id):
 
 @app.route('/users/<id>', methods=['PUT'])
 def put_users(id):
-    # if id is empty
+    # If id is empty. Ping?Pong!
     if len(id) == 0:
         return f'Success', 200
-    #Check if user exists already
+    # Check if user exists already
     table = 'usersTable'
     data = {'userid': id}
     if get_data(table, data, check=True):
         return f"Conflict", 409
     #Put user's data into database
-    #combine data
+    # Combine data
     table = 'usersTable'
     data = {
         'userId': str(id),
@@ -177,17 +174,18 @@ def put_users(id):
 
 @app.route('/users/<id>/recommendations', methods=['GET'])
 def get_users_recommendations(id):
-    # if id is empty
+    # If id is empty. Ping?Pong!.
     if len(id) == 0:
         return f'Success', 200
     
-    #check if user exist
+    # Check if user exists
     table = 'usersTable'
-    data = {'userid': str(id)}    
+    data = {'userId': id}
     if not get_data(table, data, check=True):
-        return f"Not found", 404
+         return f'<userId>: <{id}>. Not found ', 404
     
-    #Get data
+    # Get data
+    #'273cf928-a41f-43c6-9dac-c13385b2a29e' - the only user with predictions now
     params ={
         'startPosition': request.args['start'],
         'size': request.args['size']
@@ -195,46 +193,25 @@ def get_users_recommendations(id):
     table = 'predictions'
     data = {'userid': str(id)}
     result = get_data(table, data, recommendations = params)
-    #print(f'result: {result}')
+    
     # Creation output dictionary 
-    
-    return f'result: {result}', 200
-
-    #'273cf928-a41f-43c6-9dac-c13385b2a29e' - the only user with predictions now
-    
-    
-    match id:
-        case '01061add-1302-4846-bb8e-b8e0ffe7ac84':
-            return jsonify({
-                'predictions': 
-                [{'cafe': 'ChIJvxY0e1UZE2sRshBd4u2VPNc', 'ranking': 0.98},
-                 {'cafe': 'ChIJEeMz8sMZE2sRynqdMW4YF9g', 'ranking': 0.94}, 
-                 {'cafe': 'ChIJj8l_uYYUE2sRPddj46-ukO0', 'ranking': 0.82}]}), 200
-        case '25c26f74-d0eb-408b-8f97-26429032c832':
-            return jsonify({
-                'predictions': 
-                [{'cafe': 'ChIJvxY0e1UZE2sRshBd4u2VPNc', 'ranking': 0.98},
-                 {'cafe': 'ChIJEeMz8sMZE2sRynqdMW4YF9g', 'ranking': 0.94}, 
-                 {'cafe': 'ChIJj8l_uYYUE2sRPddj46-ukO0', 'ranking': 0.82}]}), 200
-        case '273cf928-a41f-43c6-9dac-c13385b2a29e':
-            return jsonify({
-                'predictions': 
-                [{'cafe': 'ChIJvxY0e1UZE2sRshBd4u2VPNc', 'ranking': 0.98},
-                 {'cafe': 'ChIJEeMz8sMZE2sRynqdMW4YF9g', 'ranking': 0.94}, 
-                 {'cafe': 'ChIJj8l_uYYUE2sRPddj46-ukO0', 'ranking': 0.82}]}), 200
-    return f"Not found", 404
-        
+    pred_list = []
+    for prediction in result:
+        pred_list.append({'cafe': prediction[0], 'ranking': prediction[1]})
+    pred_dictionary = {"recommendations": pred_list}
+    return jsonify(pred_dictionary), 200
+            
 @app.route('/users/<id>/responses', methods=['PUT'])
 def put_responses(id):
-    # if id is empty
+    # If id is empty. Ping?Pong!
     if len(id) == 0:
         return f'Success', 200
     
-    #Check if user exists already
+    # Check if user exists
     table = 'usersTable'
-    data = {'userid': id}
+    data = {'userId': id}
     if not get_data(table, data, check=True):
-        return f'Not found', 404
+         return f'<userId>: <{id}>. Not found ', 404
     #Put user's data into database
     #Combine data
     table = 'responses'
@@ -255,12 +232,12 @@ def put_responses(id):
 @app.route('/users/<id>/rankings/<cafeid>', methods=['PUT'])
 def put_ranking(id, cafeid):
     #Check if user and cafeid exist
-    #Check userId
+    # Check if user exists
     table = 'usersTable'
     data = {'userId': id}
     if not get_data(table, data, check=True):
          return f'<userId>: <{id}>. Not found ', 404
-    #Check cafeId
+    #Check if cafeId exists
     table = 'cafes'
     data = {'cafeId': cafeid}
     if not get_data(table, data, check=True):
