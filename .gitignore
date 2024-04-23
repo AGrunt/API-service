@@ -50,4 +50,4 @@ output
 
 # temps
 docs/temp/
-temp.py
+temp*.py
