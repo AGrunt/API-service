@@ -51,6 +51,10 @@ TemplateS for flask application. Home page.
   `docker cp ./api-app.py api-svc:/app/ ; docker container restart api-svc`
 
 * update sql volume with latest sql script or rewrite spoiled schema:
+  Solution:
+  `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
+  
+  Discussion:
   * One way:
   1. delete mysql container and its volume:
     `docker stop api-db ; docker rm api-db ; docker volume rm api-service_api-db`
