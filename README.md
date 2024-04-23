@@ -1,3 +1,6 @@
+# WARNING. Service port changed from 5000 to 5001 due to macos port allocations.
+# New address: localhost:5001
+
 # API-service
  Coffee selection rest api service
 
