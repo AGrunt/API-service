@@ -3,6 +3,7 @@ import mysql.connector
 import sklearn
 import pandas as pd
 from pandas import DataFrame
+from sklearn.cluster import KMeans
 
 while True:
     try:
@@ -23,33 +24,11 @@ while True:
         print(f'Something wrong with Mysql service: <{err}>. It is slow. Let`s just wait for 5 seconds')
         time.sleep(5)
 
-def Get_usersTable_data(**kwargs):
-    table = 'usersTable'
-    table_columns = ['userId', 'gender', 'age', 'postcode']
-    if kwargs.get('columns'):
-        return table_columns
-    columns_string = ''
-    for index, column in enumerate(table_columns):
-        if index < len(table_columns) - 1:
-            columns_string += f'{column}, '
-        else:
-            columns_string += f'{column}'
-    select_stmt = (
-            f'SELECT {columns_string} FROM {table} '
-            )
-    cursor.execute(select_stmt)
-    result = cursor.fetchall()
-    return result
-
-#example data_dict ={
-    # 'tableName': 'somename',
-    # 'tableColumns': [list_of_columns_name],
-    # 'conditions': {'columnname': 'condition_value'}
-    # }
-
 #universal get data function
 def Get_data(**kwargs):
-    
+    #if (not kwargs.get('tableName') or not kwargs.get('tableColumns')) and not kwargs.get('conditions'):
+    #    return f'One of the required args is empty. Check tableName and tableColumns arguments'
+
     if kwargs.get('tableName'):
         table_name = kwargs.get('tableName')
         #print(table_name)
@@ -78,87 +57,58 @@ def Get_data(**kwargs):
             else:
                 conditions_string += f'{column} = %s'
             conditions_values += tuple([value])
-    else:
-        conditions_string = ''
-    #print(f'conditions_string: {conditions_string}')
-    #print(f'conditions_values: {conditions_values}')
-    select_stmt = (
+        select_stmt = (
         f'SELECT {columns_string} FROM {table_name}' + conditions_string
             )
-    #print(f'select_stmt: {select_stmt}')
-    
-    if kwargs.get('conditions'):
         cursor.execute(select_stmt, conditions_values)
         result = cursor.fetchall()
-        return result 
-    else:
+        return result
+
+    if kwargs.get('statement'):
+        select_stmt = kwargs['statement']
         cursor.execute(select_stmt)
         result = cursor.fetchall()
         return result
     
-    if kwargs.get('statement'):
-        select_stmt = kwargs['statement']['statement']
-        if 'values' in kwargs['statement'].keys():
-            conditions_values = kwargs['statement']['values']
-            cursor.execute(select_stmt, conditions_values)
-        else:
-            cursor.execute(select_stmt)
+    select_stmt = (
+        f'SELECT {columns_string} FROM {table_name}'
+            )
+    cursor.execute(select_stmt)
     result = cursor.fetchall()
-        
     return result
 
 
 # example of usage: 
 # print(Get_data(tableName=table, tableColumns=table_columns, conditions = conditions_data))
 
-# Make users dataframe
-# Dataframe data params
-table = 'usersTable'
-table_columns = ['userId', 'gender', 'age', 'postcode']
-conditions_data = {'userId': '273cf928-a41f-43c6-9dac-c13385b2a29e'}
-df_users = DataFrame(Get_data(tableName=table, tableColumns=table_columns))
-#df_users.columns = table_columns
-print(df_users)
-
-# Make responces dataframe
-
-# Dataframe data params
+# Making list of question ids
 table = 'responses'
-table_columns = ['userId', 'questionId', 'questionValue', 'responseTimeStamp']
-conditions_data = {'userId': '273cf928-a41f-43c6-9dac-c13385b2a29e'}
+table_columns = ['distinct questionId']
+questionCategories = Get_data(tableName = table, tableColumns = table_columns)
+stmt = 'select userId, gender, age, postcode from usersTable order by userId DESC'
+users_df = DataFrame(Get_data(statement=stmt), columns = ['userId', 'gender', 'age', 'postcode'])
 
-# Make a dataframe
-df_responses = DataFrame(Get_data(tableName=table, tableColumns=table_columns))
-#df_responses.columns = table_columns
-print(df_responses)
-
-stmt = {
-    'statement': 'SELECT cafeId FROM cafes'
-             }
-
-df_cafes = DataFrame(Get_data(statement = stmt))
-df_cafes.columns = ['cafeId']
-print
-#statement = {
-#    'statement': 'SELECT * FROM cafes',
-#    'values': ('value1', 'value2')
-#             }
-
-
-#statement = {
-    # 'statement': 'statement_string', 
-    # 'values': (values tuple)
-    # }
-
-
-#print(Get_usersTable_data()[0])
-#columns = Get_usersTable_data(columns=True)
-#df = DataFrame(Get_usersTable_data())
-#df.columns = columns
-#print(df.head(10))
-
-
-
+# Combining question datasets with users dataset
+convert_dictionary = {'age': int,
+                      'gender': int}
+for category in questionCategories:
+    stmt = f'select questionValue from responses where questionId = "{category[0]}" order by userId DESC'
+    category_df = DataFrame(Get_data(statement=stmt), columns = [f'questionId{category[0]}'])
+    users_df = pd.concat([users_df, category_df], axis=1)
+    convert_dictionary[f'questionId{category[0]}'] = int
     
-    
-    
+#Convert NaN values to 0s
+users_df = users_df.fillna(0)
+#Convert data types of dataframe columns
+users_df = users_df.astype(convert_dictionary)
+print(users_df)
+#print(users_df.dtypes)
+
+#apply kmeans
+
+kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(users_df.loc[:, users_df.columns != 'userId' ])
+print(kmeans.labels_)
+
+
+#NOTES: 
+#stmt = 'select usersTable.userId, gender, age, postcode, questionId, questionValue from usersTable join responses ON usersTable.userId = responses.userId where questionId not like "test" order by usersTable.userId, responseTimeStamp, questionId DESC'
