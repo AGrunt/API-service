@@ -26,18 +26,6 @@ while True:
         print(f'Something wrong with Mysql service: <{err}>. It is slow. Let`s just wait for 5 seconds')
         time.sleep(5)
 
-#Creating db connector
-dbConnection = mysql.connector.connect(
-  host="api-db",
-  port="3306",
-  user="sample",
-  password="sample",
-  database="coffee-mate"
-  )
-
-# Make a cursor
-cursor = dbConnection.cursor()
-
 SWAGGER_URL="/swagger"
 API_URL="/static/swagger.json"
 
