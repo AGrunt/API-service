@@ -106,9 +106,20 @@ print(users_df)
 
 #apply kmeans
 
+
 kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(users_df.loc[:, users_df.columns != 'userId' ])
+#kmeans.labels_
+
+
+#write lables to db
+
+
 print(kmeans.labels_)
 
 
+
 #NOTES: 
-#stmt = 'select usersTable.userId, gender, age, postcode, questionId, questionValue from usersTable join responses ON usersTable.userId = responses.userId where questionId not like "test" order by usersTable.userId, responseTimeStamp, questionId DESC'
+#stmt = 'select usersTable.userId, gender, age, postcode, questionId, questionValue 
+# from usersTable 
+# join responses ON usersTable.userId = responses.userId
+# where questionId not like "test" order by usersTable.userId, responseTimeStamp, questionId DESC'
