@@ -95,25 +95,41 @@ def get_users_dataframe():
     except Exception as err:
         return print(str(err))
 
-def get_group_rankings_dataframe():
-    
+def get_cluster_rankings_dataframe():
+
     engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
 
     try:
-        #get just last question by timestamp
-        query = "Select tbl.userId, tbl.questionId, tbl.questionValue from (SELECT *, row_number() OVER (PARTITION BY userId, questionId ORDER BY STR_TO_DATE(responseTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM responses) tbl where r = 1 ORDER BY userId"
-        rankings_df = pd.read_sql(query,engine).fillna(0)
+        query  = "Select distinct tbl2.cafeId as cafeId, ud.cluster as cluster, avg(tbl2.rankingValue) over ( partition by cluster, cafeid) as ranking from ("
+        query += "Select tbl.userId, tbl.cafeId, tbl.rankingValue "
+        query += "from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM rankings WHERE categoryId = 1) tbl "
+        query += "WHERE r = 1 ORDER BY userId ) tbl2 left join usersData ud on tbl2.userId = ud.userId"
+        rankings_df = pd.read_sql(query,engine)
         
-        
-        
-        query = "Select userId, cafeId, rankingValue from rankings where rankingValue = 5"
-        rankings_dataFrame = pd.read_sql(query,engine)
-        
-        pivoted_dataframe = rankings_dataFrame.pivot(index='userId', columns = 'cafeId', values='rankingValue')
-        
-        print(pivoted_dataframe)
+        pivoted_rankings_df = rankings_df.pivot(index='cafeId', columns = 'cluster', values='ranking')
+        return pivoted_rankings_df
     except Exception as e:
         print(str(e))
+
+def get_user_rankings_dataframe():
+
+    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+
+    try:
+        query = "Select tbl.userId as userId, tbl.cafeId as cafeId, tbl.rankingValue as ranking "
+        query += "from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM rankings WHERE categoryId = 1) tbl "
+        query += "WHERE r = 1 ORDER BY userId"
+        rankings_df = pd.read_sql(query,engine)
+        print(rankings_df)
+
+        pivoted_rankings_df = rankings_df.pivot(index='userId', columns = 'cafeId', values='ranking')
+        
+
+        print(pivoted_rankings_df)
+        return pivoted_rankings_df
+    except Exception as e:
+        print(str(e))
+
 
 
 #KMEANS =================================================================================================
@@ -128,15 +144,20 @@ print(df)
 
 engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
 
-drop_table('usersData')
+#drop_table('usersData')
 
-columns = df.columns.values.tolist()
+""" columns = df.columns.values.tolist()
 columns.append(df.index.name)
 primary_key = df.index.name
 print(columns, primary_key )
 create_table('usersData', columns, primary_key)
+ """
+df.reset_index().to_sql('usersData', engine, if_exists='replace', index=False)
 
-df.to_sql('usersData', engine, if_exists='replace', index=False)
+
+#print(get_cluster_rankings_dataframe().T)
+
+print(get_user_rankings_dataframe())
 
 
 
@@ -171,3 +192,29 @@ df.to_sql('usersData', engine, if_exists='replace', index=False)
 
 except Exception as err:
     print(err) """
+
+
+
+#****** NOTES ********
+
+#SQL statenments:
+#1. how to get latest cafe rankings with user's cluster
+""" 
+Select tbl2.userId, tbl2.cafeId, tbl2.rankingValue, ud.cluster 
+from (
+Select tbl.userId, tbl.cafeId, tbl.rankingValue
+from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM rankings WHERE categoryId = 1) tbl 
+WHERE r = 1 ORDER BY userId
+) tbl2 left join usersData ud on tbl2.userId = ud.userId;
+ """
+
+#2. how to get combined data from latest cafe rankings with user's cluster grouped with average in rankingvalue
+""" 
+Select distinct tbl2.cafeId,  ud.cluster, avg(tbl2.rankingValue) over ( partition by cluster, cafeid) 
+from (
+Select tbl.userId, tbl.cafeId, tbl.rankingValue
+from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM rankings WHERE categoryId = 1) tbl 
+WHERE r = 1 ORDER BY userId
+) tbl2 left join usersData ud on tbl2.userId = ud.userId;
+ """
+
