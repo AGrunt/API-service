@@ -1,3 +1,4 @@
+import os
 import time
 import mysql.connector
 import sklearn
@@ -9,6 +10,64 @@ import mysql.connector as connection
 from sqlalchemy import create_engine
 
 pd.set_option('future.no_silent_downcasting', True)
+os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
+
+def create_table(table_name, columns, primary_key):
+
+    try:
+        dbConnection = mysql.connector.connect(
+        host="localhost",
+        port="33060",
+        user="sample",
+        password="sample",
+        database="coffee-mate"
+        )
+
+        cursor = dbConnection.cursor()
+        
+        #UsersData
+        #make string from columns
+        stmt_string = 'CREATE TABLE %(table_name)s ('
+        values_dict = {'table_name': table_name}
+        for column in columns:
+            stmt_string += f', %({column}) varchar(255) DEFAULT NULL'
+            values_dict[column] = column
+        stmt_string += ', PRIMARY KEY (%(primary_key)s) )'
+        values_dict['primary_key'] = primary_key
+
+        stmt = (stmt_string)
+
+        cursor.execute(stmt, {'table_name': table_name})
+        cursor.close()
+        dbConnection.close()
+        return True
+    except Exception as err:
+        cursor.close()
+        dbConnection.close()
+        return f'Error: {err}'
+
+def drop_table(table_name):
+
+    try:
+        dbConnection = mysql.connector.connect(
+        host="localhost",
+        port="33060",
+        user="sample",
+        password="sample",
+        database="coffee-mate"
+        )
+
+        cursor = dbConnection.cursor()
+
+        stmt = ('DROP TABLE IF EXISTS %(table_name)s')
+        cursor.execute(stmt, {'table_name': table_name})
+        cursor.close()
+        dbConnection.close()
+        return True
+    except Exception as err:
+        cursor.close()
+        dbConnection.close()
+        return f'Error: {err}'
 
 def get_users_dataframe():
 
@@ -36,15 +95,17 @@ def get_users_dataframe():
     except Exception as err:
         return print(str(err))
 
-
-
-
-
 def get_group_rankings_dataframe():
     
     engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
 
     try:
+        #get just last question by timestamp
+        query = "Select tbl.userId, tbl.questionId, tbl.questionValue from (SELECT *, row_number() OVER (PARTITION BY userId, questionId ORDER BY STR_TO_DATE(responseTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM responses) tbl where r = 1 ORDER BY userId"
+        rankings_df = pd.read_sql(query,engine).fillna(0)
+        
+        
+        
         query = "Select userId, cafeId, rankingValue from rankings where rankingValue = 5"
         rankings_dataFrame = pd.read_sql(query,engine)
         
@@ -55,17 +116,43 @@ def get_group_rankings_dataframe():
         print(str(e))
 
 
-#print(get_group_rankings_dataframe())
+#KMEANS =================================================================================================
+
+df = get_users_dataframe()
+kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataframe().values)
+print(kmeans.labels_)
+df.loc[:,"cluster"] = kmeans.labels_
+
+#df = df.join(DataFrame(list(kmeans.labels_), columns = ['labels']))
+print(df)
+
+engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+
+drop_table('usersData')
+
+columns = df.columns.values.tolist()
+columns.append(df.index.name)
+primary_key = df.index.name
+print(columns, primary_key )
+create_table('usersData', columns, primary_key)
+
+df.to_sql('usersData', engine, if_exists='replace', index=False)
 
 
-#get_group_labels()
-#users_df = 
 
-print(get_users_dataframe())
-print(get_users_dataframe()['postcodeId'].unique())
+#print(df)
+#=========================
+
+
+#drop_table(UsersData)
+#print(df.index.name)
+
+#df.to_sql('usersData', engine, if_exists='replace', index=False)
+
+#dd['cluster'].to_sql(name='usersTable', con=engine.connect() ,chunksize=100, if_exists='replace', dtype='int',)
 
 #print(users_df)
-#kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataframe().values)
+#
 #labels_df = DataFrame(kmeans.labels_, columns=['category'])
 #lables_df = lables_df.transpose()
 #df_list = [users_df, labels_df]
