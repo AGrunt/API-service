@@ -120,10 +120,9 @@ def get_user_rankings_dataframe():
         query += "from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM rankings WHERE categoryId = 1) tbl "
         query += "WHERE r = 1 ORDER BY userId"
         rankings_df = pd.read_sql(query,engine)
-        print(rankings_df)
+        #print(rankings_df)
 
         pivoted_rankings_df = rankings_df.pivot(index='userId', columns = 'cafeId', values='ranking')
-        
 
         print(pivoted_rankings_df)
         return pivoted_rankings_df
