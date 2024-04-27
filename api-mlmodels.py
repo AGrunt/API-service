@@ -8,6 +8,10 @@ from sklearn.cluster import KMeans
 import pickle
 import mysql.connector as connection
 from sqlalchemy import create_engine
+import tensorflow.compat.v1 as tf
+
+tf.disable_v2_behavior()
+
 
 pd.set_option('future.no_silent_downcasting', True)
 os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
@@ -107,7 +111,7 @@ def get_cluster_rankings_dataframe():
         rankings_df = pd.read_sql(query,engine)
         
         pivoted_rankings_df = rankings_df.pivot(index='cafeId', columns = 'cluster', values='ranking')
-        return pivoted_rankings_df
+        return pivoted_rankings_df.T
     except Exception as e:
         print(str(e))
 
@@ -120,16 +124,10 @@ def get_user_rankings_dataframe():
         query += "from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, '%Y-%m-%d %H:%i:%s.%f') DESC) r FROM rankings WHERE categoryId = 1) tbl "
         query += "WHERE r = 1 ORDER BY userId"
         rankings_df = pd.read_sql(query,engine)
-        #print(rankings_df)
-
-        pivoted_rankings_df = rankings_df.pivot(index='userId', columns = 'cafeId', values='ranking')
-
-        print(pivoted_rankings_df)
-        return pivoted_rankings_df
+        pivoted_rankings_df = rankings_df.pivot(index='cafeId', columns = 'userId', values='ranking')
+        return pivoted_rankings_df.T
     except Exception as e:
         print(str(e))
-
-
 
 #KMEANS =================================================================================================
 
@@ -138,25 +136,35 @@ kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataf
 print(kmeans.labels_)
 df.loc[:,"cluster"] = kmeans.labels_
 
+
+
+pickle.dump(kmeans, open(f'.\\models\\{filename}.pkl','wb'))
+
 #df = df.join(DataFrame(list(kmeans.labels_), columns = ['labels']))
 print(df)
 
 engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
 
-#drop_table('usersData')
 
-""" columns = df.columns.values.tolist()
-columns.append(df.index.name)
-primary_key = df.index.name
-print(columns, primary_key )
-create_table('usersData', columns, primary_key)
- """
 df.reset_index().to_sql('usersData', engine, if_exists='replace', index=False)
 
+#Matrices
+cluster_cafe_matrix = get_cluster_rankings_dataframe()
+users_cafe_matrix = get_user_rankings_dataframe()
 
-#print(get_cluster_rankings_dataframe().T)
+# MODELING
+# make a model on:
+# cluster_matrix
 
-print(get_user_rankings_dataframe())
+cluster_cafe_matrix.fillna(0)
+users = cluster_cafe_matrix.index.tolist()
+cafes = cluster_cafe_matrix.columns.tolist()
+cluster_cafe_matrix = cluster_cafe_matrix.as_matrix()
+
+
+
+
+
 
 
 
