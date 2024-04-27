@@ -22,3 +22,5 @@ urllib3==2.2.1
 uuid==1.30
 Werkzeug==3.0.1
 scikit-learn
+sqlalchemy
+tensorflow
