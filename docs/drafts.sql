@@ -19,16 +19,16 @@ SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(ra
 ) tbl2 left join usersTable ut on ut.userId = tbl2.userId
 ) tbl3 left join cafes cf on tbl3.cafeId = cf.cafeId;
 
+select cafeId, servesCoffee, takeout, goodForChildren, goodForGroups, delivery from cafes;
 
 
-Select tbl.cafeId, tbl.userId, tbl.rankingValue, ut.age, ut.postcode, ut.gender, cf.ServesCoffee, cf.takeout, cf.goodForChildren, cf.goodForGroups, cf.delivery  from 
+
+
+
+Select tbl.cafeId, tbl.userId, tbl.rankingValue, ut.age, ut.postcode, ut.gender from 
 (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1 ) tbl 
 LEFT JOIN usersTable ut on ut.userId = tbl.userId
-LEFT JOIN cafes cf on cf.cafeId = tbl.cafeId
 WHERE r = 1 ORDER BY userId;
-
-
-Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from   (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO' at line 1
 
 
 
@@ -125,16 +125,33 @@ select distinct questionId from responses where questionId not like "test";
 select distinct questionId from responses;
 
 
-SELECT resp.*, row_number() OVER (PARTITION BY questionId ORDER BY STR_TO_DATE(responseTimeStamp, '%Y-%m-%d %H:%i:%s.%f ') DESC) r FROM responses resp;
+SELECT resp.*, row_number() OVER (PARTITION BY questionId ORDER BY STR_TO_DATE(responseTimeStamp, '%Y-%m-%d %H:%i:%s.%f ') DESC) r FROM responses;
 
 SELECT resp.*, row_number() OVER (PARTITION BY questionId ORDER BY STR_TO_DATE(responseTimeStamp, '%Y-%m-%d %H:%i:%s.%f ') DESC) r FROM responses;
 
+ Select tbl.cafeId, tbl.userId, tbl.rankingValue from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1 ) tbl WHERE r = 1 ORDER BY userId;
 
+Select tbl.cafeId as cafeId, tbl.userId as userId, tbl.rankingValue as ranking from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1 ) tbl WHERE r = 1 ORDER BY userId;
 select usersTable.userId, gender, age, postcode, questionId, questionValue from usersTable join responses ON usersTable.userId = responses.userId where questionId not like "test" order by responseTimeStamp and questionId ;
 
+select cafeId, rankingValueusersTableusersTableusersTable from rankings where userId = "001c430d-5e6b-453c-b735-8ae3a4721a37";
 
 
+alter table usersTable drop primary key;
 
+alter table usersTable add userIndex INT AUTO_INCREMENT add PRIMARY KEY (userIndex );
+
+alter table usersTable add column userIndex INT unsigned primary KEY AUTO_INCREMENT;
+
+select * from usersTable;
+select * from cafes;
+
+
+Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(userIndex )' at line 1
+
+
+alter usersTable 
+responseIndex INT AUTO_INCREMENT,
 
 
  select count(*) from responses;

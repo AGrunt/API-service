@@ -36,7 +36,7 @@ services:
     container_name: api-svc
     restart: always
     build:
-      dockerfile: api-service.dockerfile
+      dockerfile: api.dockerfile
     depends_on:
       - coffee-api-service-db
     links: 
