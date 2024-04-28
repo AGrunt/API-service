@@ -12,8 +12,11 @@
 
 ## How to update
 
-1. Run `docker ps -a | grep "api-db" | awk '{print $1}' | xargs docker rm ; docker volume ls | grep "api-db" | awk '{print $2}' | xargs docker volume rm`
-2. Run `docker compose up --build`
+  1. delete mysql container and its volume:  
+    `docker stop api-db ; docker rm api-db ; docker volume rm api-service_api-db`
+  2. rebuild container  
+    `docker compose up --build`
+
 ## How to use
 
 Service available at `http://localhost:5001`  
