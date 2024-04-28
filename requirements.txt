@@ -23,4 +23,5 @@ uuid==1.30
 Werkzeug==3.0.1
 scikit-learn
 sqlalchemy
-tensorflow
+tensorflow==2.15.0
+tensorflow_recommenders

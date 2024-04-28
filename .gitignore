@@ -38,7 +38,7 @@ next-env.d.ts
 
 # Environments
 .env
-.venv
+.venv*
 env/
 venv/
 ENV/

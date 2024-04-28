@@ -12,9 +12,9 @@
 
 ## How to update
 
-  1. delete mysql container and its volume:
+  1. delete mysql container and its volume:  
     `docker stop api-db ; docker rm api-db ; docker volume rm api-service_api-db`
-  2. rebuild container
+  2. rebuild container  
     `docker compose up --build`
 
 ## How to use
