@@ -26,6 +26,7 @@ services:
     volumes:
       - api-db:/var/lib/mysql
       - ./scripts/V004_coffee_mate.sql:/docker-entrypoint-initdb.d/V004_coffee_mate.sql
+  
   coffee-api-service:
     image: flask/application
     networks:
@@ -41,9 +42,12 @@ services:
       - coffee-api-service-db
     links: 
       - coffee-api-service-db
+    volumes:
+      - ./models/:/app/models/
 
 volumes:
   api-db:
+
 
 networks:
   apiNet:

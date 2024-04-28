@@ -15,22 +15,22 @@ os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude warnings
 
 def get_ratings_dataframe():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
         query = 'SELECT tbl.cafeId AS cafe_id, tbl.userId AS user_id, tbl.rankingValue AS rating from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1) tbl WHERE r = 1'
-        rankings_df = pd.read_sql(query, engine, dtype={'user_id': 'category', 'cafe_id': 'category', 'rating': 'float32'})
+        rankings_df = pd.read_sql(query, engine, dtype={'user_id': 'string', 'cafe_id': 'string', 'rating': 'float32'})
         return rankings_df
     except Exception as e:
         print(str(e))
 
 def get_cafes_dataframe():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
         query = 'SELECT DISTINCT tbl.cafeId AS cafe_id from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1) tbl WHERE r = 1'
-        rankings_df = pd.read_sql(query, engine, dtype={'cafe_id': 'category'})
+        rankings_df = pd.read_sql(query, engine, dtype={'cafe_id': 'string'})
         return rankings_df
     except Exception as e:
         print(str(e))
@@ -123,18 +123,7 @@ index.index_from_dataset(
 # Get recommendations.
 _, ids = index(tf.constant(["001c430d-5e6b-453c-b735-8ae3a4721a37"]))
 
-# Export the query model.
-with tempfile.TemporaryDirectory() as tmp:
-  path = os.path.join(tmp, "model")
 
-  # Save the index.
-  tf.saved_model.save(index, path)
-
-  # Load it back; can also be done in TensorFlow Serving.
-  loaded = tf.saved_model.load(path)
-
-  # Pass a user id in, get top predicted movie titles back.
-  scores, titles = loaded(["001c430d-5e6b-453c-b735-8ae3a4721a37"])
-
-  print(scores, titles)
-
+# Save model.  
+path = './models/model_user'
+tf.saved_model.save(index, path)

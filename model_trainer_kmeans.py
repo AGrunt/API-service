@@ -14,7 +14,7 @@ os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
 
 def get_users_dataframe():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
         query = "Select userId, age, postcode, gender from usersTable order by userId ASC"
@@ -41,7 +41,7 @@ def get_users_dataframe():
 
 df = get_users_dataframe()
 kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataframe().values)
-#print(kmeans.labels_)
-df.loc[:,"cluster"] = kmeans.labels_
 
 pickle.dump(kmeans, open(f'./models/kmeans.pkl','wb'))
+
+

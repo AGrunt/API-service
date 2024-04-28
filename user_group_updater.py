@@ -14,7 +14,7 @@ kmeans_model = pickle.load(open('./models/kmeans.pkl', 'rb'))
 
 def get_users():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
         query = "Select userId, age, postcode, gender from usersTable order by userId ASC"
@@ -44,7 +44,6 @@ users_df = get_users()
 result = kmeans_model.predict(users_df)
 
 users_df['cluster'] = result
-
 
 dbConnection = mysql.connector.connect(
         host="localhost",
