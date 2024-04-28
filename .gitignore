@@ -52,3 +52,4 @@ output
 docs/temp/
 temp*.py
 __pycache__
+test*
