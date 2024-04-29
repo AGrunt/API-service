@@ -218,7 +218,7 @@ def recomendations(id, start, size):
     user_df = pd.DataFrame.from_dict(user_data)
 
     final_df = pd.DataFrame.merge(group_df, user_df, how='outer', on='cafe').fillna(0)
-    final_df['ranking'] = ( final_df['ranking_user'] + final_df['ranking_group'] ) / 2
+    final_df['ranking'] = ( final_df['ranking_user']*0.75 + final_df['ranking_group']*0.25) / 2
     final_df = final_df.sort_values(by='ranking', ascending=False)
     final_df['cafe'] = final_df['cafe'].astype('string')
     final_df = final_df[['cafe', 'ranking']]
