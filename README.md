@@ -67,7 +67,7 @@ TemplateS for flask application. Home page.
 ## Notes
 
 * update api-app.py:
-  `docker cp ./api-app.py api-svc:/app/ ; docker container restart api-svc`
+  `docker cp ./api.py api-svc:/app/ ; docker container restart api-svc`
 
 * update sql volume with latest sql script or rewrite spoiled schema:
   Solution:
