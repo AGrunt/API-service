@@ -129,7 +129,7 @@ def put_responses(id):
     try:
         for response in request.json('responses'):
             insert_stmt = ('INSERT INTO responses (userId, questionId, questionValue, responseTimeStamp) VALUES (%(userId)s, %(questionId)s, %(questionValue)s, %(responseTimeStamp)s)')
-            cursor.execute(insert_stmt, {'userId': id, 'questionId': response['questionId'], 'questionValue': response['questionValue'], 'responseTimeStamp': datetime.now()})
+            cursor.execute(insert_stmt, {'userId': id, 'questionId': request.json['questionId'], 'questionValue': request.json['questionValue'], 'responseTimeStamp': datetime.now()})
         dbConnection.commit()
         cursor.close()
         dbConnection.close()
@@ -160,7 +160,7 @@ def put_ranking(id, cafeid):
         for ranking in request.json('rankings'):
             insert_stmt = ('INSERT INTO rankings (userId, cafeId, categoryId, rankingValue, rankingTimeStamp) '
                            'VALUES (%(userId)s, %(cafeId)s, %(categoryId)s, %(rankingValue)s, %(rankingTimeStamp)s)')
-            cursor.execute(insert_stmt, {'userId': id, 'cafeId': cafeid, 'categoryId': ranking['categoryId'], 'rankingValue': ranking['rankingValue'], 'responseTimeStamp': datetime.now()})
+            cursor.execute(insert_stmt, {'userId': id, 'cafeId': cafeid, 'categoryId': request.json['categoryId'], 'rankingValue': request.json['rankingValue'], 'responseTimeStamp': datetime.now()})
         dbConnection.commit()
         cursor.close()
         dbConnection.close()
