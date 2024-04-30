@@ -7,7 +7,7 @@ import mysql.connector
 import sys
 
 pd.set_option('future.no_silent_downcasting', True)
-os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
+os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude warnings
 
 kmeans_model = pickle.load(open('./models/kmeans.pkl', 'rb'))
 
