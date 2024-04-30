@@ -6,7 +6,6 @@ import os
 import mysql.connector
 import sys
 
-
 pd.set_option('future.no_silent_downcasting', True)
 os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
 
@@ -38,7 +37,6 @@ def get_users():
     except Exception as err:
         return print(str(err))
 
-
 users_df = get_users()
 
 result = kmeans_model.predict(users_df)
@@ -46,8 +44,8 @@ result = kmeans_model.predict(users_df)
 users_df['cluster'] = result
 
 dbConnection = mysql.connector.connect(
-        host="localhost",
-        port="33060",
+        host="api-db",
+        port="3306",
         user="sample",
         password="sample",
         database="coffee-mate"

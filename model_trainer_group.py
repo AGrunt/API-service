@@ -1,9 +1,5 @@
 import os
-import pprint
-import tempfile
-
 from typing import Dict, Text
-
 import numpy as np
 import tensorflow as tf
 import tensorflow_recommenders as tfrs
@@ -38,9 +34,6 @@ def get_cafes_dataframe():
 
 ratings_df = get_ratings_dataframe()
 cafes_df = get_cafes_dataframe()
-
-#print(ratings_df)
-#print(cafes_df)
 
 ratings = tf.data.Dataset.from_tensor_slices((dict(ratings_df)))
 cafes = tf.data.Dataset.from_tensor_slices((dict(cafes_df)))

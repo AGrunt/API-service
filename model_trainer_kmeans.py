@@ -1,16 +1,11 @@
 import os
-import time
-from datetime import datetime
 import pandas as pd
-from pandas import DataFrame
 from sklearn.cluster import KMeans
 import pickle
 from sqlalchemy import create_engine
-import numpy as np
 
 pd.set_option('future.no_silent_downcasting', True)
 os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
-
 
 def get_users_dataframe():
 
@@ -38,10 +33,7 @@ def get_users_dataframe():
     except Exception as err:
         return print(str(err))
 
-
 df = get_users_dataframe()
 kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataframe().values)
 
 pickle.dump(kmeans, open(f'./models/kmeans.pkl','wb'))
-
-
