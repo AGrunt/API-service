@@ -114,9 +114,6 @@ index.index_from_dataset(
   tf.data.Dataset.zip((cafes.batch(100), cafes.batch(100).map(model.cafe_model)))
 )
 
-# Get recommendations.
-group_scores, group_cafe_ids = index(tf.constant(["0"]))
-
 # Save model.  
 path = './models/model_group'
 tf.saved_model.save(index, path)

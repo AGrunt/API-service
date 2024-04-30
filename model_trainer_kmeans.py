@@ -5,7 +5,7 @@ import pickle
 from sqlalchemy import create_engine
 
 pd.set_option('future.no_silent_downcasting', True)
-os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude wornings
+os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude warnings
 
 def get_users_dataframe():
 
