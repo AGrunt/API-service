@@ -19,7 +19,7 @@ def get_ratings_dataframe():
     engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
-        query = 'SELECT DISTINCT tbl2.cafeId AS cafe_id, ud.cluster AS user_id, AVG(tbl2.rankingValue) OVER (PARTITION BY cluster, cafeid) AS rating FROM (SELECT tbl.userId, tbl.cafeId, tbl.rankingValue FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1) tbl WHERE r = 1 ORDER BY userId) tbl2 LEFT JOIN usersData ud ON tbl2.userId = ud.userId'
+        query = 'SELECT DISTINCT tbl2.cafeId AS cafe_id, ut.category AS user_id, AVG(tbl2.rankingValue) OVER (PARTITION BY category, cafeid) AS rating FROM (SELECT tbl.userId, tbl.cafeId, tbl.rankingValue FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1) tbl WHERE r = 1 ORDER BY userId) tbl2 LEFT JOIN usersTable ut ON tbl2.userId = ut.userId'
         rankings_df = pd.read_sql(query, engine, dtype={'user_id': 'string', 'cafe_id': 'string', 'rating': 'float32'})
         return rankings_df
     except Exception as e:
@@ -39,8 +39,8 @@ def get_cafes_dataframe():
 ratings_df = get_ratings_dataframe()
 cafes_df = get_cafes_dataframe()
 
-print(ratings_df)
-print(cafes_df)
+#print(ratings_df)
+#print(cafes_df)
 
 ratings = tf.data.Dataset.from_tensor_slices((dict(ratings_df)))
 cafes = tf.data.Dataset.from_tensor_slices((dict(cafes_df)))
@@ -127,8 +127,3 @@ group_scores, group_cafe_ids = index(tf.constant(["0"]))
 # Save model.  
 path = './models/model_group'
 tf.saved_model.save(index, path)
-
-group_data = {'cafe': group_cafe_ids[0][:].numpy(), 'ranking':  group_scores[0][:].numpy()}
-group_df = pd.DataFrame.from_dict(group_data)
-
-print(group_df)

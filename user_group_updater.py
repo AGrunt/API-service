@@ -57,7 +57,7 @@ cursor = dbConnection.cursor()
 
 for index, user in users_df.iterrows():
     try:
-        print(f'User Clustrer updating. user: {index}. cluster: {user["cluster"]} ')
+        print(f'User Cluster updating. user: {index}. cluster: {user["cluster"]} ')
         update_stmt = ('UPDATE usersTable SET category = %(category)s WHERE userId = %(userId)s')
         cursor.execute(update_stmt, {'userId': index, 'category': int(user['cluster'])})
     except Exception as err:
