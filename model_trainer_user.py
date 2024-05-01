@@ -11,7 +11,7 @@ os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude warnings
 
 def get_ratings_dataframe():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
         query = 'SELECT tbl.cafeId AS cafe_id, tbl.userId AS user_id, tbl.rankingValue AS rating from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1) tbl WHERE r = 1'
@@ -22,7 +22,7 @@ def get_ratings_dataframe():
 
 def get_cafes_dataframe():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
 
     try:
         query = 'SELECT DISTINCT tbl.cafeId AS cafe_id from (SELECT *, row_number() OVER (PARTITION BY userId, cafeId ORDER BY STR_TO_DATE(rankingTimeStamp, "%Y-%m-%d %H:%i:%s.%f") DESC) r FROM rankings WHERE categoryId = 1) tbl WHERE r = 1'
@@ -102,7 +102,7 @@ model.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.1))
 cached_train = train.shuffle(20000).batch(8192).cache()
 cached_test = test.batch(4096).cache()
 
-model.fit(cached_train, epochs=20)
+model.fit(cached_train, epochs=3)
 
 model.evaluate(cached_test, return_dict=True)
 
