@@ -9,7 +9,7 @@ os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude warnings
 
 def get_users_dataframe():
 
-    engine = create_engine("mysql+mysqlconnector://sample:sample@api-db:3306/coffee-mate")
+    engine = create_engine("mysql+mysqlconnector://sample:sample@localhost:33060/coffee-mate")
 
     try:
         query = "Select userId, age, postcode, gender from usersTable order by userId ASC"
