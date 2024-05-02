@@ -9,7 +9,9 @@ import pickle
 from  sqlalchemy import create_engine
 import pandas as pd
 from pandas import DataFrame
-
+from training_pipeline import run_model_training_pipeline
+import atexit
+from apscheduler.schedulers.background import BackgroundScheduler
 
 #wait for mysqlService
 time.sleep(10)
@@ -48,7 +50,8 @@ def get_users(id):
     cursor = dbConnection.cursor()
     
     try:
-        select_stmt = ('SELECT userId, gender, age, postcode FROM usersTable WHERE userId = %(userId)s LIMIT 1')
+        select
+        _stmt = ('SELECT userId, gender, age, postcode FROM usersTable WHERE userId = %(userId)s LIMIT 1')
         cursor.execute(select_stmt, {'userId':id})
         result = cursor.fetchone()
         if result:
@@ -228,5 +231,13 @@ def recomendations(id, start, size):
 
 #Run swagger 
 app.register_blueprint(swagger_ui_blueprint, url_prefix=SWAGGER_URL)
+
 #Run flask
 app.run(debug=True)
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=run_model_training_pipeline, trigger="interval", seconds=60, coalesce=True)
+scheduler.start()
+
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())

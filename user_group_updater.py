@@ -9,7 +9,7 @@ import sys
 pd.set_option('future.no_silent_downcasting', True)
 os.environ['LOKY_MAX_CPU_COUNT'] = '0' #exclude warnings
 
-kmeans_model = pickle.load(open('./models/kmeans.pkl', 'rb'))
+
 
 def get_users():
 
@@ -37,33 +37,37 @@ def get_users():
     except Exception as err:
         return print(str(err))
 
-users_df = get_users()
+def update_user_groups_using_kmeans_model():
+    
+    users_df = get_users()
 
-result = kmeans_model.predict(users_df)
+    kmeans_model = pickle.load(open('./models/kmeans.pkl', 'rb'))
 
-users_df['cluster'] = result
+    result = kmeans_model.predict(users_df)
 
-dbConnection = mysql.connector.connect(
-        host="api-db",
-        port="3306",
-        user="sample",
-        password="sample",
-        database="coffee-mate"
-        )
+    users_df['cluster'] = result
 
-cursor = dbConnection.cursor()
+    dbConnection = mysql.connector.connect(
+            host="api-db",
+            port="3306",
+            user="sample",
+            password="sample",
+            database="coffee-mate"
+            )
 
-for index, user in users_df.iterrows():
-    try:
-        print(f'User Cluster updating. user: {index}. cluster: {user["cluster"]} ')
-        update_stmt = ('UPDATE usersTable SET category = %(category)s WHERE userId = %(userId)s')
-        cursor.execute(update_stmt, {'userId': index, 'category': int(user['cluster'])})
-    except Exception as err:
-        dbConnection.rollback()
-        cursor.close()
-        dbConnection.close()
-        sys.exit(f'Database error: {err}')
+    cursor = dbConnection.cursor()
 
-dbConnection.commit()
-cursor.close()
-dbConnection.close()
+    for index, user in users_df.iterrows():
+        try:
+            print(f'User Cluster updating. user: {index}. cluster: {user["cluster"]} ')
+            update_stmt = ('UPDATE usersTable SET category = %(category)s WHERE userId = %(userId)s')
+            cursor.execute(update_stmt, {'userId': index, 'category': int(user['cluster'])})
+        except Exception as err:
+            dbConnection.rollback()
+            cursor.close()
+            dbConnection.close()
+            sys.exit(f'Database error: {err}')
+
+    dbConnection.commit()
+    cursor.close()
+    dbConnection.close()

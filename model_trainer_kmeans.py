@@ -33,7 +33,12 @@ def get_users_dataframe():
     except Exception as err:
         return print(str(err))
 
-df = get_users_dataframe()
-kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataframe().values)
+def train_kmeans_model():
+    
+    print('Starting kmeans model training...')
+    
+    kmeans = KMeans(n_clusters=3, random_state=0, n_init="auto").fit(get_users_dataframe().values)
 
-pickle.dump(kmeans, open(f'./models/kmeans.pkl','wb'))
+    pickle.dump(kmeans, open(f'./models/kmeans.pkl','wb'))
+    
+    print('Kmeans model training complete.')
