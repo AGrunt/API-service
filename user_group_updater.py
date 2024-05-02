@@ -59,7 +59,7 @@ def update_user_groups_using_kmeans_model():
 
     for index, user in users_df.iterrows():
         try:
-            print(f'User Cluster updating. user: {index}. cluster: {user["cluster"]} ')
+            #print(f'User Cluster updating. user: {index}. cluster: {user["cluster"]} ')
             update_stmt = ('UPDATE usersTable SET category = %(category)s WHERE userId = %(userId)s')
             cursor.execute(update_stmt, {'userId': index, 'category': int(user['cluster'])})
         except Exception as err:
@@ -68,6 +68,7 @@ def update_user_groups_using_kmeans_model():
             dbConnection.close()
             sys.exit(f'Database error: {err}')
 
+    print(f'Kmeans cluster update complete. Total users: {len(users_df)}')
     dbConnection.commit()
     cursor.close()
     dbConnection.close()

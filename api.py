@@ -50,8 +50,7 @@ def get_users(id):
     cursor = dbConnection.cursor()
     
     try:
-        select
-        _stmt = ('SELECT userId, gender, age, postcode FROM usersTable WHERE userId = %(userId)s LIMIT 1')
+        select_stmt = ('SELECT userId, gender, age, postcode FROM usersTable WHERE userId = %(userId)s LIMIT 1')
         cursor.execute(select_stmt, {'userId':id})
         result = cursor.fetchone()
         if result:
@@ -175,11 +174,10 @@ def put_ranking(id, cafeid):
         return f'Error: {err}', 500
 
 def recomendations(id, start, size):
-    #load kmenas model
+    
+    #load kmeans model
     kmeans_path = './models/kmeans.pkl' 
     kmeans_loaded = pickle.load(open('./models/kmeans.pkl', 'rb'))
-
-    'models/kmeans.pkl'
 
     #load group model
     model_group_path = './models/model_group'
@@ -213,7 +211,7 @@ def recomendations(id, start, size):
     results = kmeans_loaded.predict(users_df) 
     group_scores, group_cafe_ids = model_group_loaded([str(results[0])])
     user_scores, user_cafe_ids = model_user_loaded([str(id)])
-
+    
     group_data = {'cafe': group_cafe_ids[0][:].numpy(), 'ranking_group':  group_scores[0][:].numpy()}
     group_df = pd.DataFrame.from_dict(group_data)
 

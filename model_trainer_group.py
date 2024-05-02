@@ -107,7 +107,6 @@ def train_group_model():
     cached_test = test.batch(4096).cache()
 
     model.fit(cached_train, epochs=15)
-
     model.evaluate(cached_test, return_dict=True)
 
     # Create a model that takes in raw query features, and
