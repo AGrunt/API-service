@@ -31,91 +31,96 @@ def get_cafes_dataframe():
     except Exception as e:
         print(str(e))
 
-ratings_df = get_ratings_dataframe()
-cafes_df = get_cafes_dataframe()
+def train_user_model():
 
-ratings = tf.data.Dataset.from_tensor_slices((dict(ratings_df)))
-cafes = tf.data.Dataset.from_tensor_slices((dict(cafes_df)))
+    print('Starting user model training...')
 
-ratings = ratings.map(lambda x: {
-    "cafe_id": x["cafe_id"],
-    "user_id": x["user_id"],
-})
-cafes = cafes.map(lambda x: x["cafe_id"])
+    ratings_df = get_ratings_dataframe()
+    cafes_df = get_cafes_dataframe()
 
-tf.random.set_seed(42)
-shuffled = ratings.shuffle(20000, seed=42, reshuffle_each_iteration=False)
+    ratings = tf.data.Dataset.from_tensor_slices((dict(ratings_df)))
+    cafes = tf.data.Dataset.from_tensor_slices((dict(cafes_df)))
 
-train = shuffled.take(int(len(ratings)*0.8))
-test = shuffled.skip(int(len(ratings)*0.8)).take(int(len(ratings) - len(ratings)*0.8))
+    ratings = ratings.map(lambda x: {
+        "cafe_id": x["cafe_id"],
+        "user_id": x["user_id"],
+    })
+    cafes = cafes.map(lambda x: x["cafe_id"])
 
-cafe_ids = cafes.batch(1_000)
-user_ids = ratings.batch(1_000_000).map(lambda x: x["user_id"])
+    tf.random.set_seed(42)
+    shuffled = ratings.shuffle(20000, seed=42, reshuffle_each_iteration=False)
 
-unique_cafe_ids = np.unique(np.concatenate(list(cafe_ids)))
-unique_user_ids = np.unique(np.concatenate(list(user_ids)))
+    train = shuffled.take(int(len(ratings)*0.8))
+    test = shuffled.skip(int(len(ratings)*0.8)).take(int(len(ratings) - len(ratings)*0.8))
 
-embedding_dimension = 32
+    cafe_ids = cafes.batch(1_000)
+    user_ids = ratings.batch(1_000_000).map(lambda x: x["user_id"])
 
-user_model = tf.keras.Sequential([
-  tf.keras.layers.StringLookup(
-      vocabulary=unique_user_ids, mask_token=None),
-  # We add an additional embedding to account for unknown tokens.
-  tf.keras.layers.Embedding(len(unique_user_ids) + 1, embedding_dimension)
-])
+    unique_cafe_ids = np.unique(np.concatenate(list(cafe_ids)))
+    unique_user_ids = np.unique(np.concatenate(list(user_ids)))
 
-cafe_model = tf.keras.Sequential([
-  tf.keras.layers.StringLookup(
-      vocabulary=unique_cafe_ids, mask_token=None),
-  tf.keras.layers.Embedding(len(unique_cafe_ids) + 1, embedding_dimension)
-])
+    embedding_dimension = 32
 
-metrics = tfrs.metrics.FactorizedTopK(
-  candidates=cafes.batch(128).map(cafe_model)
-)
+    user_model = tf.keras.Sequential([
+    tf.keras.layers.StringLookup(
+        vocabulary=unique_user_ids, mask_token=None),
+    # We add an additional embedding to account for unknown tokens.
+    tf.keras.layers.Embedding(len(unique_user_ids) + 1, embedding_dimension)
+    ])
 
-task = tfrs.tasks.Retrieval(
-  metrics=metrics
-)
+    cafe_model = tf.keras.Sequential([
+    tf.keras.layers.StringLookup(
+        vocabulary=unique_cafe_ids, mask_token=None),
+    tf.keras.layers.Embedding(len(unique_cafe_ids) + 1, embedding_dimension)
+    ])
 
-class CoffeeMateModel(tfrs.Model):
+    metrics = tfrs.metrics.FactorizedTopK(
+    candidates=cafes.batch(128).map(cafe_model)
+    )
 
-  def __init__(self, user_model, cafe_model):
-    super().__init__()
-    self.cafe_model: tf.keras.Model = cafe_model
-    self.user_model: tf.keras.Model = user_model
-    self.task: tf.keras.layers.Layer = task
+    task = tfrs.tasks.Retrieval(
+    metrics=metrics
+    )
 
-  def compute_loss(self, features: Dict[Text, tf.Tensor], training=False) -> tf.Tensor:
-    # We pick out the user features and pass them into the user model.
-    user_embeddings = self.user_model(features["user_id"])
-    # And pick out the movie features and pass them into the movie model,
-    # getting embeddings back.
-    positive_cafe_embeddings = self.cafe_model(features["cafe_id"])
+    class CoffeeMateUserModel(tfrs.Model):
 
-    # The task computes the loss and the metrics.
-    return self.task(user_embeddings, positive_cafe_embeddings)
+        def __init__(self, user_model, cafe_model):
+            super().__init__()
+            self.cafe_model: tf.keras.Model = cafe_model
+            self.user_model: tf.keras.Model = user_model
+            self.task: tf.keras.layers.Layer = task
 
-model = CoffeeMateModel(user_model, cafe_model)
-model.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.1))
+        def compute_loss(self, features: Dict[Text, tf.Tensor], training=False) -> tf.Tensor:
+            # We pick out the user features and pass them into the user model.
+            user_embeddings = self.user_model(features["user_id"])
+            # And pick out the movie features and pass them into the movie model,
+            # getting embeddings back.
+            positive_cafe_embeddings = self.cafe_model(features["cafe_id"])
 
-cached_train = train.shuffle(20000).batch(8192).cache()
-cached_test = test.batch(4096).cache()
+            # The task computes the loss and the metrics.
+            return self.task(user_embeddings, positive_cafe_embeddings)
 
-model.fit(cached_train, epochs=3)
+    model = CoffeeMateUserModel(user_model, cafe_model)
+    model.compile(optimizer=tf.keras.optimizers.Adagrad(learning_rate=0.1))
 
-model.evaluate(cached_test, return_dict=True)
+    cached_train = train.shuffle(20000).batch(8192).cache()
+    cached_test = test.batch(4096).cache()
 
-# Create a model that takes in raw query features, and
-index = tfrs.layers.factorized_top_k.BruteForce(model.user_model, k=25)
-# recommends movies out of the entire movies dataset.
-index.index_from_dataset(
-  tf.data.Dataset.zip((cafes.batch(100), cafes.batch(100).map(model.cafe_model)))
-)
+    model.fit(cached_train, epochs=3)
+    model.evaluate(cached_test, return_dict=True)
 
-# Get recommendations.
-_, ids = index(tf.constant(["001c430d-5e6b-453c-b735-8ae3a4721a37"]))
+    # Create a model that takes in raw query features, and
+    index = tfrs.layers.factorized_top_k.BruteForce(model.user_model, k=25)
+    # recommends movies out of the entire movies dataset.
+    index.index_from_dataset(
+    tf.data.Dataset.zip((cafes.batch(100), cafes.batch(100).map(model.cafe_model)))
+    )
 
-# Save model.  
-path = './models/model_user'
-tf.saved_model.save(index, path)
+    # Get recommendations.
+    _, ids = index(tf.constant(["001c430d-5e6b-453c-b735-8ae3a4721a37"]))
+
+    # Save model.  
+    path = './models/model_user'
+    tf.saved_model.save(index, path)
+    
+    print('User model training complete.')

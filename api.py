@@ -9,7 +9,9 @@ import pickle
 from  sqlalchemy import create_engine
 import pandas as pd
 from pandas import DataFrame
-
+from training_pipeline import run_model_training_pipeline
+import atexit
+from apscheduler.schedulers.background import BackgroundScheduler
 
 #wait for mysqlService
 time.sleep(10)
@@ -172,11 +174,10 @@ def put_ranking(id, cafeid):
         return f'Error: {err}', 500
 
 def recomendations(id, start, size):
-    #load kmenas model
+    
+    #load kmeans model
     kmeans_path = './models/kmeans.pkl' 
     kmeans_loaded = pickle.load(open('./models/kmeans.pkl', 'rb'))
-
-    'models/kmeans.pkl'
 
     #load group model
     model_group_path = './models/model_group'
@@ -210,7 +211,7 @@ def recomendations(id, start, size):
     results = kmeans_loaded.predict(users_df) 
     group_scores, group_cafe_ids = model_group_loaded([str(results[0])])
     user_scores, user_cafe_ids = model_user_loaded([str(id)])
-
+    
     group_data = {'cafe': group_cafe_ids[0][:].numpy(), 'ranking_group':  group_scores[0][:].numpy()}
     group_df = pd.DataFrame.from_dict(group_data)
 
@@ -228,5 +229,13 @@ def recomendations(id, start, size):
 
 #Run swagger 
 app.register_blueprint(swagger_ui_blueprint, url_prefix=SWAGGER_URL)
+
 #Run flask
 app.run(debug=True)
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=run_model_training_pipeline, trigger="interval", seconds=60, coalesce=True)
+scheduler.start()
+
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())

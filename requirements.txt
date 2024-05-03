@@ -25,3 +25,4 @@ scikit-learn
 sqlalchemy
 tensorflow==2.15.0
 tensorflow_recommenders
+apscheduler==3.10.4
